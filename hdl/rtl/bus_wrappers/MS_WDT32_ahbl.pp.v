@@ -23,6 +23,10 @@
 `timescale			1ns/1ns
 `default_nettype	none
 
+
+
+
+
 module MS_WDT32_ahbl (
 	input	wire 		HCLK,
 	input	wire 		HRESETn,
@@ -74,8 +78,8 @@ module MS_WDT32_ahbl (
 	wire[31:0]	TIMER_REG	= WDTMR;
 	wire[31:0]	WDTLOAD	= LOAD_REG[31:0];
 	wire		WDTEN	= CONTROL_REG[0:0];
-	wire		WDTOV;
-	wire		_WDTOV_FLAG_	= WDTOV;
+	wire		WDTTO;
+	wire		_WDTTO_FLAG_	= WDTTO;
 	wire		MIS_REG	= RIS_REG & IM_REG;
 	wire		ahbl_valid	= last_HSEL & last_HTRANS[1];
 	wire		ahbl_we	= last_HWRITE & ahbl_valid;
@@ -88,7 +92,7 @@ module MS_WDT32_ahbl (
 		.rst_n(~_rst_),
 		.WDTMR(WDTMR),
 		.WDTLOAD(WDTLOAD),
-		.WDTOV(WDTOV),
+		.WDTTO(WDTTO),
 		.WDTEN(WDTEN)
 	);
 
@@ -101,7 +105,7 @@ module MS_WDT32_ahbl (
 	always @(posedge HCLK or negedge HRESETn)
 		if(~HRESETn) RIS_REG <= 32'd0;
 		else begin
-			if(_WDTOV_FLAG_) RIS_REG[0] <= 1'b1; else if(ICR_REG[0]) RIS_REG[0] <= 1'b0;
+			if(_WDTTO_FLAG_) RIS_REG[0] <= 1'b1; else if(ICR_REG[0]) RIS_REG[0] <= 1'b0;
 
 		end
 
