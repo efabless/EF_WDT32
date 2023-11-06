@@ -23,10 +23,6 @@
 `timescale			1ns/1ns
 `default_nettype	none
 
-`define		AHB_BLOCK(name, init)		always @(posedge HCLK or negedge HRESETn) if(~HRESETn) name <= init;
-`define		AHB_REG(name, init, size)	`AHB_BLOCK(name, init) else if(ahbl_we & (last_HADDR[15:0]==``name``_ADDR)) name <= HWDATA[``size``-1:0];
-`define		AHB_ICR(size)				`AHB_BLOCK(ICR_REG, size'b0) else if(ahbl_we & (last_HADDR[15:0]==ICR_REG_ADDR)) ICR_REG <= HWDATA[``size``-1:0]; else ICR_REG <= ``size``'d0;
-
 module MS_WDT32_ahbl (
 	input	wire 		HCLK,
 	input	wire 		HRESETn,
@@ -96,11 +92,11 @@ module MS_WDT32_ahbl (
 		.WDTEN(WDTEN)
 	);
 
-	`AHB_REG(LOAD_REG, 0, 32)
-	`AHB_REG(CONTROL_REG, 0, 1)
-	`AHB_REG(IM_REG, 0, 1)
+	always @(posedge HCLK or negedge HRESETn) if(~HRESETn) LOAD_REG <= 0; else if(ahbl_we & (last_HADDR[15:0]==LOAD_REG_ADDR)) LOAD_REG <= HWDATA[32-1:0];
+	always @(posedge HCLK or negedge HRESETn) if(~HRESETn) CONTROL_REG <= 0; else if(ahbl_we & (last_HADDR[15:0]==CONTROL_REG_ADDR)) CONTROL_REG <= HWDATA[1-1:0];
+	always @(posedge HCLK or negedge HRESETn) if(~HRESETn) IM_REG <= 0; else if(ahbl_we & (last_HADDR[15:0]==IM_REG_ADDR)) IM_REG <= HWDATA[1-1:0];
 
-	`AHB_ICR(1)
+	always @(posedge HCLK or negedge HRESETn) if(~HRESETn) ICR_REG <= 1'b0; else if(ahbl_we & (last_HADDR[15:0]==ICR_REG_ADDR)) ICR_REG <= HWDATA[1-1:0]; else ICR_REG <= 1'd0;
 
 	always @(posedge HCLK or negedge HRESETn)
 		if(~HRESETn) RIS_REG <= 32'd0;

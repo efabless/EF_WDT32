@@ -23,10 +23,6 @@
 `timescale			1ns/1ns
 `default_nettype	none
 
-`define		APB_BLOCK(name, init)		always @(posedge PCLK or negedge PRESETn) if(~PRESETn) name <= init;
-`define		APB_REG(name, init, size)	`APB_BLOCK(name, init) else if(apb_we & (PADDR[15:0]==``name``_ADDR)) name <= PWDATA[``size``-1:0];
-`define		APB_ICR(size)				`APB_BLOCK(ICR_REG, ``size``'b0) else if(apb_we & (PADDR[15:0]==ICR_REG_ADDR)) ICR_REG <= PWDATA[``size``-1:0]; else ICR_REG <= ``size``'d0;
-
 module MS_WDT32_apb (
 	input	wire 		PCLK,
 	input	wire 		PRESETn,
@@ -75,11 +71,11 @@ module MS_WDT32_apb (
 		.WDTEN(WDTEN)
 	);
 
-	`APB_REG(LOAD_REG, 0, 32)
-	`APB_REG(CONTROL_REG, 0, 1)
-	`APB_REG(IM_REG, 0, 1)
+	always @(posedge PCLK or negedge PRESETn) if(~PRESETn) LOAD_REG <= 0; else if(apb_we & (PADDR[15:0]==LOAD_REG_ADDR)) LOAD_REG <= PWDATA[32-1:0];
+	always @(posedge PCLK or negedge PRESETn) if(~PRESETn) CONTROL_REG <= 0; else if(apb_we & (PADDR[15:0]==CONTROL_REG_ADDR)) CONTROL_REG <= PWDATA[1-1:0];
+	always @(posedge PCLK or negedge PRESETn) if(~PRESETn) IM_REG <= 0; else if(apb_we & (PADDR[15:0]==IM_REG_ADDR)) IM_REG <= PWDATA[1-1:0];
 
-	`APB_ICR(1)
+	always @(posedge PCLK or negedge PRESETn) if(~PRESETn) ICR_REG <= 1'b0; else if(apb_we & (PADDR[15:0]==ICR_REG_ADDR)) ICR_REG <= PWDATA[1-1:0]; else ICR_REG <= 1'd0;
 
 	always @(posedge PCLK or negedge PRESETn)
 		if(~PRESETn) RIS_REG <= 1'd0;
