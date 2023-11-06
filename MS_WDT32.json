@@ -76,8 +76,8 @@
     ],
     "flags": [
         {
-            "name": "wdtov",
-            "port": "WDTOV"
+            "name": "wdtto",
+            "port": "WDTTO"
         }
     ],
     "clock": "clk",
@@ -88,7 +88,7 @@
     "ports":[
       {"name": "WDTMR", "size": "32"},
       {"name": "WDTLOAD", "size": "32"},
-      {"name": "WDTOV", "size": "1"},
+      {"name": "WDTTO", "size": "1"},
       {"name": "WDTEN", "size": "1"}
     ]
 }
