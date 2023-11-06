@@ -1,2 +1,2 @@
 # MS_WDT32
-A simple WatchDog Timer
+A simple 32-bit WatchDog Timer (WDT)
