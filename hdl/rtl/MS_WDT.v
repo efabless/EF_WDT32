@@ -22,20 +22,22 @@ module MS_WDT32 (
 		input wire          rst_n,
 		output reg [31:0]   WDTMR,
 		input wire [31:0]   WDTLOAD,
-		output wire         WDTOV,
+		output wire         WDTTO,
 		input wire          WDTEN
 );
 
-	assign	WDTOV = (WDTMR == 32'd0);
+	assign	WDTTO = WDTEN & (WDTMR == 32'd0);
 	
 	// WDTimer
 	always @(posedge clk or negedge rst_n)
 	begin
 		if(!rst_n)
 			WDTMR <= 32'h0;
-		else if(WDTOV)
+		else if(WDTEN == 1'b0)
 			WDTMR <= WDTLOAD;
-		else if(WDTEN)
+		else if(WDTTO == 1'b1)
+			WDTMR <= WDTLOAD;
+		else 
 			WDTMR <= WDTMR - 32'd1;
 	end
 
