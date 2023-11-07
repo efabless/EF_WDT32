@@ -19,7 +19,7 @@ The WDT can be enabled/disabled. When it is disabled the counter is loaded with 
 |0x0F0C| ICR | 1 | Interrupts Clear Register; write 1 to clear the flag |
 
 ## Interrupt Flags
-The Time Out (TO) flag is the only available flag. The TO is raised when timer==0. 
+The Time Out (TO) flag is the only available flag. The TO is raised when the down-counter reaches 0. 
 
 ## How to use
 ### Configuring the timeout value
