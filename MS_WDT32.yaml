@@ -1,0 +1,92 @@
+---
+info:
+  name: MS_WDT32
+  description: A 32-bit Watchdog Timer
+  repo: https://github.com/efabless/MS_WDT32
+  owner: Mohamed Shalan
+  license: Apache 2.0
+  author: Mohamed Shalan
+  email: mshalan@aucegypt.edu
+  version: v1.0.4
+  date: 1-1-2020
+  category: digital
+  tags:
+  - peripheral
+  - timer
+  - wdt
+  bus:
+  - generic
+  type: soft
+  status: verified
+  cell_count:
+    - IP: TBD
+    - APB: TBD
+    - AHBL: TBD
+    - WB: TBD
+  width: "0.0"
+  height: "0.0"
+  technology: n/a
+  clock_freq_mhz:
+    - IP: TBD
+    - APB: TBD
+    - AHBL: TBD
+    - WB: TBD
+  digital_supply_voltage: n/a
+  analog_supply_voltage: n/a
+  irq_reg_offset: 0xFF00
+  fifo_reg_offset: 0xFE00
+
+ports:
+- name: WDTMR
+  width: 32
+  direction: output
+  description: 
+- name: WDTLOAD
+  width: 32
+  direction: input
+  description: 
+- name: WDTTO
+  width: 1
+  direction: output
+  description: 
+- name: WDTEN
+  width: 1
+  direction: input
+  description: 
+
+clock:
+  name: clk
+reset:
+  name: rst_n  
+  level: 0
+
+registers:
+- name: timer
+  size: 32
+  mode: r
+  fifo: no
+  offset: 0
+  bit_access: no 
+  read_port: WDTMR
+- name: load
+  size: 32
+  mode: w
+  fifo: no
+  offset: 4
+  bit_access: no 
+  write_port: WDTLOAD
+- name: control
+  size: 1
+  mode: w
+  fifo: no
+  offset: 8
+  bit_access: no 
+  write_port: WDTEN
+  
+
+flags:
+- name: wdtto
+  port: WDTTO
+  description: 
+
+
