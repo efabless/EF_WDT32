@@ -1,7 +1,7 @@
 /*
-	Copyright 2025 Mohamed Shalan
+	Copyright 2025 Efabless Corp.
 
-	Author: Mohamed Shalan (mshalan@aucegypt.edu)
+	Author: Efabless Corp. (ip_admin@efabless.com)
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.

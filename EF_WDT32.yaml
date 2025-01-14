@@ -10,10 +10,10 @@ info:
 
     The WDT can be enabled/disabled. When it is disabled the counter is loaded with the value in the load register.
   repo: https://github.com/efabless/EF_WDT32
-  owner: Mohamed Shalan
+  owner: Efabless Corp.
   license: Apache 2.0
-  author: Mohamed Shalan
-  email: mshalan@aucegypt.edu
+  author: Efabless Corp.
+  email: ip_admin@efabless.com
   version: v1.0.6
   date: 2-1-2025
   category: digital
