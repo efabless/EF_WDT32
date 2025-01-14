@@ -1,5 +1,5 @@
 /*
-	Copyright 2020 Mohamed Shalan
+	Copyright 2025 Mohamed Shalan
 
 	Author: Mohamed Shalan (mshalan@aucegypt.edu)
 
@@ -26,7 +26,7 @@
 
 `include			"apb_wrapper.vh"
 
-module MS_WDT32_APB (
+module EF_WDT32_APB (
 `ifdef USE_POWER_PINS
 	inout VPWR,
 	inout VGND,
@@ -42,27 +42,21 @@ module MS_WDT32_APB (
 	localparam	RIS_REG_OFFSET = `APB_AW'hFF08;
 	localparam	IC_REG_OFFSET = `APB_AW'hFF0C;
 
-        reg [0:0] GCLK_REG;
-        wire clk_g;
-        wire clk_gated_en = GCLK_REG[0];
+    reg [0:0] GCLK_REG;
+    wire clk_g;
 
-	`ifdef FPGA
-		wire clk = PCLK;
-	`else
-		(* keep *) sky130_fd_sc_hd__dlclkp_4 clk_gate(
-		`ifdef USE_POWER_PINS 
-			.VPWR(VPWR), 
-			.VGND(VGND), 
-			.VNB(VGND),
-			.VPB(VPWR),
-		`endif
-			.GCLK(clk_g), 
-			.GATE(clk_gated_en), 
-			.CLK(PCLK)
-			);
-			
-		wire		clk = clk_g;
-	`endif
+    wire clk_gated_en = sc_testmode ? 1'b1 : GCLK_REG[0];
+    ef_util_gating_cell clk_gate_cell(
+        `ifdef USE_POWER_PINS 
+        .vpwr(VPWR),
+        .vgnd(VGND),
+        `endif // USE_POWER_PINS
+        .clk(PCLK),
+        .clk_en(clk_gated_en),
+        .clk_o(clk_g)
+    );
+    
+	wire		clk = clk_g;
 	wire		rst_n = PRESETn;
 
 
@@ -108,7 +102,7 @@ module MS_WDT32_APB (
 
 	assign IRQ = |MIS_REG;
 
-	MS_WDT32 instance_to_wrap (
+	EF_WDT32 instance_to_wrap (
 		.clk(clk),
 		.rst_n(rst_n),
 		.WDTMR(WDTMR),
@@ -124,7 +118,6 @@ module MS_WDT32_APB (
 			(PADDR[`APB_AW-1:0] == IM_REG_OFFSET)	? IM_REG :
 			(PADDR[`APB_AW-1:0] == MIS_REG_OFFSET)	? MIS_REG :
 			(PADDR[`APB_AW-1:0] == RIS_REG_OFFSET)	? RIS_REG :
-			(PADDR[`APB_AW-1:0] == IC_REG_OFFSET)	? IC_REG :
 			(PADDR[`APB_AW-1:0] == GCLK_REG_OFFSET)	? GCLK_REG :
 			32'hDEADBEEF;
 

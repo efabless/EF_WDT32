@@ -1,8 +1,15 @@
 ---
 info:
-  name: MS_WDT32
-  description: A 32-bit Watchdog Timer
-  repo: https://github.com/efabless/MS_WDT32
+  name: EF_WDT32
+  description: |
+    A simple 32-bit WatchDog Timer (WDT). It can be used to interrupt the CPU to:
+
+    Indicate a software malfunction.
+    Wakeup the CPU after a certain sleep time.
+    The WDT is a simple 32-bit down-counter which is decremented every system clock cycle. When it reached zero, the counter is loaded with the value stored in the load register and the TO flag is raised..
+
+    The WDT can be enabled/disabled. When it is disabled the counter is loaded with the value in the load register.
+  repo: https://github.com/efabless/EF_WDT32
   owner: Mohamed Shalan
   license: Apache 2.0
   author: Mohamed Shalan
@@ -40,22 +47,23 @@ ports:
 - name: WDTMR
   width: 32
   direction: output
-  description: 
+  description: The current value of the timer
 - name: WDTLOAD
   width: 32
   direction: input
-  description: 
+  description: The value loaded into the timer when it reaches zero
 - name: WDTTO
   width: 1
   direction: output
-  description: 
+  description: Time out flag
 - name: WDTEN
   width: 1
   direction: input
-  description: 
+  description: watchdog timer enable 
 
 clock:
   name: clk
+  gated: "yes"
 reset:
   name: rst_n  
   level: 0
@@ -68,6 +76,7 @@ registers:
   offset: 0
   bit_access: no 
   read_port: WDTMR
+  description: The current value of the timer
 - name: load
   size: 32
   mode: w
@@ -75,6 +84,7 @@ registers:
   offset: 4
   bit_access: no 
   write_port: WDTLOAD
+  description: The value loaded into the timer when it reaches zero
 - name: control
   size: 1
   mode: w
@@ -82,11 +92,12 @@ registers:
   offset: 8
   bit_access: no 
   write_port: WDTEN
+  description: Writing 0 disables the WDT and writing 1 enables it
   
 
 flags:
 - name: wdtto
   port: WDTTO
-  description: 
+  description: Time out flag 
 
 

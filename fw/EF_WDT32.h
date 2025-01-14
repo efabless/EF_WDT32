@@ -1,7 +1,7 @@
-#ifndef MS_WDT32_H
-#define MS_WDT32_H
+#ifndef EF_WDT32_H
+#define EF_WDT32_H
 
-#include <MS_WDT32_regs.h>
+#include <EF_WDT32_regs.h>
 #include <stdint.h>
 #include <stdbool.h>
 

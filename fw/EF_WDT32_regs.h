@@ -1,5 +1,5 @@
 /*
-	Copyright 2020 Mohamed Shalan
+	Copyright 2025 Mohamed Shalan
 
 	Author: Mohamed Shalan (mshalan@aucegypt.edu)
 
@@ -17,8 +17,8 @@
 
 */
 
-#ifndef MS_WDT32REGS_H
-#define MS_WDT32REGS_H
+#ifndef EF_WDT32REGS_H
+#define EF_WDT32REGS_H
 
 #ifndef IO_TYPES
 #define IO_TYPES
@@ -28,9 +28,9 @@
 #endif
 
 
-#define MS_WDT32_WDTTO_FLAG	0x1
+#define EF_WDT32_WDTTO_FLAG	0x1
 
-typedef struct _MS_WDT32_TYPE_ {
+typedef struct _EF_WDT32_TYPE_ {
 	__R 	timer;
 	__W 	load;
 	__W 	control;
@@ -40,7 +40,7 @@ typedef struct _MS_WDT32_TYPE_ {
 	__R 	RIS;
 	__W 	IC;
 	__W 	GCLK;
-} MS_WDT32_TYPE;
+} EF_WDT32_TYPE;
 
 #endif
 

@@ -17,7 +17,7 @@
 `timescale          1ns/1ps
 `default_nettype    none
 
-module MS_WDT32 (
+module EF_WDT32 (
 		input wire          clk,
 		input wire          rst_n,
 		output reg [31:0]   WDTMR,
