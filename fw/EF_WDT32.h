@@ -18,7 +18,7 @@
 
 
 /*! \file EF_WDT32.h
-    \brief C header file for EF_WDT32 APIs which contains the function prototypes 
+    \brief H header file for EF_WDT32 APIs which contains the function prototypes 
     
 */
 
@@ -43,19 +43,19 @@
 /******************************************************************************
 * Function Prototypes
 ******************************************************************************/
-EF_DRIVER_STATUS WDT32_readTimerValue(EF_WDT32_TYPE_PTR wdt, uint32_t* timer_value);
+EF_DRIVER_STATUS EF_WDT32_readTimerValue(EF_WDT32_TYPE_PTR wdt, uint32_t* timer_value);
 
-EF_DRIVER_STATUS WDT32_setReloadValue(EF_WDT32_TYPE_PTR wdt, uint32_t load_val);
+EF_DRIVER_STATUS EF_WDT32_setReloadValue(EF_WDT32_TYPE_PTR wdt, uint32_t load_val);
 
-EF_DRIVER_STATUS WDT32_getRIS(EF_WDT32_TYPE_PTR wdt, uint32_t* ris);
+EF_DRIVER_STATUS EF_WDT32_getRIS(EF_WDT32_TYPE_PTR wdt, uint32_t* ris);
 
-EF_DRIVER_STATUS WDT32_getMIS(EF_WDT32_TYPE_PTR wdt, uint32_t* mis);
+EF_DRIVER_STATUS EF_WDT32_getMIS(EF_WDT32_TYPE_PTR wdt, uint32_t* mis);
 
-EF_DRIVER_STATUS WDT32_setIM(EF_WDT32_TYPE_PTR wdt, uint32_t mask);
+EF_DRIVER_STATUS EF_WDT32_setIM(EF_WDT32_TYPE_PTR wdt, uint32_t mask);
 
-EF_DRIVER_STATUS WDT32_getIM(EF_WDT32_TYPE_PTR wdt, uint32_t* im);
+EF_DRIVER_STATUS EF_WDT32_getIM(EF_WDT32_TYPE_PTR wdt, uint32_t* im);
 
-EF_DRIVER_STATUS WDT32_setICR(EF_WDT32_TYPE_PTR wdt, uint32_t mask);
+EF_DRIVER_STATUS EF_WDT32_setICR(EF_WDT32_TYPE_PTR wdt, uint32_t mask);
 
 
 // The following functions are not verified yet
@@ -63,15 +63,15 @@ EF_DRIVER_STATUS WDT32_setICR(EF_WDT32_TYPE_PTR wdt, uint32_t mask);
 /******************************************************************************************************************************************/
 EF_DRIVER_STATUS EF_I2C_setGclkEnable (EF_WDT32_TYPE_PTR wdt, uint32_t value);
 
-EF_DRIVER_STATUS WDT32_enable(EF_WDT32_TYPE_PTR wdt);
+EF_DRIVER_STATUS EF_WDT32_enable(EF_WDT32_TYPE_PTR wdt);
 
-EF_DRIVER_STATUS WDT32_disable(EF_WDT32_TYPE_PTR wdt);
+EF_DRIVER_STATUS EF_WDT32_disable(EF_WDT32_TYPE_PTR wdt);
 
-EF_DRIVER_STATUS WDT32_reloadWDT(EF_WDT32_TYPE_PTR wdt);
+EF_DRIVER_STATUS EF_WDT32_reloadWDT(EF_WDT32_TYPE_PTR wdt);
 
-EF_DRIVER_STATUS WDT32_clearTimeOutFlag(EF_WDT32_TYPE_PTR wdt);
+EF_DRIVER_STATUS EF_WDT32_clearTimeOutFlag(EF_WDT32_TYPE_PTR wdt);
 
-EF_DRIVER_STATUS WDT32_isTimeOut(EF_WDT32_TYPE_PTR wdt, uint32_t* is_timeout);
+EF_DRIVER_STATUS EF_WDT32_isTimeOut(EF_WDT32_TYPE_PTR wdt, uint32_t* is_timeout);
 
 /******************************************************************************
 * External Variables

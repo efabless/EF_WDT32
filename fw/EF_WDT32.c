@@ -55,7 +55,7 @@
 ******************************************************************************/
 
 
-EF_DRIVER_STATUS WDT32_readTimerValue(EF_WDT32_TYPE_PTR wdt, uint32_t* timer_value){
+EF_DRIVER_STATUS EF_WDT32_readTimerValue(EF_WDT32_TYPE_PTR wdt, uint32_t* timer_value){
 
     EF_DRIVER_STATUS status = EF_DRIVER_OK;
 
@@ -69,7 +69,7 @@ EF_DRIVER_STATUS WDT32_readTimerValue(EF_WDT32_TYPE_PTR wdt, uint32_t* timer_val
     return status;
 }
 
-EF_DRIVER_STATUS WDT32_setReloadValue(EF_WDT32_TYPE_PTR wdt, uint32_t load_val){
+EF_DRIVER_STATUS EF_WDT32_setReloadValue(EF_WDT32_TYPE_PTR wdt, uint32_t load_val){
     
     EF_DRIVER_STATUS status = EF_DRIVER_OK;
 
@@ -81,7 +81,7 @@ EF_DRIVER_STATUS WDT32_setReloadValue(EF_WDT32_TYPE_PTR wdt, uint32_t load_val){
     return status;
 }
 
-EF_DRIVER_STATUS WDT32_getRIS(EF_WDT32_TYPE_PTR wdt, uint32_t* ris){
+EF_DRIVER_STATUS EF_WDT32_getRIS(EF_WDT32_TYPE_PTR wdt, uint32_t* ris){
 
     EF_DRIVER_STATUS status = EF_DRIVER_OK;
 
@@ -95,7 +95,7 @@ EF_DRIVER_STATUS WDT32_getRIS(EF_WDT32_TYPE_PTR wdt, uint32_t* ris){
     return status;
 }
 
-EF_DRIVER_STATUS WDT32_getMIS(EF_WDT32_TYPE_PTR wdt, uint32_t* mis){
+EF_DRIVER_STATUS EF_WDT32_getMIS(EF_WDT32_TYPE_PTR wdt, uint32_t* mis){
 
     EF_DRIVER_STATUS status = EF_DRIVER_OK;
 
@@ -109,7 +109,7 @@ EF_DRIVER_STATUS WDT32_getMIS(EF_WDT32_TYPE_PTR wdt, uint32_t* mis){
     return status;
 }
 
-EF_DRIVER_STATUS WDT32_setIM(EF_WDT32_TYPE_PTR wdt, uint32_t mask){
+EF_DRIVER_STATUS EF_WDT32_setIM(EF_WDT32_TYPE_PTR wdt, uint32_t mask){
 
     EF_DRIVER_STATUS status = EF_DRIVER_OK;
 
@@ -121,7 +121,7 @@ EF_DRIVER_STATUS WDT32_setIM(EF_WDT32_TYPE_PTR wdt, uint32_t mask){
     return status;
 }
 
-EF_DRIVER_STATUS WDT32_getIM(EF_WDT32_TYPE_PTR wdt, uint32_t* im){
+EF_DRIVER_STATUS EF_WDT32_getIM(EF_WDT32_TYPE_PTR wdt, uint32_t* im){
 
     EF_DRIVER_STATUS status = EF_DRIVER_OK;
 
@@ -135,7 +135,7 @@ EF_DRIVER_STATUS WDT32_getIM(EF_WDT32_TYPE_PTR wdt, uint32_t* im){
     return status;
 }
 
-EF_DRIVER_STATUS WDT32_setICR(EF_WDT32_TYPE_PTR wdt, uint32_t mask){
+EF_DRIVER_STATUS EF_WDT32_setICR(EF_WDT32_TYPE_PTR wdt, uint32_t mask){
 
     EF_DRIVER_STATUS status = EF_DRIVER_OK;
 
@@ -168,7 +168,7 @@ EF_DRIVER_STATUS EF_I2C_setGclkEnable (EF_WDT32_TYPE_PTR wdt, uint32_t value){
     return status;
 }
 
-EF_DRIVER_STATUS WDT32_enable(EF_WDT32_TYPE_PTR wdt){
+EF_DRIVER_STATUS EF_WDT32_enable(EF_WDT32_TYPE_PTR wdt){
 
     EF_DRIVER_STATUS status = EF_DRIVER_OK;
 
@@ -180,7 +180,7 @@ EF_DRIVER_STATUS WDT32_enable(EF_WDT32_TYPE_PTR wdt){
     return status;
 }
 
-EF_DRIVER_STATUS WDT32_disable(EF_WDT32_TYPE_PTR wdt){
+EF_DRIVER_STATUS EF_WDT32_disable(EF_WDT32_TYPE_PTR wdt){
 
     EF_DRIVER_STATUS status = EF_DRIVER_OK;
 
@@ -192,20 +192,20 @@ EF_DRIVER_STATUS WDT32_disable(EF_WDT32_TYPE_PTR wdt){
     return status;
 }
 
-EF_DRIVER_STATUS WDT32_reloadWDT(EF_WDT32_TYPE_PTR wdt){
+EF_DRIVER_STATUS EF_WDT32_reloadWDT(EF_WDT32_TYPE_PTR wdt){
     EF_DRIVER_STATUS status = EF_DRIVER_OK;
 
     if (wdt == NULL) {
         status = EF_DRIVER_ERROR_PARAMETER;     // Return EF_DRIVER_ERROR_PARAMETER if wdt is NULL
     } else {
-        status = WDT32_clearTimeOutFlag(wdt);
-        if (status == EF_DRIVER_OK) { WDT32_disable(wdt);}else{}
-        if (status == EF_DRIVER_OK) {WDT32_enable(wdt);} else{}
+        status = EF_WDT32_clearTimeOutFlag(wdt);
+        if (status == EF_DRIVER_OK) {status = EF_WDT32_disable(wdt);}else{}
+        if (status == EF_DRIVER_OK) {status = EF_WDT32_enable(wdt);} else{}
     }
     return status;
 }
 
-EF_DRIVER_STATUS WDT32_clearTimeOutFlag(EF_WDT32_TYPE_PTR wdt){
+EF_DRIVER_STATUS EF_WDT32_clearTimeOutFlag(EF_WDT32_TYPE_PTR wdt){
 
     EF_DRIVER_STATUS status = EF_DRIVER_OK;
 
@@ -217,7 +217,7 @@ EF_DRIVER_STATUS WDT32_clearTimeOutFlag(EF_WDT32_TYPE_PTR wdt){
     return status;
 }
     
-EF_DRIVER_STATUS WDT32_isTimeOut(EF_WDT32_TYPE_PTR wdt, uint32_t* is_timeout){
+EF_DRIVER_STATUS EF_WDT32_isTimeOut(EF_WDT32_TYPE_PTR wdt, uint32_t* is_timeout){
     EF_DRIVER_STATUS status = EF_DRIVER_OK;
 
     if (wdt == NULL) {
