@@ -1,0 +1,337 @@
+\hypertarget{_e_f___w_d_t32_8c}{}\doxysection{EF\+\_\+\+WDT32.\+c File Reference}
+\label{_e_f___w_d_t32_8c}\index{EF\_WDT32.c@{EF\_WDT32.c}}
+
+
+C file for WDT32 APIs which contains the function implmentations.  
+
+
+{\ttfamily \#include \char`\"{}EF\+\_\+\+WDT32.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_e_f___w_d_t32_8c_a147df04fc0736aa0c0c09441d42c1e2d}{EF\+\_\+\+WDT32\+\_\+C}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \mbox{\hyperlink{_e_f___w_d_t32_8c_a070bae4e509f7ff44bde19c4395c1f13}{EF\+\_\+\+WDT32\+\_\+read\+Timer\+Value}} (\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}} wdt, uint32\+\_\+t $\ast$timer\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Reads the current timer value from the WDT32 peripheral. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \mbox{\hyperlink{_e_f___w_d_t32_8c_a939788c900140f759e334e4459d4b958}{EF\+\_\+\+WDT32\+\_\+set\+Reload\+Value}} (\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}} wdt, uint32\+\_\+t load\+\_\+val)
+\begin{DoxyCompactList}\small\item\em Sets the reload value in the WDT32 peripheral. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \mbox{\hyperlink{_e_f___w_d_t32_8c_a3e5017e26b1f75011c36b39ba391d97d}{EF\+\_\+\+WDT32\+\_\+get\+RIS}} (\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}} wdt, uint32\+\_\+t $\ast$ris)
+\begin{DoxyCompactList}\small\item\em Gets the raw interrupt status (RIS) from the WDT32 peripheral. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \mbox{\hyperlink{_e_f___w_d_t32_8c_a3063b72a80217098001d522e1c3977f3}{EF\+\_\+\+WDT32\+\_\+get\+MIS}} (\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}} wdt, uint32\+\_\+t $\ast$mis)
+\begin{DoxyCompactList}\small\item\em Gets the masked interrupt status (MIS) from the WDT32 peripheral. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \mbox{\hyperlink{_e_f___w_d_t32_8c_a7bb77b2c466435c20e5fb6bf7391f723}{EF\+\_\+\+WDT32\+\_\+set\+IM}} (\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}} wdt, uint32\+\_\+t mask)
+\begin{DoxyCompactList}\small\item\em Sets the interrupt mask (IM) in the WDT32 peripheral. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \mbox{\hyperlink{_e_f___w_d_t32_8c_a6b8db048008ec7c64da0805649685ee9}{EF\+\_\+\+WDT32\+\_\+get\+IM}} (\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}} wdt, uint32\+\_\+t $\ast$im)
+\begin{DoxyCompactList}\small\item\em Gets the interrupt mask (IM) from the WDT32 peripheral. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \mbox{\hyperlink{_e_f___w_d_t32_8c_a7e76af97caf95f02df56665edb433b86}{EF\+\_\+\+WDT32\+\_\+set\+ICR}} (\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}} wdt, uint32\+\_\+t mask)
+\begin{DoxyCompactList}\small\item\em Sets the interrupt clear (IC) register in the WDT32 peripheral. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \mbox{\hyperlink{_e_f___w_d_t32_8c_a6f6927f4bc7e8d3687969831e8497a97}{EF\+\_\+\+I2\+C\+\_\+set\+Gclk\+Enable}} (\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}} wdt, uint32\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Sets the GCLK enable bit for the specified WDT32 peripheral. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \mbox{\hyperlink{_e_f___w_d_t32_8c_a06ad40c0ae428ae3858c004d8d13d725}{EF\+\_\+\+WDT32\+\_\+enable}} (\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}} wdt)
+\begin{DoxyCompactList}\small\item\em Enables the WDT32 peripheral. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \mbox{\hyperlink{_e_f___w_d_t32_8c_a07bd55f1fdacb26adc08bd83e63a3de1}{EF\+\_\+\+WDT32\+\_\+disable}} (\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}} wdt)
+\begin{DoxyCompactList}\small\item\em Disables the WDT32 peripheral. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \mbox{\hyperlink{_e_f___w_d_t32_8c_a5ad03a1924b7771fd1d01c636899e0ea}{EF\+\_\+\+WDT32\+\_\+reload\+WDT}} (\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}} wdt)
+\begin{DoxyCompactList}\small\item\em Reloads the WDT32 timer by disabling and re-\/enabling it. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \mbox{\hyperlink{_e_f___w_d_t32_8c_a724d7dc17ff1b58fdb42add0f7ce8707}{EF\+\_\+\+WDT32\+\_\+clear\+Time\+Out\+Flag}} (\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}} wdt)
+\begin{DoxyCompactList}\small\item\em Clears the timeout flag in the WDT32 peripheral. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \mbox{\hyperlink{_e_f___w_d_t32_8c_aa4021705a5d400c234ef2286a54a77d2}{EF\+\_\+\+WDT32\+\_\+is\+Time\+Out}} (\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}} wdt, uint32\+\_\+t $\ast$is\+\_\+timeout)
+\begin{DoxyCompactList}\small\item\em Checks if the WDT32 has timed out. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+C file for WDT32 APIs which contains the function implmentations. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_e_f___w_d_t32_8c_a147df04fc0736aa0c0c09441d42c1e2d}\label{_e_f___w_d_t32_8c_a147df04fc0736aa0c0c09441d42c1e2d}} 
+\index{EF\_WDT32.c@{EF\_WDT32.c}!EF\_WDT32\_C@{EF\_WDT32\_C}}
+\index{EF\_WDT32\_C@{EF\_WDT32\_C}!EF\_WDT32.c@{EF\_WDT32.c}}
+\doxysubsubsection{\texorpdfstring{EF\_WDT32\_C}{EF\_WDT32\_C}}
+{\footnotesize\ttfamily \#define EF\+\_\+\+WDT32\+\_\+C}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_e_f___w_d_t32_8c_a6f6927f4bc7e8d3687969831e8497a97}\label{_e_f___w_d_t32_8c_a6f6927f4bc7e8d3687969831e8497a97}} 
+\index{EF\_WDT32.c@{EF\_WDT32.c}!EF\_I2C\_setGclkEnable@{EF\_I2C\_setGclkEnable}}
+\index{EF\_I2C\_setGclkEnable@{EF\_I2C\_setGclkEnable}!EF\_WDT32.c@{EF\_WDT32.c}}
+\doxysubsubsection{\texorpdfstring{EF\_I2C\_setGclkEnable()}{EF\_I2C\_setGclkEnable()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} EF\+\_\+\+I2\+C\+\_\+set\+Gclk\+Enable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}}]{wdt,  }\item[{uint32\+\_\+t}]{value }\end{DoxyParamCaption})}
+
+
+
+Sets the GCLK enable bit for the specified WDT32 peripheral. 
+
+This function enables or disables the GCLK for the WDT32 peripheral.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em wdt} & Pointer to the WDT32 base address structure \mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em value} & The value to set (0 to disable, 1 to enable).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+status A value of type \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \+: returns a success or error code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_e_f___w_d_t32_8c_a724d7dc17ff1b58fdb42add0f7ce8707}\label{_e_f___w_d_t32_8c_a724d7dc17ff1b58fdb42add0f7ce8707}} 
+\index{EF\_WDT32.c@{EF\_WDT32.c}!EF\_WDT32\_clearTimeOutFlag@{EF\_WDT32\_clearTimeOutFlag}}
+\index{EF\_WDT32\_clearTimeOutFlag@{EF\_WDT32\_clearTimeOutFlag}!EF\_WDT32.c@{EF\_WDT32.c}}
+\doxysubsubsection{\texorpdfstring{EF\_WDT32\_clearTimeOutFlag()}{EF\_WDT32\_clearTimeOutFlag()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} EF\+\_\+\+WDT32\+\_\+clear\+Time\+Out\+Flag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}}]{wdt }\end{DoxyParamCaption})}
+
+
+
+Clears the timeout flag in the WDT32 peripheral. 
+
+This function writes to the interrupt clear register (IC) to clear the WDT timeout flag.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em wdt} & Pointer to the WDT32 base address structure \mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+status A value of type \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \+: returns a success or error code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_e_f___w_d_t32_8c_a07bd55f1fdacb26adc08bd83e63a3de1}\label{_e_f___w_d_t32_8c_a07bd55f1fdacb26adc08bd83e63a3de1}} 
+\index{EF\_WDT32.c@{EF\_WDT32.c}!EF\_WDT32\_disable@{EF\_WDT32\_disable}}
+\index{EF\_WDT32\_disable@{EF\_WDT32\_disable}!EF\_WDT32.c@{EF\_WDT32.c}}
+\doxysubsubsection{\texorpdfstring{EF\_WDT32\_disable()}{EF\_WDT32\_disable()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} EF\+\_\+\+WDT32\+\_\+disable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}}]{wdt }\end{DoxyParamCaption})}
+
+
+
+Disables the WDT32 peripheral. 
+
+This function clears the enable bit in the control register of the WDT32 peripheral.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em wdt} & Pointer to the WDT32 base address structure \mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+status A value of type \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \+: returns a success or error code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_e_f___w_d_t32_8c_a06ad40c0ae428ae3858c004d8d13d725}\label{_e_f___w_d_t32_8c_a06ad40c0ae428ae3858c004d8d13d725}} 
+\index{EF\_WDT32.c@{EF\_WDT32.c}!EF\_WDT32\_enable@{EF\_WDT32\_enable}}
+\index{EF\_WDT32\_enable@{EF\_WDT32\_enable}!EF\_WDT32.c@{EF\_WDT32.c}}
+\doxysubsubsection{\texorpdfstring{EF\_WDT32\_enable()}{EF\_WDT32\_enable()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} EF\+\_\+\+WDT32\+\_\+enable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}}]{wdt }\end{DoxyParamCaption})}
+
+
+
+Enables the WDT32 peripheral. 
+
+This function sets the enable bit in the control register of the WDT32 peripheral.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em wdt} & Pointer to the WDT32 base address structure \mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+status A value of type \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \+: returns a success or error code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_e_f___w_d_t32_8c_a6b8db048008ec7c64da0805649685ee9}\label{_e_f___w_d_t32_8c_a6b8db048008ec7c64da0805649685ee9}} 
+\index{EF\_WDT32.c@{EF\_WDT32.c}!EF\_WDT32\_getIM@{EF\_WDT32\_getIM}}
+\index{EF\_WDT32\_getIM@{EF\_WDT32\_getIM}!EF\_WDT32.c@{EF\_WDT32.c}}
+\doxysubsubsection{\texorpdfstring{EF\_WDT32\_getIM()}{EF\_WDT32\_getIM()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} EF\+\_\+\+WDT32\+\_\+get\+IM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}}]{wdt,  }\item[{uint32\+\_\+t $\ast$}]{im }\end{DoxyParamCaption})}
+
+
+
+Gets the interrupt mask (IM) from the WDT32 peripheral. 
+
+This function retrieves the interrupt mask (IM) from the specified WDT32 peripheral.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em wdt} & Pointer to the WDT32 base address structure \mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}. \\
+\hline
+\mbox{\texttt{ out}}  & {\em im} & Pointer to a variable where the IM value will be stored.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+status A value of type \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \+: returns a success or error code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_e_f___w_d_t32_8c_a3063b72a80217098001d522e1c3977f3}\label{_e_f___w_d_t32_8c_a3063b72a80217098001d522e1c3977f3}} 
+\index{EF\_WDT32.c@{EF\_WDT32.c}!EF\_WDT32\_getMIS@{EF\_WDT32\_getMIS}}
+\index{EF\_WDT32\_getMIS@{EF\_WDT32\_getMIS}!EF\_WDT32.c@{EF\_WDT32.c}}
+\doxysubsubsection{\texorpdfstring{EF\_WDT32\_getMIS()}{EF\_WDT32\_getMIS()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} EF\+\_\+\+WDT32\+\_\+get\+MIS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}}]{wdt,  }\item[{uint32\+\_\+t $\ast$}]{mis }\end{DoxyParamCaption})}
+
+
+
+Gets the masked interrupt status (MIS) from the WDT32 peripheral. 
+
+This function retrieves the masked interrupt status (MIS) from the specified WDT32 peripheral.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em wdt} & Pointer to the WDT32 base address structure \mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}. \\
+\hline
+\mbox{\texttt{ out}}  & {\em mis} & Pointer to a variable where the MIS value will be stored.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+status A value of type \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \+: returns a success or error code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_e_f___w_d_t32_8c_a3e5017e26b1f75011c36b39ba391d97d}\label{_e_f___w_d_t32_8c_a3e5017e26b1f75011c36b39ba391d97d}} 
+\index{EF\_WDT32.c@{EF\_WDT32.c}!EF\_WDT32\_getRIS@{EF\_WDT32\_getRIS}}
+\index{EF\_WDT32\_getRIS@{EF\_WDT32\_getRIS}!EF\_WDT32.c@{EF\_WDT32.c}}
+\doxysubsubsection{\texorpdfstring{EF\_WDT32\_getRIS()}{EF\_WDT32\_getRIS()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} EF\+\_\+\+WDT32\+\_\+get\+RIS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}}]{wdt,  }\item[{uint32\+\_\+t $\ast$}]{ris }\end{DoxyParamCaption})}
+
+
+
+Gets the raw interrupt status (RIS) from the WDT32 peripheral. 
+
+This function retrieves the raw interrupt status (RIS) from the specified WDT32 peripheral.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em wdt} & Pointer to the WDT32 base address structure \mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ris} & Pointer to a variable where the RIS value will be stored.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+status A value of type \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \+: returns a success or error code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_e_f___w_d_t32_8c_aa4021705a5d400c234ef2286a54a77d2}\label{_e_f___w_d_t32_8c_aa4021705a5d400c234ef2286a54a77d2}} 
+\index{EF\_WDT32.c@{EF\_WDT32.c}!EF\_WDT32\_isTimeOut@{EF\_WDT32\_isTimeOut}}
+\index{EF\_WDT32\_isTimeOut@{EF\_WDT32\_isTimeOut}!EF\_WDT32.c@{EF\_WDT32.c}}
+\doxysubsubsection{\texorpdfstring{EF\_WDT32\_isTimeOut()}{EF\_WDT32\_isTimeOut()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} EF\+\_\+\+WDT32\+\_\+is\+Time\+Out (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}}]{wdt,  }\item[{uint32\+\_\+t $\ast$}]{is\+\_\+timeout }\end{DoxyParamCaption})}
+
+
+
+Checks if the WDT32 has timed out. 
+
+This function reads the raw interrupt status (RIS) to determine if a timeout has occurred.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em wdt} & Pointer to the WDT32 base address structure \mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}. \\
+\hline
+\mbox{\texttt{ out}}  & {\em is\+\_\+timeout} & Pointer to a variable where the timeout status will be stored (1 if timeout, 0 otherwise).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+status A value of type \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \+: returns a success or error code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_e_f___w_d_t32_8c_a070bae4e509f7ff44bde19c4395c1f13}\label{_e_f___w_d_t32_8c_a070bae4e509f7ff44bde19c4395c1f13}} 
+\index{EF\_WDT32.c@{EF\_WDT32.c}!EF\_WDT32\_readTimerValue@{EF\_WDT32\_readTimerValue}}
+\index{EF\_WDT32\_readTimerValue@{EF\_WDT32\_readTimerValue}!EF\_WDT32.c@{EF\_WDT32.c}}
+\doxysubsubsection{\texorpdfstring{EF\_WDT32\_readTimerValue()}{EF\_WDT32\_readTimerValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} EF\+\_\+\+WDT32\+\_\+read\+Timer\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}}]{wdt,  }\item[{uint32\+\_\+t $\ast$}]{timer\+\_\+value }\end{DoxyParamCaption})}
+
+
+
+Reads the current timer value from the WDT32 peripheral. 
+
+This function retrieves the current value of the timer register in the specified WDT32 peripheral.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em wdt} & Pointer to the WDT32 base address structure \mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}. \\
+\hline
+\mbox{\texttt{ out}}  & {\em timer\+\_\+value} & Pointer to a variable where the current timer value will be stored.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+status A value of type \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \+: returns a success or error code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_e_f___w_d_t32_8c_a5ad03a1924b7771fd1d01c636899e0ea}\label{_e_f___w_d_t32_8c_a5ad03a1924b7771fd1d01c636899e0ea}} 
+\index{EF\_WDT32.c@{EF\_WDT32.c}!EF\_WDT32\_reloadWDT@{EF\_WDT32\_reloadWDT}}
+\index{EF\_WDT32\_reloadWDT@{EF\_WDT32\_reloadWDT}!EF\_WDT32.c@{EF\_WDT32.c}}
+\doxysubsubsection{\texorpdfstring{EF\_WDT32\_reloadWDT()}{EF\_WDT32\_reloadWDT()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} EF\+\_\+\+WDT32\+\_\+reload\+WDT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}}]{wdt }\end{DoxyParamCaption})}
+
+
+
+Reloads the WDT32 timer by disabling and re-\/enabling it. 
+
+This function clears the timeout flag, disables the WDT32, and then re-\/enables it.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em wdt} & Pointer to the WDT32 base address structure \mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+status A value of type \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \+: returns a success or error code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_e_f___w_d_t32_8c_a7e76af97caf95f02df56665edb433b86}\label{_e_f___w_d_t32_8c_a7e76af97caf95f02df56665edb433b86}} 
+\index{EF\_WDT32.c@{EF\_WDT32.c}!EF\_WDT32\_setICR@{EF\_WDT32\_setICR}}
+\index{EF\_WDT32\_setICR@{EF\_WDT32\_setICR}!EF\_WDT32.c@{EF\_WDT32.c}}
+\doxysubsubsection{\texorpdfstring{EF\_WDT32\_setICR()}{EF\_WDT32\_setICR()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} EF\+\_\+\+WDT32\+\_\+set\+ICR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}}]{wdt,  }\item[{uint32\+\_\+t}]{mask }\end{DoxyParamCaption})}
+
+
+
+Sets the interrupt clear (IC) register in the WDT32 peripheral. 
+
+This function sets the interrupt clear (IC) register in the specified WDT32 peripheral to clear interrupts.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em wdt} & Pointer to the WDT32 base address structure \mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em mask} & The value to be written to the interrupt clear (IC) register.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+status A value of type \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \+: returns a success or error code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_e_f___w_d_t32_8c_a7bb77b2c466435c20e5fb6bf7391f723}\label{_e_f___w_d_t32_8c_a7bb77b2c466435c20e5fb6bf7391f723}} 
+\index{EF\_WDT32.c@{EF\_WDT32.c}!EF\_WDT32\_setIM@{EF\_WDT32\_setIM}}
+\index{EF\_WDT32\_setIM@{EF\_WDT32\_setIM}!EF\_WDT32.c@{EF\_WDT32.c}}
+\doxysubsubsection{\texorpdfstring{EF\_WDT32\_setIM()}{EF\_WDT32\_setIM()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} EF\+\_\+\+WDT32\+\_\+set\+IM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}}]{wdt,  }\item[{uint32\+\_\+t}]{mask }\end{DoxyParamCaption})}
+
+
+
+Sets the interrupt mask (IM) in the WDT32 peripheral. 
+
+This function sets the interrupt mask (IM) register in the specified WDT32 peripheral.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em wdt} & Pointer to the WDT32 base address structure \mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em mask} & The value to be written to the interrupt mask (IM) register.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+status A value of type \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \+: returns a success or error code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_e_f___w_d_t32_8c_a939788c900140f759e334e4459d4b958}\label{_e_f___w_d_t32_8c_a939788c900140f759e334e4459d4b958}} 
+\index{EF\_WDT32.c@{EF\_WDT32.c}!EF\_WDT32\_setReloadValue@{EF\_WDT32\_setReloadValue}}
+\index{EF\_WDT32\_setReloadValue@{EF\_WDT32\_setReloadValue}!EF\_WDT32.c@{EF\_WDT32.c}}
+\doxysubsubsection{\texorpdfstring{EF\_WDT32\_setReloadValue()}{EF\_WDT32\_setReloadValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} EF\+\_\+\+WDT32\+\_\+set\+Reload\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}}]{wdt,  }\item[{uint32\+\_\+t}]{load\+\_\+val }\end{DoxyParamCaption})}
+
+
+
+Sets the reload value in the WDT32 peripheral. 
+
+This function sets the reload value in the load register of the specified WDT32 peripheral.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em wdt} & Pointer to the WDT32 base address structure \mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em load\+\_\+val} & The value to be loaded into the WDT32 reload register.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+status A value of type \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \+: returns a success or error code. 
+\end{DoxyReturn}

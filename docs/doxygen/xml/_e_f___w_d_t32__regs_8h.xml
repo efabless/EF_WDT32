@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="_e_f___w_d_t32__regs_8h" kind="file" language="C++">
+    <compoundname>EF_WDT32_regs.h</compoundname>
+    <includes refid="_e_f___driver___common_8h" local="yes">EF_Driver_Common.h</includes>
+    <includedby refid="_e_f___w_d_t32_8h" local="yes">EF_WDT32.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>EF_Driver_Common.h</label>
+        <link refid="_e_f___driver___common_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>EF_WDT32_regs.h</label>
+        <link refid="_e_f___w_d_t32__regs_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>EF_WDT32.c</label>
+        <link refid="_e_f___w_d_t32_8c"/>
+      </node>
+      <node id="2">
+        <label>EF_WDT32.h</label>
+        <link refid="_e_f___w_d_t32_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>EF_WDT32_regs.h</label>
+        <link refid="_e_f___w_d_t32__regs_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct___e_f___w_d_t32___t_y_p_e__" prot="public">_EF_WDT32_TYPE_</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_e_f___w_d_t32__regs_8h_1a470cd5845bed94d8b8b358933e4a3442" prot="public" static="no">
+        <name>IO_TYPES</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EF_WDT32_regs.h" line="35" column="9" bodyfile="EF_WDT32_regs.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_f___w_d_t32__regs_8h_1aef00c279597b188e4cdd14d288ddf77a" prot="public" static="no">
+        <name>__R</name>
+        <initializer>volatile const uint32_t</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EF_WDT32_regs.h" line="36" column="11" bodyfile="EF_WDT32_regs.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_f___w_d_t32__regs_8h_1ad8cfe7014044235a4c8d3239c2597f09" prot="public" static="no">
+        <name>__W</name>
+        <initializer>volatile       uint32_t</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EF_WDT32_regs.h" line="37" column="11" bodyfile="EF_WDT32_regs.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_f___w_d_t32__regs_8h_1a81f369079976a46554fd9798ab035697" prot="public" static="no">
+        <name>__RW</name>
+        <initializer>volatile       uint32_t</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EF_WDT32_regs.h" line="38" column="11" bodyfile="EF_WDT32_regs.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_f___w_d_t32__regs_8h_1afc47a0a881a5cadf7875ea591140159c" prot="public" static="no">
+        <name>EF_WDT32_WDTTO_FLAG</name>
+        <initializer>((uint32_t)0x1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EF_WDT32_regs.h" line="42" column="9" bodyfile="EF_WDT32_regs.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_f___w_d_t32__regs_8h_1ac1ec56bd03f45cbdb8ae8356f90f79f7" prot="public" static="no">
+        <name>EF_WDT32_CTRL_EN_MASK</name>
+        <initializer>((uint32_t)0x1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EF_WDT32_regs.h" line="43" column="9" bodyfile="EF_WDT32_regs.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_e_f___w_d_t32__regs_8h_1ad85812f9899d3b7b40344acb0a9dad00" prot="public" static="no">
+        <type>struct <ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">_EF_WDT32_TYPE_</ref></type>
+        <definition>typedef struct _EF_WDT32_TYPE_ EF_WDT32_TYPE</definition>
+        <argsstring></argsstring>
+        <name>EF_WDT32_TYPE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EF_WDT32_regs.h" line="58" column="15"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_e_f___w_d_t32__regs_8h_1a7025a25691b7b7e9932da8b0c51d137c" prot="public" static="no">
+        <type><ref refid="_e_f___w_d_t32__regs_8h_1ad85812f9899d3b7b40344acb0a9dad00" kindref="member">EF_WDT32_TYPE</ref> *</type>
+        <definition>typedef EF_WDT32_TYPE* EF_WDT32_TYPE_PTR</definition>
+        <argsstring></argsstring>
+        <name>EF_WDT32_TYPE_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EF_WDT32_regs.h" line="60" column="23" bodyfile="EF_WDT32_regs.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>Copyright<sp/>2025<sp/>Efabless<sp/>Corp.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/>Author:<sp/>Efabless<sp/>Corp.<sp/>(ip_admin@efabless.com)</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EF_WDT32REGS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EF_WDT32REGS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">*<sp/>Includes</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_e_f___driver___common_8h" kindref="compound">EF_Driver_Common.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">*<sp/>Macros<sp/>and<sp/>Constants</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>IO_TYPES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="_e_f___w_d_t32__regs_8h_1a470cd5845bed94d8b8b358933e4a3442" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_TYPES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="_e_f___w_d_t32__regs_8h_1aef00c279597b188e4cdd14d288ddf77a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>__R<sp/><sp/><sp/><sp/><sp/>volatile<sp/>const<sp/>uint32_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="_e_f___w_d_t32__regs_8h_1ad8cfe7014044235a4c8d3239c2597f09" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>__W<sp/><sp/><sp/><sp/><sp/>volatile<sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="_e_f___w_d_t32__regs_8h_1a81f369079976a46554fd9798ab035697" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>__RW<sp/><sp/><sp/><sp/>volatile<sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="_e_f___w_d_t32__regs_8h_1afc47a0a881a5cadf7875ea591140159c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EF_WDT32_WDTTO_FLAG<sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="_e_f___w_d_t32__regs_8h_1ac1ec56bd03f45cbdb8ae8356f90f79f7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EF_WDT32_CTRL_EN_MASK<sp/><sp/><sp/><sp/>((uint32_t)0x1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="46"><highlight class="comment">*<sp/>Typedefs<sp/>and<sp/>Enums</highlight></codeline>
+<codeline lineno="47"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="struct___e_f___w_d_t32___t_y_p_e__" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">_EF_WDT32_TYPE_</ref><sp/>{</highlight></codeline>
+<codeline lineno="49" refid="struct___e_f___w_d_t32___t_y_p_e___1aac6071b7a5093ac3b983294530c3c4f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_e_f___w_d_t32__regs_8h_1aef00c279597b188e4cdd14d288ddf77a" kindref="member">__R</ref><sp/><sp/><sp/><sp/><sp/><ref refid="struct___e_f___w_d_t32___t_y_p_e___1aac6071b7a5093ac3b983294530c3c4f5" kindref="member">timer</ref>;</highlight></codeline>
+<codeline lineno="50" refid="struct___e_f___w_d_t32___t_y_p_e___1a3cff0007fa7fb12b52a35b42f1aebc91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_e_f___w_d_t32__regs_8h_1ad8cfe7014044235a4c8d3239c2597f09" kindref="member">__W</ref><sp/><sp/><sp/><sp/><sp/><ref refid="struct___e_f___w_d_t32___t_y_p_e___1a3cff0007fa7fb12b52a35b42f1aebc91" kindref="member">load</ref>;</highlight></codeline>
+<codeline lineno="51" refid="struct___e_f___w_d_t32___t_y_p_e___1a23c92cee14c406201e9b6b068d95e794" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_e_f___w_d_t32__regs_8h_1ad8cfe7014044235a4c8d3239c2597f09" kindref="member">__W</ref><sp/><sp/><sp/><sp/><sp/><ref refid="struct___e_f___w_d_t32___t_y_p_e___1a23c92cee14c406201e9b6b068d95e794" kindref="member">control</ref>;</highlight></codeline>
+<codeline lineno="52" refid="struct___e_f___w_d_t32___t_y_p_e___1a4c7b0fff0f9de27fcdaea31c0f9e6560" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_e_f___w_d_t32__regs_8h_1aef00c279597b188e4cdd14d288ddf77a" kindref="member">__R</ref><sp/><sp/><sp/><sp/><sp/><ref refid="struct___e_f___w_d_t32___t_y_p_e___1a4c7b0fff0f9de27fcdaea31c0f9e6560" kindref="member">reserved_0</ref>[16317];</highlight></codeline>
+<codeline lineno="53" refid="struct___e_f___w_d_t32___t_y_p_e___1a1d6f6bcfc24f3f9f173c3522d55f96c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_e_f___w_d_t32__regs_8h_1a81f369079976a46554fd9798ab035697" kindref="member">__RW</ref><sp/><sp/><sp/><sp/><ref refid="struct___e_f___w_d_t32___t_y_p_e___1a1d6f6bcfc24f3f9f173c3522d55f96c4" kindref="member">IM</ref>;</highlight></codeline>
+<codeline lineno="54" refid="struct___e_f___w_d_t32___t_y_p_e___1a147ea6d80c0545aa582683137e5077d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_e_f___w_d_t32__regs_8h_1aef00c279597b188e4cdd14d288ddf77a" kindref="member">__R</ref><sp/><sp/><sp/><sp/><sp/><ref refid="struct___e_f___w_d_t32___t_y_p_e___1a147ea6d80c0545aa582683137e5077d9" kindref="member">MIS</ref>;</highlight></codeline>
+<codeline lineno="55" refid="struct___e_f___w_d_t32___t_y_p_e___1a9644f0838e0af93e117eaecf02aa3f0d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_e_f___w_d_t32__regs_8h_1aef00c279597b188e4cdd14d288ddf77a" kindref="member">__R</ref><sp/><sp/><sp/><sp/><sp/><ref refid="struct___e_f___w_d_t32___t_y_p_e___1a9644f0838e0af93e117eaecf02aa3f0d" kindref="member">RIS</ref>;</highlight></codeline>
+<codeline lineno="56" refid="struct___e_f___w_d_t32___t_y_p_e___1a6052ad7ddccf61a26d8826049dd58188" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_e_f___w_d_t32__regs_8h_1ad8cfe7014044235a4c8d3239c2597f09" kindref="member">__W</ref><sp/><sp/><sp/><sp/><sp/><ref refid="struct___e_f___w_d_t32___t_y_p_e___1a6052ad7ddccf61a26d8826049dd58188" kindref="member">IC</ref>;</highlight></codeline>
+<codeline lineno="57" refid="struct___e_f___w_d_t32___t_y_p_e___1ac4cda46ab43cb7271d546ecea757e42b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_e_f___w_d_t32__regs_8h_1ad8cfe7014044235a4c8d3239c2597f09" kindref="member">__W</ref><sp/><sp/><sp/><sp/><sp/><ref refid="struct___e_f___w_d_t32___t_y_p_e___1ac4cda46ab43cb7271d546ecea757e42b" kindref="member">GCLK</ref>;</highlight></codeline>
+<codeline lineno="58" refid="_e_f___w_d_t32__regs_8h_1ad85812f9899d3b7b40344acb0a9dad00" refkind="member"><highlight class="normal">}<sp/><ref refid="_e_f___w_d_t32__regs_8h_1ad85812f9899d3b7b40344acb0a9dad00" kindref="member">EF_WDT32_TYPE</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="_e_f___w_d_t32__regs_8h_1a7025a25691b7b7e9932da8b0c51d137c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE</ref>*<sp/><ref refid="_e_f___w_d_t32__regs_8h_1a7025a25691b7b7e9932da8b0c51d137c" kindref="member">EF_WDT32_TYPE_PTR</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="63"><highlight class="comment">*<sp/>Function<sp/>Prototypes</highlight></codeline>
+<codeline lineno="64"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="69"><highlight class="comment">*<sp/>External<sp/>Variables</highlight></codeline>
+<codeline lineno="70"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>EF_WDT32REGS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="78"><highlight class="comment">*<sp/>End<sp/>of<sp/>File</highlight></codeline>
+<codeline lineno="79"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="EF_WDT32_regs.h"/>
+  </compounddef>
+</doxygen>

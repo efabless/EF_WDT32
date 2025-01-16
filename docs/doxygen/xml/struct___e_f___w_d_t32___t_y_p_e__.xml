@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="struct___e_f___w_d_t32___t_y_p_e__" kind="struct" language="C++" prot="public">
+    <compoundname>_EF_WDT32_TYPE_</compoundname>
+    <includes refid="_e_f___w_d_t32__regs_8h" local="no">EF_WDT32_regs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct___e_f___w_d_t32___t_y_p_e___1aac6071b7a5093ac3b983294530c3c4f5" prot="public" static="no" mutable="no">
+        <type><ref refid="_e_f___w_d_t32__regs_8h_1aef00c279597b188e4cdd14d288ddf77a" kindref="member">__R</ref></type>
+        <definition>__R _EF_WDT32_TYPE_::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <qualifiedname>_EF_WDT32_TYPE_::timer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EF_WDT32_regs.h" line="49" column="5" bodyfile="EF_WDT32_regs.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___e_f___w_d_t32___t_y_p_e___1a3cff0007fa7fb12b52a35b42f1aebc91" prot="public" static="no" mutable="no">
+        <type><ref refid="_e_f___w_d_t32__regs_8h_1ad8cfe7014044235a4c8d3239c2597f09" kindref="member">__W</ref></type>
+        <definition>__W _EF_WDT32_TYPE_::load</definition>
+        <argsstring></argsstring>
+        <name>load</name>
+        <qualifiedname>_EF_WDT32_TYPE_::load</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EF_WDT32_regs.h" line="50" column="5" bodyfile="EF_WDT32_regs.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___e_f___w_d_t32___t_y_p_e___1a23c92cee14c406201e9b6b068d95e794" prot="public" static="no" mutable="no">
+        <type><ref refid="_e_f___w_d_t32__regs_8h_1ad8cfe7014044235a4c8d3239c2597f09" kindref="member">__W</ref></type>
+        <definition>__W _EF_WDT32_TYPE_::control</definition>
+        <argsstring></argsstring>
+        <name>control</name>
+        <qualifiedname>_EF_WDT32_TYPE_::control</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EF_WDT32_regs.h" line="51" column="5" bodyfile="EF_WDT32_regs.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___e_f___w_d_t32___t_y_p_e___1a4c7b0fff0f9de27fcdaea31c0f9e6560" prot="public" static="no" mutable="no">
+        <type><ref refid="_e_f___w_d_t32__regs_8h_1aef00c279597b188e4cdd14d288ddf77a" kindref="member">__R</ref></type>
+        <definition>__R _EF_WDT32_TYPE_::reserved_0[16317]</definition>
+        <argsstring>[16317]</argsstring>
+        <name>reserved_0</name>
+        <qualifiedname>_EF_WDT32_TYPE_::reserved_0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EF_WDT32_regs.h" line="52" column="5" bodyfile="EF_WDT32_regs.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___e_f___w_d_t32___t_y_p_e___1a1d6f6bcfc24f3f9f173c3522d55f96c4" prot="public" static="no" mutable="no">
+        <type><ref refid="_e_f___w_d_t32__regs_8h_1a81f369079976a46554fd9798ab035697" kindref="member">__RW</ref></type>
+        <definition>__RW _EF_WDT32_TYPE_::IM</definition>
+        <argsstring></argsstring>
+        <name>IM</name>
+        <qualifiedname>_EF_WDT32_TYPE_::IM</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EF_WDT32_regs.h" line="53" column="5" bodyfile="EF_WDT32_regs.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___e_f___w_d_t32___t_y_p_e___1a147ea6d80c0545aa582683137e5077d9" prot="public" static="no" mutable="no">
+        <type><ref refid="_e_f___w_d_t32__regs_8h_1aef00c279597b188e4cdd14d288ddf77a" kindref="member">__R</ref></type>
+        <definition>__R _EF_WDT32_TYPE_::MIS</definition>
+        <argsstring></argsstring>
+        <name>MIS</name>
+        <qualifiedname>_EF_WDT32_TYPE_::MIS</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EF_WDT32_regs.h" line="54" column="5" bodyfile="EF_WDT32_regs.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___e_f___w_d_t32___t_y_p_e___1a9644f0838e0af93e117eaecf02aa3f0d" prot="public" static="no" mutable="no">
+        <type><ref refid="_e_f___w_d_t32__regs_8h_1aef00c279597b188e4cdd14d288ddf77a" kindref="member">__R</ref></type>
+        <definition>__R _EF_WDT32_TYPE_::RIS</definition>
+        <argsstring></argsstring>
+        <name>RIS</name>
+        <qualifiedname>_EF_WDT32_TYPE_::RIS</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EF_WDT32_regs.h" line="55" column="5" bodyfile="EF_WDT32_regs.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___e_f___w_d_t32___t_y_p_e___1a6052ad7ddccf61a26d8826049dd58188" prot="public" static="no" mutable="no">
+        <type><ref refid="_e_f___w_d_t32__regs_8h_1ad8cfe7014044235a4c8d3239c2597f09" kindref="member">__W</ref></type>
+        <definition>__W _EF_WDT32_TYPE_::IC</definition>
+        <argsstring></argsstring>
+        <name>IC</name>
+        <qualifiedname>_EF_WDT32_TYPE_::IC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EF_WDT32_regs.h" line="56" column="5" bodyfile="EF_WDT32_regs.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___e_f___w_d_t32___t_y_p_e___1ac4cda46ab43cb7271d546ecea757e42b" prot="public" static="no" mutable="no">
+        <type><ref refid="_e_f___w_d_t32__regs_8h_1ad8cfe7014044235a4c8d3239c2597f09" kindref="member">__W</ref></type>
+        <definition>__W _EF_WDT32_TYPE_::GCLK</definition>
+        <argsstring></argsstring>
+        <name>GCLK</name>
+        <qualifiedname>_EF_WDT32_TYPE_::GCLK</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EF_WDT32_regs.h" line="57" column="5" bodyfile="EF_WDT32_regs.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="EF_WDT32_regs.h" line="48" column="1" bodyfile="EF_WDT32_regs.h" bodystart="48" bodyend="58"/>
+    <listofallmembers>
+      <member refid="struct___e_f___w_d_t32___t_y_p_e___1a23c92cee14c406201e9b6b068d95e794" prot="public" virt="non-virtual"><scope>_EF_WDT32_TYPE_</scope><name>control</name></member>
+      <member refid="struct___e_f___w_d_t32___t_y_p_e___1ac4cda46ab43cb7271d546ecea757e42b" prot="public" virt="non-virtual"><scope>_EF_WDT32_TYPE_</scope><name>GCLK</name></member>
+      <member refid="struct___e_f___w_d_t32___t_y_p_e___1a6052ad7ddccf61a26d8826049dd58188" prot="public" virt="non-virtual"><scope>_EF_WDT32_TYPE_</scope><name>IC</name></member>
+      <member refid="struct___e_f___w_d_t32___t_y_p_e___1a1d6f6bcfc24f3f9f173c3522d55f96c4" prot="public" virt="non-virtual"><scope>_EF_WDT32_TYPE_</scope><name>IM</name></member>
+      <member refid="struct___e_f___w_d_t32___t_y_p_e___1a3cff0007fa7fb12b52a35b42f1aebc91" prot="public" virt="non-virtual"><scope>_EF_WDT32_TYPE_</scope><name>load</name></member>
+      <member refid="struct___e_f___w_d_t32___t_y_p_e___1a147ea6d80c0545aa582683137e5077d9" prot="public" virt="non-virtual"><scope>_EF_WDT32_TYPE_</scope><name>MIS</name></member>
+      <member refid="struct___e_f___w_d_t32___t_y_p_e___1a4c7b0fff0f9de27fcdaea31c0f9e6560" prot="public" virt="non-virtual"><scope>_EF_WDT32_TYPE_</scope><name>reserved_0</name></member>
+      <member refid="struct___e_f___w_d_t32___t_y_p_e___1a9644f0838e0af93e117eaecf02aa3f0d" prot="public" virt="non-virtual"><scope>_EF_WDT32_TYPE_</scope><name>RIS</name></member>
+      <member refid="struct___e_f___w_d_t32___t_y_p_e___1aac6071b7a5093ac3b983294530c3c4f5" prot="public" virt="non-virtual"><scope>_EF_WDT32_TYPE_</scope><name>timer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,84 @@
+\hypertarget{_e_f___w_d_t32__regs_8h_source}{}\doxysection{EF\+\_\+\+WDT32\+\_\+regs.\+h}
+\mbox{\hyperlink{_e_f___w_d_t32__regs_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ \ \ \ Copyright\ 2025\ Efabless\ Corp.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ \ \ \ Author:\ Efabless\ Corp.\ (ip\_admin@efabless.com)}}
+\DoxyCodeLine{00005\ \textcolor{comment}{}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ \ \ \ Licensed\ under\ the\ Apache\ License,\ Version\ 2.0\ (the\ "{}License"{});}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ \ \ \ you\ may\ not\ use\ this\ file\ except\ in\ compliance\ with\ the\ License.}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ \ \ \ You\ may\ obtain\ a\ copy\ of\ the\ License\ at}}
+\DoxyCodeLine{00009\ \textcolor{comment}{}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ \ \ \ \ \ \ \ www.apache.org/licenses/LICENSE-\/2.0}}
+\DoxyCodeLine{00011\ \textcolor{comment}{}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ \ \ \ Unless\ required\ by\ applicable\ law\ or\ agreed\ to\ in\ writing,\ software}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ \ \ \ distributed\ under\ the\ License\ is\ distributed\ on\ an\ "{}AS\ IS"{}\ BASIS,}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ \ \ \ WITHOUT\ WARRANTIES\ OR\ CONDITIONS\ OF\ ANY\ KIND,\ either\ express\ or\ implied.}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ \ \ \ See\ the\ License\ for\ the\ specific\ language\ governing\ permissions\ and}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ \ \ \ limitations\ under\ the\ License.}}
+\DoxyCodeLine{00017\ \textcolor{comment}{}}
+\DoxyCodeLine{00018\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#ifndef\ EF\_WDT32REGS\_H}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ EF\_WDT32REGS\_H}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00026\ \textcolor{comment}{*\ Includes}}
+\DoxyCodeLine{00027\ \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_e_f___driver___common_8h}{EF\_Driver\_Common.h}}"{}}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00032\ \textcolor{comment}{*\ Macros\ and\ Constants}}
+\DoxyCodeLine{00033\ \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#ifndef\ IO\_TYPES}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#define\ IO\_TYPES}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#define\ \ \ \_\_R\ \ \ \ \ volatile\ const\ uint32\_t}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ \ \ \_\_W\ \ \ \ \ volatile\ \ \ \ \ \ \ uint32\_t}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ \ \ \_\_RW\ \ \ \ volatile\ \ \ \ \ \ \ uint32\_t}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#define\ EF\_WDT32\_WDTTO\_FLAG\ \ \ \ \ \ ((uint32\_t)0x1)}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#define\ EF\_WDT32\_CTRL\_EN\_MASK\ \ \ \ ((uint32\_t)0x1)}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00046\ \textcolor{comment}{*\ Typedefs\ and\ Enums}}
+\DoxyCodeLine{00047\ \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{00048\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{\_EF\_WDT32\_TYPE\_}}\ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{_e_f___w_d_t32__regs_8h_aef00c279597b188e4cdd14d288ddf77a}{\_\_R}}\ \ \mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e___aac6071b7a5093ac3b983294530c3c4f5}{timer}};}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{_e_f___w_d_t32__regs_8h_ad8cfe7014044235a4c8d3239c2597f09}{\_\_W}}\ \ \mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e___a3cff0007fa7fb12b52a35b42f1aebc91}{load}};}
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{_e_f___w_d_t32__regs_8h_ad8cfe7014044235a4c8d3239c2597f09}{\_\_W}}\ \ \mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e___a23c92cee14c406201e9b6b068d95e794}{control}};}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{_e_f___w_d_t32__regs_8h_aef00c279597b188e4cdd14d288ddf77a}{\_\_R}}\ \ \mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e___a4c7b0fff0f9de27fcdaea31c0f9e6560}{reserved\_0}}[16317];}
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a81f369079976a46554fd9798ab035697}{\_\_RW}}\ \ \ \ \mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e___a1d6f6bcfc24f3f9f173c3522d55f96c4}{IM}};}
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{_e_f___w_d_t32__regs_8h_aef00c279597b188e4cdd14d288ddf77a}{\_\_R}}\ \ \mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e___a147ea6d80c0545aa582683137e5077d9}{MIS}};}
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{_e_f___w_d_t32__regs_8h_aef00c279597b188e4cdd14d288ddf77a}{\_\_R}}\ \ \mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e___a9644f0838e0af93e117eaecf02aa3f0d}{RIS}};}
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{_e_f___w_d_t32__regs_8h_ad8cfe7014044235a4c8d3239c2597f09}{\_\_W}}\ \ \mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e___a6052ad7ddccf61a26d8826049dd58188}{IC}};}
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{_e_f___w_d_t32__regs_8h_ad8cfe7014044235a4c8d3239c2597f09}{\_\_W}}\ \ \mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e___ac4cda46ab43cb7271d546ecea757e42b}{GCLK}};}
+\DoxyCodeLine{00058\ \}\ \mbox{\hyperlink{_e_f___w_d_t32__regs_8h_ad85812f9899d3b7b40344acb0a9dad00}{EF\_WDT32\_TYPE}};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE}}*\ \mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\_WDT32\_TYPE\_PTR}};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00063\ \textcolor{comment}{*\ Function\ Prototypes}}
+\DoxyCodeLine{00064\ \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00069\ \textcolor{comment}{*\ External\ Variables}}
+\DoxyCodeLine{00070\ \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ EF\_WDT32REGS\_H}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00078\ \textcolor{comment}{*\ End\ of\ File}}
+\DoxyCodeLine{00079\ \textcolor{comment}{******************************************************************************/}}
+
+\end{DoxyCode}

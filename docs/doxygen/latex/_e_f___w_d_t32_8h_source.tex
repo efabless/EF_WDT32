@@ -1,0 +1,116 @@
+\hypertarget{_e_f___w_d_t32_8h_source}{}\doxysection{EF\+\_\+\+WDT32.\+h}
+\mbox{\hyperlink{_e_f___w_d_t32_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ \ \ \ Copyright\ 2025\ Efabless\ Corp.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ \ \ \ Licensed\ under\ the\ Apache\ License,\ Version\ 2.0\ (the\ "{}License"{});}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ \ \ \ you\ may\ not\ use\ this\ file\ except\ in\ compliance\ with\ the\ License.}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ \ \ \ You\ may\ obtain\ a\ copy\ of\ the\ License\ at}}
+\DoxyCodeLine{00008\ \textcolor{comment}{}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ \ \ \ \ \ \ \ www.apache.org/licenses/LICENSE-\/2.0}}
+\DoxyCodeLine{00010\ \textcolor{comment}{}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ \ \ \ Unless\ required\ by\ applicable\ law\ or\ agreed\ to\ in\ writing,\ software}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ \ \ \ distributed\ under\ the\ License\ is\ distributed\ on\ an\ "{}AS\ IS"{}\ BASIS,}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ \ \ \ WITHOUT\ WARRANTIES\ OR\ CONDITIONS\ OF\ ANY\ KIND,\ either\ express\ or\ implied.}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ \ \ \ See\ the\ License\ for\ the\ specific\ language\ governing\ permissions\ and}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ \ \ \ limitations\ under\ the\ License.}}
+\DoxyCodeLine{00016\ \textcolor{comment}{}}
+\DoxyCodeLine{00017\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#ifndef\ EF\_WDT32\_H}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ EF\_WDT32\_H}}
+\DoxyCodeLine{00027\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00028\ \textcolor{comment}{*\ Includes}}
+\DoxyCodeLine{00029\ \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_e_f___w_d_t32__regs_8h}{EF\_WDT32\_regs.h}}"{}}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_e_f___driver___common_8h}{EF\_Driver\_Common.h}}"{}}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00035\ \textcolor{comment}{*\ Macros\ and\ Constants}}
+\DoxyCodeLine{00036\ \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00039\ \textcolor{comment}{*\ Typedefs\ and\ Enums}}
+\DoxyCodeLine{00040\ \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00044\ \textcolor{comment}{*\ Function\ Prototypes}}
+\DoxyCodeLine{00045\ \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00056\ \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32_8h_a070bae4e509f7ff44bde19c4395c1f13}{EF\_WDT32\_readTimerValue}}(\mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE\_PTR}}\ wdt,\ uint32\_t*\ timer\_value);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00070\ \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32_8h_a939788c900140f759e334e4459d4b958}{EF\_WDT32\_setReloadValue}}(\mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE\_PTR}}\ wdt,\ uint32\_t\ load\_val);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00082\ \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32_8h_a3e5017e26b1f75011c36b39ba391d97d}{EF\_WDT32\_getRIS}}(\mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE\_PTR}}\ wdt,\ uint32\_t*\ ris);}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00094\ \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32_8h_a3063b72a80217098001d522e1c3977f3}{EF\_WDT32\_getMIS}}(\mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE\_PTR}}\ wdt,\ uint32\_t*\ mis);}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00106\ \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32_8h_a7bb77b2c466435c20e5fb6bf7391f723}{EF\_WDT32\_setIM}}(\mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE\_PTR}}\ wdt,\ uint32\_t\ mask);}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00119\ \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32_8h_a6b8db048008ec7c64da0805649685ee9}{EF\_WDT32\_getIM}}(\mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE\_PTR}}\ wdt,\ uint32\_t*\ im);}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00132\ \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32_8h_a7e76af97caf95f02df56665edb433b86}{EF\_WDT32\_setICR}}(\mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE\_PTR}}\ wdt,\ uint32\_t\ mask);}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ \textcolor{comment}{//\ The\ following\ functions\ are\ not\ verified\ yet}}
+\DoxyCodeLine{00136\ \textcolor{comment}{/******************************************************************************************************************************************/}}
+\DoxyCodeLine{00137\ \textcolor{comment}{/******************************************************************************************************************************************/}}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00149\ \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32_8h_a6f6927f4bc7e8d3687969831e8497a97}{EF\_I2C\_setGclkEnable}}\ (\mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE\_PTR}}\ wdt,\ uint32\_t\ value);}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00160\ \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32_8h_a06ad40c0ae428ae3858c004d8d13d725}{EF\_WDT32\_enable}}(\mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE\_PTR}}\ wdt);}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00171\ \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32_8h_a07bd55f1fdacb26adc08bd83e63a3de1}{EF\_WDT32\_disable}}(\mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE\_PTR}}\ wdt);}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00181\ \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32_8h_a5ad03a1924b7771fd1d01c636899e0ea}{EF\_WDT32\_reloadWDT}}(\mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE\_PTR}}\ wdt);}
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00194\ \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32_8h_a724d7dc17ff1b58fdb42add0f7ce8707}{EF\_WDT32\_clearTimeOutFlag}}(\mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE\_PTR}}\ wdt);}
+\DoxyCodeLine{00195\ }
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00198\ }
+\DoxyCodeLine{00207\ \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32_8h_aa4021705a5d400c234ef2286a54a77d2}{EF\_WDT32\_isTimeOut}}(\mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE\_PTR}}\ wdt,\ uint32\_t*\ is\_timeout);}
+\DoxyCodeLine{00208\ }
+\DoxyCodeLine{00209\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00210\ \textcolor{comment}{*\ External\ Variables}}
+\DoxyCodeLine{00211\ \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{00212\ }
+\DoxyCodeLine{00213\ }
+\DoxyCodeLine{00214\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ EF\_WDT32\_H}}
+\DoxyCodeLine{00215\ }
+\DoxyCodeLine{00216\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00217\ \textcolor{comment}{*\ End\ of\ File}}
+\DoxyCodeLine{00218\ \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{00219\ }
+
+\end{DoxyCode}

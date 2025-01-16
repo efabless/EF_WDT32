@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.6" xml:lang="en-US">
+  <compound refid="struct___e_f___w_d_t32___t_y_p_e__" kind="struct"><name>_EF_WDT32_TYPE_</name>
+    <member refid="struct___e_f___w_d_t32___t_y_p_e___1aac6071b7a5093ac3b983294530c3c4f5" kind="variable"><name>timer</name></member>
+    <member refid="struct___e_f___w_d_t32___t_y_p_e___1a3cff0007fa7fb12b52a35b42f1aebc91" kind="variable"><name>load</name></member>
+    <member refid="struct___e_f___w_d_t32___t_y_p_e___1a23c92cee14c406201e9b6b068d95e794" kind="variable"><name>control</name></member>
+    <member refid="struct___e_f___w_d_t32___t_y_p_e___1a4c7b0fff0f9de27fcdaea31c0f9e6560" kind="variable"><name>reserved_0</name></member>
+    <member refid="struct___e_f___w_d_t32___t_y_p_e___1a1d6f6bcfc24f3f9f173c3522d55f96c4" kind="variable"><name>IM</name></member>
+    <member refid="struct___e_f___w_d_t32___t_y_p_e___1a147ea6d80c0545aa582683137e5077d9" kind="variable"><name>MIS</name></member>
+    <member refid="struct___e_f___w_d_t32___t_y_p_e___1a9644f0838e0af93e117eaecf02aa3f0d" kind="variable"><name>RIS</name></member>
+    <member refid="struct___e_f___w_d_t32___t_y_p_e___1a6052ad7ddccf61a26d8826049dd58188" kind="variable"><name>IC</name></member>
+    <member refid="struct___e_f___w_d_t32___t_y_p_e___1ac4cda46ab43cb7271d546ecea757e42b" kind="variable"><name>GCLK</name></member>
+  </compound>
+  <compound refid="_e_f___driver___common_8h" kind="file"><name>EF_Driver_Common.h</name>
+    <member refid="_e_f___driver___common_8h_1ab56c746d5d1672835c101f00f7c90b7c" kind="define"><name>EF_DRIVER_OK</name></member>
+    <member refid="_e_f___driver___common_8h_1adf96107766b856292d4f08a495064c7e" kind="define"><name>EF_DRIVER_ERROR</name></member>
+    <member refid="_e_f___driver___common_8h_1a9b7e06e07ac1038e9cc63d5f25d681fb" kind="define"><name>EF_DRIVER_ERROR_BUSY</name></member>
+    <member refid="_e_f___driver___common_8h_1a26b87ad6f8f1d017af3ee034bd178795" kind="define"><name>EF_DRIVER_ERROR_TIMEOUT</name></member>
+    <member refid="_e_f___driver___common_8h_1abd8e6eb4870238ef0f900911e3935d91" kind="define"><name>EF_DRIVER_ERROR_UNSUPPORTED</name></member>
+    <member refid="_e_f___driver___common_8h_1aed4f0552faa082d7941ed37ae1e430e4" kind="define"><name>EF_DRIVER_ERROR_PARAMETER</name></member>
+    <member refid="_e_f___driver___common_8h_1a89de2e78c0ce8d5b48c0cef064ae3aab" kind="define"><name>EF_DRIVER_ERROR_SPECIFIC</name></member>
+    <member refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kind="typedef"><name>EF_DRIVER_STATUS</name></member>
+  </compound>
+  <compound refid="_e_f___w_d_t32_8c" kind="file"><name>EF_WDT32.c</name>
+    <member refid="_e_f___w_d_t32_8c_1a147df04fc0736aa0c0c09441d42c1e2d" kind="define"><name>EF_WDT32_C</name></member>
+    <member refid="_e_f___w_d_t32_8c_1a070bae4e509f7ff44bde19c4395c1f13" kind="function"><name>EF_WDT32_readTimerValue</name></member>
+    <member refid="_e_f___w_d_t32_8c_1a939788c900140f759e334e4459d4b958" kind="function"><name>EF_WDT32_setReloadValue</name></member>
+    <member refid="_e_f___w_d_t32_8c_1a3e5017e26b1f75011c36b39ba391d97d" kind="function"><name>EF_WDT32_getRIS</name></member>
+    <member refid="_e_f___w_d_t32_8c_1a3063b72a80217098001d522e1c3977f3" kind="function"><name>EF_WDT32_getMIS</name></member>
+    <member refid="_e_f___w_d_t32_8c_1a7bb77b2c466435c20e5fb6bf7391f723" kind="function"><name>EF_WDT32_setIM</name></member>
+    <member refid="_e_f___w_d_t32_8c_1a6b8db048008ec7c64da0805649685ee9" kind="function"><name>EF_WDT32_getIM</name></member>
+    <member refid="_e_f___w_d_t32_8c_1a7e76af97caf95f02df56665edb433b86" kind="function"><name>EF_WDT32_setICR</name></member>
+    <member refid="_e_f___w_d_t32_8c_1a6f6927f4bc7e8d3687969831e8497a97" kind="function"><name>EF_I2C_setGclkEnable</name></member>
+    <member refid="_e_f___w_d_t32_8c_1a06ad40c0ae428ae3858c004d8d13d725" kind="function"><name>EF_WDT32_enable</name></member>
+    <member refid="_e_f___w_d_t32_8c_1a07bd55f1fdacb26adc08bd83e63a3de1" kind="function"><name>EF_WDT32_disable</name></member>
+    <member refid="_e_f___w_d_t32_8c_1a5ad03a1924b7771fd1d01c636899e0ea" kind="function"><name>EF_WDT32_reloadWDT</name></member>
+    <member refid="_e_f___w_d_t32_8c_1a724d7dc17ff1b58fdb42add0f7ce8707" kind="function"><name>EF_WDT32_clearTimeOutFlag</name></member>
+    <member refid="_e_f___w_d_t32_8c_1aa4021705a5d400c234ef2286a54a77d2" kind="function"><name>EF_WDT32_isTimeOut</name></member>
+  </compound>
+  <compound refid="_e_f___w_d_t32_8h" kind="file"><name>EF_WDT32.h</name>
+    <member refid="_e_f___w_d_t32_8h_1a070bae4e509f7ff44bde19c4395c1f13" kind="function"><name>EF_WDT32_readTimerValue</name></member>
+    <member refid="_e_f___w_d_t32_8h_1a939788c900140f759e334e4459d4b958" kind="function"><name>EF_WDT32_setReloadValue</name></member>
+    <member refid="_e_f___w_d_t32_8h_1a3e5017e26b1f75011c36b39ba391d97d" kind="function"><name>EF_WDT32_getRIS</name></member>
+    <member refid="_e_f___w_d_t32_8h_1a3063b72a80217098001d522e1c3977f3" kind="function"><name>EF_WDT32_getMIS</name></member>
+    <member refid="_e_f___w_d_t32_8h_1a7bb77b2c466435c20e5fb6bf7391f723" kind="function"><name>EF_WDT32_setIM</name></member>
+    <member refid="_e_f___w_d_t32_8h_1a6b8db048008ec7c64da0805649685ee9" kind="function"><name>EF_WDT32_getIM</name></member>
+    <member refid="_e_f___w_d_t32_8h_1a7e76af97caf95f02df56665edb433b86" kind="function"><name>EF_WDT32_setICR</name></member>
+    <member refid="_e_f___w_d_t32_8h_1a6f6927f4bc7e8d3687969831e8497a97" kind="function"><name>EF_I2C_setGclkEnable</name></member>
+    <member refid="_e_f___w_d_t32_8h_1a06ad40c0ae428ae3858c004d8d13d725" kind="function"><name>EF_WDT32_enable</name></member>
+    <member refid="_e_f___w_d_t32_8h_1a07bd55f1fdacb26adc08bd83e63a3de1" kind="function"><name>EF_WDT32_disable</name></member>
+    <member refid="_e_f___w_d_t32_8h_1a5ad03a1924b7771fd1d01c636899e0ea" kind="function"><name>EF_WDT32_reloadWDT</name></member>
+    <member refid="_e_f___w_d_t32_8h_1a724d7dc17ff1b58fdb42add0f7ce8707" kind="function"><name>EF_WDT32_clearTimeOutFlag</name></member>
+    <member refid="_e_f___w_d_t32_8h_1aa4021705a5d400c234ef2286a54a77d2" kind="function"><name>EF_WDT32_isTimeOut</name></member>
+  </compound>
+  <compound refid="_e_f___w_d_t32__regs_8h" kind="file"><name>EF_WDT32_regs.h</name>
+    <member refid="_e_f___w_d_t32__regs_8h_1a470cd5845bed94d8b8b358933e4a3442" kind="define"><name>IO_TYPES</name></member>
+    <member refid="_e_f___w_d_t32__regs_8h_1aef00c279597b188e4cdd14d288ddf77a" kind="define"><name>__R</name></member>
+    <member refid="_e_f___w_d_t32__regs_8h_1ad8cfe7014044235a4c8d3239c2597f09" kind="define"><name>__W</name></member>
+    <member refid="_e_f___w_d_t32__regs_8h_1a81f369079976a46554fd9798ab035697" kind="define"><name>__RW</name></member>
+    <member refid="_e_f___w_d_t32__regs_8h_1afc47a0a881a5cadf7875ea591140159c" kind="define"><name>EF_WDT32_WDTTO_FLAG</name></member>
+    <member refid="_e_f___w_d_t32__regs_8h_1ac1ec56bd03f45cbdb8ae8356f90f79f7" kind="define"><name>EF_WDT32_CTRL_EN_MASK</name></member>
+    <member refid="_e_f___w_d_t32__regs_8h_1ad85812f9899d3b7b40344acb0a9dad00" kind="typedef"><name>EF_WDT32_TYPE</name></member>
+    <member refid="_e_f___w_d_t32__regs_8h_1a7025a25691b7b7e9932da8b0c51d137c" kind="typedef"><name>EF_WDT32_TYPE_PTR</name></member>
+  </compound>
+</doxygenindex>
