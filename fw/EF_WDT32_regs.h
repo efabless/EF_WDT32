@@ -7,7 +7,7 @@
 	you may not use this file except in compliance with the License.
 	You may obtain a copy of the License at
 
-	    http://www.apache.org/licenses/LICENSE-2.0
+	    www.apache.org/licenses/LICENSE-2.0
 
 	Unless required by applicable law or agreed to in writing, software
 	distributed under the License is distributed on an "AS IS" BASIS,
@@ -20,16 +20,31 @@
 #ifndef EF_WDT32REGS_H
 #define EF_WDT32REGS_H
 
+
+
+/******************************************************************************
+* Includes
+******************************************************************************/
+#include "EF_Driver_Common.h"
+
+
+/******************************************************************************
+* Macros and Constants
+******************************************************************************/
 #ifndef IO_TYPES
 #define IO_TYPES
-#define   __R     volatile const unsigned int
-#define   __W     volatile       unsigned int
-#define   __RW    volatile       unsigned int
+#define   __R     volatile const uint32_t
+#define   __W     volatile       uint32_t
+#define   __RW    volatile       uint32_t
 #endif
 
 
-#define EF_WDT32_WDTTO_FLAG	0x1
+#define EF_WDT32_WDTTO_FLAG	     ((uint32_t)0x1)
+#define EF_WDT32_CTRL_EN_MASK	 ((uint32_t)0x1)
 
+/******************************************************************************
+* Typedefs and Enums
+******************************************************************************/
 typedef struct _EF_WDT32_TYPE_ {
 	__R 	timer;
 	__W 	load;
@@ -42,5 +57,23 @@ typedef struct _EF_WDT32_TYPE_ {
 	__W 	GCLK;
 } EF_WDT32_TYPE;
 
-#endif
+typedef EF_WDT32_TYPE* EF_WDT32_TYPE_PTR;
 
+/******************************************************************************
+* Function Prototypes
+******************************************************************************/
+
+
+
+/******************************************************************************
+* External Variables
+******************************************************************************/
+
+
+
+
+#endif // EF_WDT32REGS_H
+
+/******************************************************************************
+* End of File
+******************************************************************************/
