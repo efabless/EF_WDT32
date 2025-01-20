@@ -1,0 +1,624 @@
+\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{Header files}\label{md__r_e_a_d_m_e_autotoc_md1}
+
+\begin{DoxyItemize}
+\item EF\+\_\+\+Driver\+\_\+\+Common.h
+\item EF\+\_\+\+WDT32.h
+\item EF\+\_\+\+WDT32\+\_\+example.h
+\item EF\+\_\+\+WDT32\+\_\+regs.h
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysection{File EF\+\_\+\+Driver\+\_\+\+Common.\+h}\label{md__r_e_a_d_m_e_autotoc_md2}
+{\itshape C header file for common driver definitions and types.}\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysection{Structures and Types}\label{md__r_e_a_d_m_e_autotoc_md3}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\cellcolor{\tableheadbgcolor}\textbf{ Name    }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\cellcolor{\tableheadbgcolor}\textbf{ Name    }\\\cline{1-2}
+\endhead
+\PBS\raggedleft typedef uint32\+\_\+t   &$\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$ ~\newline
+{\itshape A type that is used to return the status of the driver functions.}   \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysection{Macros}\label{md__r_e_a_d_m_e_autotoc_md4}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\cellcolor{\tableheadbgcolor}\textbf{ Name    }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\cellcolor{\tableheadbgcolor}\textbf{ Name    }\\\cline{1-2}
+\endhead
+\PBS\raggedleft define   &$\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+ERROR$\ast$$\ast$ ((uint32\+\_\+t)1)~\newline
+{\itshape Unspecified error.}    \\\cline{1-2}
+\PBS\raggedleft define   &$\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+ERROR\textbackslash{}\+\_\+\+BUSY$\ast$$\ast$ ((uint32\+\_\+t)2)~\newline
+{\itshape Driver is busy.}    \\\cline{1-2}
+\PBS\raggedleft define   &$\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+ERROR\textbackslash{}\+\_\+\+PARAMETER$\ast$$\ast$ ((uint32\+\_\+t)5)~\newline
+{\itshape Parameter error.}    \\\cline{1-2}
+\PBS\raggedleft define   &$\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+ERROR\textbackslash{}\+\_\+\+SPECIFIC$\ast$$\ast$ ((uint32\+\_\+t)6)~\newline
+{\itshape Start of driver specific errors.}    \\\cline{1-2}
+\PBS\raggedleft define   &$\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+ERROR\textbackslash{}\+\_\+\+TIMEOUT$\ast$$\ast$ ((uint32\+\_\+t)3)~\newline
+{\itshape Timeout occurred.}    \\\cline{1-2}
+\PBS\raggedleft define   &$\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+ERROR\textbackslash{}\+\_\+\+UNSUPPORTED$\ast$$\ast$ ((uint32\+\_\+t)4)~\newline
+{\itshape Operation not supported.}    \\\cline{1-2}
+\PBS\raggedleft define   &$\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+OK$\ast$$\ast$ ((uint32\+\_\+t)0)~\newline
+{\itshape Operation succeeded.}   \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysection{Structures and Types Documentation}\label{md__r_e_a_d_m_e_autotoc_md5}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysubsection{typedef $<$tt$>$\+EF\+\_\+\+DRIVER\+\_\+\+STATUS$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md6}
+{\itshape A type that is used to return the status of the driver functions.} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{typedef}\ uint32\_t\ \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}};}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md7}{}\doxysection{Macros Documentation}\label{md__r_e_a_d_m_e_autotoc_md7}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md8}{}\doxysubsection{define $<$tt$>$\+EF\+\_\+\+DRIVER\+\_\+\+ERROR$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md8}
+{\itshape Unspecified error.} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ EF\_DRIVER\_ERROR\ ((uint32\_t)1)}}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md9}{}\doxysubsection{define $<$tt$>$\+EF\+\_\+\+DRIVER\+\_\+\+ERROR\+\_\+\+BUSY$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md9}
+{\itshape Driver is busy.} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ EF\_DRIVER\_ERROR\_BUSY\ ((uint32\_t)2)}}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md10}{}\doxysubsection{define $<$tt$>$\+EF\+\_\+\+DRIVER\+\_\+\+ERROR\+\_\+\+PARAMETER$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md10}
+{\itshape Parameter error.} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ EF\_DRIVER\_ERROR\_PARAMETER\ ((uint32\_t)5)}}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md11}{}\doxysubsection{define $<$tt$>$\+EF\+\_\+\+DRIVER\+\_\+\+ERROR\+\_\+\+SPECIFIC$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md11}
+{\itshape Start of driver specific errors.} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ EF\_DRIVER\_ERROR\_SPECIFIC\ ((uint32\_t)6)}}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md12}{}\doxysubsection{define $<$tt$>$\+EF\+\_\+\+DRIVER\+\_\+\+ERROR\+\_\+\+TIMEOUT$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md12}
+{\itshape Timeout occurred.} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ EF\_DRIVER\_ERROR\_TIMEOUT\ ((uint32\_t)3)}}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md13}{}\doxysubsection{define $<$tt$>$\+EF\+\_\+\+DRIVER\+\_\+\+ERROR\+\_\+\+UNSUPPORTED$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md13}
+{\itshape Operation not supported.} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ EF\_DRIVER\_ERROR\_UNSUPPORTED\ ((uint32\_t)4)}}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md14}{}\doxysubsection{define $<$tt$>$\+EF\+\_\+\+DRIVER\+\_\+\+OK$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md14}
+{\itshape Operation succeeded.} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ EF\_DRIVER\_OK\ ((uint32\_t)0)}}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md15}{}\doxysection{File EF\+\_\+\+WDT32.\+h}\label{md__r_e_a_d_m_e_autotoc_md15}
+{\itshape H header file for EF\+\_\+\+WDT32 APIs which contains the function prototypes.}\hypertarget{md__r_e_a_d_m_e_autotoc_md16}{}\doxysection{Functions}\label{md__r_e_a_d_m_e_autotoc_md16}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\cellcolor{\tableheadbgcolor}\textbf{ Name    }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\cellcolor{\tableheadbgcolor}\textbf{ Name    }\\\cline{1-2}
+\endhead
+\PBS\raggedleft $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$   &$\ast$$\ast$\+EF\textbackslash{}\+\_\+\+I2C\textbackslash{}\+\_\+set\+Gclk\+Enable$\ast$$\ast$ ($\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$ wdt, uint32\+\_\+t value) ~\newline
+{\itshape Sets the GCLK enable bit for the specified WDT32 peripheral.}    \\\cline{1-2}
+\PBS\raggedleft $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$   &$\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+clear\+Time\+Out\+Flag$\ast$$\ast$ ($\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$ wdt) ~\newline
+{\itshape Clears the timeout flag in the WDT32 peripheral.}    \\\cline{1-2}
+\PBS\raggedleft $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$   &$\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+disable$\ast$$\ast$ ($\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$ wdt) ~\newline
+{\itshape Disables the WDT32 peripheral.}    \\\cline{1-2}
+\PBS\raggedleft $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$   &$\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+enable$\ast$$\ast$ ($\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$ wdt) ~\newline
+{\itshape Enables the WDT32 peripheral.}    \\\cline{1-2}
+\PBS\raggedleft $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$   &$\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+get\+IM$\ast$$\ast$ ($\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$ wdt, uint32\+\_\+t $\ast$im) ~\newline
+{\itshape Gets the interrupt mask (IM) from the WDT32 peripheral.}    \\\cline{1-2}
+\PBS\raggedleft $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$   &$\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+get\+MIS$\ast$$\ast$ ($\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$ wdt, uint32\+\_\+t $\ast$mis) ~\newline
+{\itshape Gets the masked interrupt status (MIS) from the WDT32 peripheral.}    \\\cline{1-2}
+\PBS\raggedleft $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$   &$\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+get\+RIS$\ast$$\ast$ ($\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$ wdt, uint32\+\_\+t $\ast$ris) ~\newline
+{\itshape Gets the raw interrupt status (RIS) from the WDT32 peripheral.}    \\\cline{1-2}
+\PBS\raggedleft $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$   &$\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+is\+Time\+Out$\ast$$\ast$ ($\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$ wdt, uint32\+\_\+t $\ast$is\+\_\+timeout) ~\newline
+{\itshape Checks if the WDT32 has timed out.}    \\\cline{1-2}
+\PBS\raggedleft $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$   &$\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+read\+Timer\+Value$\ast$$\ast$ ($\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$ wdt, uint32\+\_\+t $\ast$timer\+\_\+value) ~\newline
+{\itshape Reads the current timer value from the WDT32 peripheral.}    \\\cline{1-2}
+\PBS\raggedleft $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$   &$\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+reload\+WDT$\ast$$\ast$ ($\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$ wdt) ~\newline
+{\itshape Reloads the WDT32 timer by disabling and re-\/enabling it.}    \\\cline{1-2}
+\PBS\raggedleft $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$   &$\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+set\+ICR$\ast$$\ast$ ($\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$ wdt, uint32\+\_\+t mask) ~\newline
+{\itshape Sets the interrupt clear (IC) register in the WDT32 peripheral.}    \\\cline{1-2}
+\PBS\raggedleft $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$   &$\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+set\+IM$\ast$$\ast$ ($\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$ wdt, uint32\+\_\+t mask) ~\newline
+{\itshape Sets the interrupt mask (IM) in the WDT32 peripheral.}    \\\cline{1-2}
+\PBS\raggedleft $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$   &$\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+set\+Reload\+Value$\ast$$\ast$ ($\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$ wdt, uint32\+\_\+t load\+\_\+val) ~\newline
+{\itshape Sets the reload value in the WDT32 peripheral.}   \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md17}{}\doxysection{Functions Documentation}\label{md__r_e_a_d_m_e_autotoc_md17}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md18}{}\doxysubsection{function $<$tt$>$\+EF\+\_\+\+I2\+C\+\_\+set\+Gclk\+Enable$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md18}
+{\itshape Sets the GCLK enable bit for the specified WDT32 peripheral.} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32_8c_a6f6927f4bc7e8d3687969831e8497a97}{EF\_I2C\_setGclkEnable}}\ (}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE\_PTR}}\ wdt,}
+\DoxyCodeLine{\ \ \ \ uint32\_t\ value}
+\DoxyCodeLine{)\ }
+
+\end{DoxyCode}
+
+
+This function enables or disables the GCLK for the WDT32 peripheral.
+
+{\bfseries{Parameters\+:}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily wdt} Pointer to the WDT32 base address structure $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$.
+\item {\ttfamily value} The value to set (0 to disable, 1 to enable).
+\end{DoxyItemize}
+
+{\bfseries{Returns\+:}}
+
+status A value of type $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$ \+: returns a success or error code. \hypertarget{md__r_e_a_d_m_e_autotoc_md19}{}\doxysubsection{function $<$tt$>$\+EF\+\_\+\+WDT32\+\_\+clear\+Time\+Out\+Flag$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md19}
+{\itshape Clears the timeout flag in the WDT32 peripheral.} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32_8c_a724d7dc17ff1b58fdb42add0f7ce8707}{EF\_WDT32\_clearTimeOutFlag}}\ (}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE\_PTR}}\ wdt}
+\DoxyCodeLine{)\ }
+
+\end{DoxyCode}
+
+
+This function writes to the interrupt clear register (IC) to clear the WDT timeout flag.
+
+{\bfseries{Parameters\+:}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily wdt} Pointer to the WDT32 base address structure $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$.
+\end{DoxyItemize}
+
+{\bfseries{Returns\+:}}
+
+status A value of type $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$ \+: returns a success or error code. \hypertarget{md__r_e_a_d_m_e_autotoc_md20}{}\doxysubsection{function $<$tt$>$\+EF\+\_\+\+WDT32\+\_\+disable$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md20}
+{\itshape Disables the WDT32 peripheral.} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32_8c_a07bd55f1fdacb26adc08bd83e63a3de1}{EF\_WDT32\_disable}}\ (}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE\_PTR}}\ wdt}
+\DoxyCodeLine{)\ }
+
+\end{DoxyCode}
+
+
+This function clears the enable bit in the control register of the WDT32 peripheral.
+
+{\bfseries{Parameters\+:}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily wdt} Pointer to the WDT32 base address structure $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$.
+\end{DoxyItemize}
+
+{\bfseries{Returns\+:}}
+
+status A value of type $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$ \+: returns a success or error code. \hypertarget{md__r_e_a_d_m_e_autotoc_md21}{}\doxysubsection{function $<$tt$>$\+EF\+\_\+\+WDT32\+\_\+enable$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md21}
+{\itshape Enables the WDT32 peripheral.} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32_8c_a06ad40c0ae428ae3858c004d8d13d725}{EF\_WDT32\_enable}}\ (}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE\_PTR}}\ wdt}
+\DoxyCodeLine{)\ }
+
+\end{DoxyCode}
+
+
+This function sets the enable bit in the control register of the WDT32 peripheral.
+
+{\bfseries{Parameters\+:}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily wdt} Pointer to the WDT32 base address structure $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$.
+\end{DoxyItemize}
+
+{\bfseries{Returns\+:}}
+
+status A value of type $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$ \+: returns a success or error code. \hypertarget{md__r_e_a_d_m_e_autotoc_md22}{}\doxysubsection{function $<$tt$>$\+EF\+\_\+\+WDT32\+\_\+get\+IM$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md22}
+{\itshape Gets the interrupt mask (IM) from the WDT32 peripheral.} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32_8c_a6b8db048008ec7c64da0805649685ee9}{EF\_WDT32\_getIM}}\ (}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE\_PTR}}\ wdt,}
+\DoxyCodeLine{\ \ \ \ uint32\_t\ *im}
+\DoxyCodeLine{)\ }
+
+\end{DoxyCode}
+
+
+This function retrieves the interrupt mask (IM) from the specified WDT32 peripheral.
+
+{\bfseries{Parameters\+:}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily wdt} Pointer to the WDT32 base address structure $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$.
+\item {\ttfamily im} Pointer to a variable where the IM value will be stored.
+\end{DoxyItemize}
+
+{\bfseries{Returns\+:}}
+
+status A value of type $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$ \+: returns a success or error code. \hypertarget{md__r_e_a_d_m_e_autotoc_md23}{}\doxysubsection{function $<$tt$>$\+EF\+\_\+\+WDT32\+\_\+get\+MIS$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md23}
+{\itshape Gets the masked interrupt status (MIS) from the WDT32 peripheral.} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32_8c_a3063b72a80217098001d522e1c3977f3}{EF\_WDT32\_getMIS}}\ (}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE\_PTR}}\ wdt,}
+\DoxyCodeLine{\ \ \ \ uint32\_t\ *mis}
+\DoxyCodeLine{)\ }
+
+\end{DoxyCode}
+
+
+This function retrieves the masked interrupt status (MIS) from the specified WDT32 peripheral.
+
+{\bfseries{Parameters\+:}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily wdt} Pointer to the WDT32 base address structure $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$.
+\item {\ttfamily mis} Pointer to a variable where the MIS value will be stored.
+\end{DoxyItemize}
+
+{\bfseries{Returns\+:}}
+
+status A value of type $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$ \+: returns a success or error code. \hypertarget{md__r_e_a_d_m_e_autotoc_md24}{}\doxysubsection{function $<$tt$>$\+EF\+\_\+\+WDT32\+\_\+get\+RIS$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md24}
+{\itshape Gets the raw interrupt status (RIS) from the WDT32 peripheral.} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32_8c_a3e5017e26b1f75011c36b39ba391d97d}{EF\_WDT32\_getRIS}}\ (}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE\_PTR}}\ wdt,}
+\DoxyCodeLine{\ \ \ \ uint32\_t\ *ris}
+\DoxyCodeLine{)\ }
+
+\end{DoxyCode}
+
+
+This function retrieves the raw interrupt status (RIS) from the specified WDT32 peripheral.
+
+{\bfseries{Parameters\+:}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily wdt} Pointer to the WDT32 base address structure $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$.
+\item {\ttfamily ris} Pointer to a variable where the RIS value will be stored.
+\end{DoxyItemize}
+
+{\bfseries{Returns\+:}}
+
+status A value of type $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$ \+: returns a success or error code. \hypertarget{md__r_e_a_d_m_e_autotoc_md25}{}\doxysubsection{function $<$tt$>$\+EF\+\_\+\+WDT32\+\_\+is\+Time\+Out$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md25}
+{\itshape Checks if the WDT32 has timed out.} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32_8c_aa4021705a5d400c234ef2286a54a77d2}{EF\_WDT32\_isTimeOut}}\ (}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE\_PTR}}\ wdt,}
+\DoxyCodeLine{\ \ \ \ uint32\_t\ *is\_timeout}
+\DoxyCodeLine{)\ }
+
+\end{DoxyCode}
+
+
+This function reads the raw interrupt status (RIS) to determine if a timeout has occurred.
+
+{\bfseries{Parameters\+:}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily wdt} Pointer to the WDT32 base address structure $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$.
+\item {\ttfamily is\+\_\+timeout} Pointer to a variable where the timeout status will be stored (1 if timeout, 0 otherwise).
+\end{DoxyItemize}
+
+{\bfseries{Returns\+:}}
+
+status A value of type $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$ \+: returns a success or error code. \hypertarget{md__r_e_a_d_m_e_autotoc_md26}{}\doxysubsection{function $<$tt$>$\+EF\+\_\+\+WDT32\+\_\+read\+Timer\+Value$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md26}
+{\itshape Reads the current timer value from the WDT32 peripheral.} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32_8c_a070bae4e509f7ff44bde19c4395c1f13}{EF\_WDT32\_readTimerValue}}\ (}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE\_PTR}}\ wdt,}
+\DoxyCodeLine{\ \ \ \ uint32\_t\ *timer\_value}
+\DoxyCodeLine{)\ }
+
+\end{DoxyCode}
+
+
+This function retrieves the current value of the timer register in the specified WDT32 peripheral.
+
+{\bfseries{Parameters\+:}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily wdt} Pointer to the WDT32 base address structure $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$.
+\item {\ttfamily timer\+\_\+value} Pointer to a variable where the current timer value will be stored.
+\end{DoxyItemize}
+
+{\bfseries{Returns\+:}}
+
+status A value of type $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$ \+: returns a success or error code. \hypertarget{md__r_e_a_d_m_e_autotoc_md27}{}\doxysubsection{function $<$tt$>$\+EF\+\_\+\+WDT32\+\_\+reload\+WDT$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md27}
+{\itshape Reloads the WDT32 timer by disabling and re-\/enabling it.} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32_8c_a5ad03a1924b7771fd1d01c636899e0ea}{EF\_WDT32\_reloadWDT}}\ (}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE\_PTR}}\ wdt}
+\DoxyCodeLine{)\ }
+
+\end{DoxyCode}
+
+
+This function clears the timeout flag, disables the WDT32, and then re-\/enables it.
+
+{\bfseries{Parameters\+:}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily wdt} Pointer to the WDT32 base address structure $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$.
+\end{DoxyItemize}
+
+{\bfseries{Returns\+:}}
+
+status A value of type $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$ \+: returns a success or error code. \hypertarget{md__r_e_a_d_m_e_autotoc_md28}{}\doxysubsection{function $<$tt$>$\+EF\+\_\+\+WDT32\+\_\+set\+ICR$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md28}
+{\itshape Sets the interrupt clear (IC) register in the WDT32 peripheral.} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32_8c_a7e76af97caf95f02df56665edb433b86}{EF\_WDT32\_setICR}}\ (}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE\_PTR}}\ wdt,}
+\DoxyCodeLine{\ \ \ \ uint32\_t\ mask}
+\DoxyCodeLine{)\ }
+
+\end{DoxyCode}
+
+
+This function sets the interrupt clear (IC) register in the specified WDT32 peripheral to clear interrupts.
+
+{\bfseries{Parameters\+:}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily wdt} Pointer to the WDT32 base address structure $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$.
+\item {\ttfamily mask} The value to be written to the interrupt clear (IC) register.
+\end{DoxyItemize}
+
+{\bfseries{Returns\+:}}
+
+status A value of type $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$ \+: returns a success or error code. \hypertarget{md__r_e_a_d_m_e_autotoc_md29}{}\doxysubsection{function $<$tt$>$\+EF\+\_\+\+WDT32\+\_\+set\+IM$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md29}
+{\itshape Sets the interrupt mask (IM) in the WDT32 peripheral.} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32_8c_a7bb77b2c466435c20e5fb6bf7391f723}{EF\_WDT32\_setIM}}\ (}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE\_PTR}}\ wdt,}
+\DoxyCodeLine{\ \ \ \ uint32\_t\ mask}
+\DoxyCodeLine{)\ }
+
+\end{DoxyCode}
+
+
+This function sets the interrupt mask (IM) register in the specified WDT32 peripheral.
+
+{\bfseries{Parameters\+:}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily wdt} Pointer to the WDT32 base address structure $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$.
+\item {\ttfamily mask} The value to be written to the interrupt mask (IM) register.
+\end{DoxyItemize}
+
+{\bfseries{Returns\+:}}
+
+status A value of type $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$ \+: returns a success or error code. \hypertarget{md__r_e_a_d_m_e_autotoc_md30}{}\doxysubsection{function $<$tt$>$\+EF\+\_\+\+WDT32\+\_\+set\+Reload\+Value$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md30}
+{\itshape Sets the reload value in the WDT32 peripheral.} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32_8c_a939788c900140f759e334e4459d4b958}{EF\_WDT32\_setReloadValue}}\ (}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE\_PTR}}\ wdt,}
+\DoxyCodeLine{\ \ \ \ uint32\_t\ load\_val}
+\DoxyCodeLine{)\ }
+
+\end{DoxyCode}
+
+
+This function sets the reload value in the load register of the specified WDT32 peripheral.
+
+{\bfseries{Parameters\+:}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily wdt} Pointer to the WDT32 base address structure $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$.
+\item {\ttfamily load\+\_\+val} The value to be loaded into the WDT32 reload register.
+\end{DoxyItemize}
+
+{\bfseries{Returns\+:}}
+
+status A value of type $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$ \+: returns a success or error code.\hypertarget{md__r_e_a_d_m_e_autotoc_md31}{}\doxysection{File EF\+\_\+\+WDT32\+\_\+example.\+h}\label{md__r_e_a_d_m_e_autotoc_md31}
+{\itshape C header file containing an example of how to use the WDT32 APIs.}\hypertarget{md__r_e_a_d_m_e_autotoc_md32}{}\doxysection{Functions}\label{md__r_e_a_d_m_e_autotoc_md32}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\cellcolor{\tableheadbgcolor}\textbf{ Name    }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\cellcolor{\tableheadbgcolor}\textbf{ Name    }\\\cline{1-2}
+\endhead
+\PBS\raggedleft $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+DRIVER\textbackslash{}\+\_\+\+STATUS$\ast$$\ast$   &$\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+example$\ast$$\ast$ (void) ~\newline
+{\itshape Example Usage Example usage\+:}   \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md33}{}\doxysection{Functions Documentation}\label{md__r_e_a_d_m_e_autotoc_md33}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md34}{}\doxysubsection{function $<$tt$>$\+EF\+\_\+\+WDT32\+\_\+example$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md34}
+{\itshape Example Usage Example usage\+:} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32__example_8c_a8709c6d249b2cd0b4f14b2f83c7ee3bd}{EF\_WDT32\_example}}\ (}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{void}}
+\DoxyCodeLine{)\ }
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_e_f___w_d_t32_8h}{EF\_WDT32.h}}"{}}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ Example\_WDT32\_BASE\_ADDRESS\ 0x40000000}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ WDT0\ ((EF\_WDT32\_TYPE\_PTR)Example\_WDT32\_BASE\_ADDRESS)}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ \mbox{\hyperlink{_e_f___w_d_t32__example_8c_a8709c6d249b2cd0b4f14b2f83c7ee3bd}{EF\_WDT32\_example}}(\textcolor{keywordtype}{void})\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\_DRIVER\_STATUS}}\ status;}
+\DoxyCodeLine{\ \ \ \ uint32\_t\ timer\_value;}
+\DoxyCodeLine{\ \ \ \ uint32\_t\ timeout\_status;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ Step\ 1:\ Enable\ the\ Watchdog\ Timer\ (WDT0)}}
+\DoxyCodeLine{\ \ \ \ status\ =\ \mbox{\hyperlink{_e_f___w_d_t32_8c_a06ad40c0ae428ae3858c004d8d13d725}{EF\_WDT32\_enable}}(\mbox{\hyperlink{_e_f___w_d_t32__example_8c_a09d9e73511b524c49ca77eec8f988678}{WDT0}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (status\ !=\ \mbox{\hyperlink{_e_f___driver___common_8h_ab56c746d5d1672835c101f00f7c90b7c}{EF\_DRIVER\_OK}})\ \{\textcolor{keywordflow}{return}\ status;\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ Step\ 2:\ Set\ the\ reload\ value\ to\ prevent\ timeout}}
+\DoxyCodeLine{\ \ \ \ status\ =\ \mbox{\hyperlink{_e_f___w_d_t32_8c_a939788c900140f759e334e4459d4b958}{EF\_WDT32\_setReloadValue}}(\mbox{\hyperlink{_e_f___w_d_t32__example_8c_a09d9e73511b524c49ca77eec8f988678}{WDT0}},\ 0x0FFFFF);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (status\ !=\ \mbox{\hyperlink{_e_f___driver___common_8h_ab56c746d5d1672835c101f00f7c90b7c}{EF\_DRIVER\_OK}})\ \{\textcolor{keywordflow}{return}\ status;\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ Step\ 3:\ Simulate\ some\ processing}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{volatile}\ \textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 1000000;\ ++i);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ Step\ 4:\ Check\ if\ the\ WDT0\ has\ timed\ out}}
+\DoxyCodeLine{\ \ \ \ status\ =\ \mbox{\hyperlink{_e_f___w_d_t32_8c_aa4021705a5d400c234ef2286a54a77d2}{EF\_WDT32\_isTimeOut}}(\mbox{\hyperlink{_e_f___w_d_t32__example_8c_a09d9e73511b524c49ca77eec8f988678}{WDT0}},\ \&timeout\_status);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (status\ !=\ \mbox{\hyperlink{_e_f___driver___common_8h_ab56c746d5d1672835c101f00f7c90b7c}{EF\_DRIVER\_OK}})\ \{\textcolor{keywordflow}{return}\ status;\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ Step\ 5:\ If\ a\ timeout\ occurred,\ handle\ it}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (timeout\_status\ ==\ 1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Clear\ the\ timeout\ flag\ to\ acknowledge\ the\ timeout}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ status\ =\ \mbox{\hyperlink{_e_f___w_d_t32_8c_a724d7dc17ff1b58fdb42add0f7ce8707}{EF\_WDT32\_clearTimeOutFlag}}(\mbox{\hyperlink{_e_f___w_d_t32__example_8c_a09d9e73511b524c49ca77eec8f988678}{WDT0}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (status\ !=\ \mbox{\hyperlink{_e_f___driver___common_8h_ab56c746d5d1672835c101f00f7c90b7c}{EF\_DRIVER\_OK}})\ \{\textcolor{keywordflow}{return}\ status;\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Reload\ the\ WDT0\ to\ prevent\ a\ system\ reset}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ status\ =\ \mbox{\hyperlink{_e_f___w_d_t32_8c_a5ad03a1924b7771fd1d01c636899e0ea}{EF\_WDT32\_reloadWDT}}(\mbox{\hyperlink{_e_f___w_d_t32__example_8c_a09d9e73511b524c49ca77eec8f988678}{WDT0}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (status\ !=\ \mbox{\hyperlink{_e_f___driver___common_8h_ab56c746d5d1672835c101f00f7c90b7c}{EF\_DRIVER\_OK}})\ \{\textcolor{keywordflow}{return}\ status;\}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ Step\ 6:\ Read\ the\ current\ timer\ value\ to\ see\ if\ it\ is\ still\ running}}
+\DoxyCodeLine{\ \ \ \ status\ =\ \mbox{\hyperlink{_e_f___w_d_t32_8c_a070bae4e509f7ff44bde19c4395c1f13}{EF\_WDT32\_readTimerValue}}(\mbox{\hyperlink{_e_f___w_d_t32__example_8c_a09d9e73511b524c49ca77eec8f988678}{WDT0}},\ \&timer\_value);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (status\ !=\ \mbox{\hyperlink{_e_f___driver___common_8h_ab56c746d5d1672835c101f00f7c90b7c}{EF\_DRIVER\_OK}})\ \{\textcolor{keywordflow}{return}\ status;\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ Step\ 7:\ Simulate\ some\ more\ processing}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{volatile}\ \textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 1000000;\ ++i);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ Step\ 8:\ Disable\ the\ Watchdog\ Timer}}
+\DoxyCodeLine{\ \ \ \ status\ =\ \mbox{\hyperlink{_e_f___w_d_t32_8c_a07bd55f1fdacb26adc08bd83e63a3de1}{EF\_WDT32\_disable}}(\mbox{\hyperlink{_e_f___w_d_t32__example_8c_a09d9e73511b524c49ca77eec8f988678}{WDT0}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (status\ !=\ \mbox{\hyperlink{_e_f___driver___common_8h_ab56c746d5d1672835c101f00f7c90b7c}{EF\_DRIVER\_OK}})\ \{\textcolor{keywordflow}{return}\ status;\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_e_f___driver___common_8h_ab56c746d5d1672835c101f00f7c90b7c}{EF\_DRIVER\_OK}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md35}{}\doxysection{File EF\+\_\+\+WDT32\+\_\+regs.\+h}\label{md__r_e_a_d_m_e_autotoc_md35}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md36}{}\doxysection{Structures and Types}\label{md__r_e_a_d_m_e_autotoc_md36}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\cellcolor{\tableheadbgcolor}\textbf{ Name    }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\cellcolor{\tableheadbgcolor}\textbf{ Name    }\\\cline{1-2}
+\endhead
+\PBS\raggedleft typedef struct $\ast$$\ast$\textbackslash{}\+\_\+\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+$\ast$$\ast$   &$\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE$\ast$$\ast$ ~\newline
+    \\\cline{1-2}
+\PBS\raggedleft typedef $\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE$\ast$$\ast$ $\ast$   &$\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+\+PTR$\ast$$\ast$ ~\newline
+    \\\cline{1-2}
+\PBS\raggedleft struct   &$\ast$$\ast$\textbackslash{}\+\_\+\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+TYPE\textbackslash{}\+\_\+$\ast$$\ast$ ~\newline
+   \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md37}{}\doxysection{Macros}\label{md__r_e_a_d_m_e_autotoc_md37}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\cellcolor{\tableheadbgcolor}\textbf{ Name    }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\cellcolor{\tableheadbgcolor}\textbf{ Name    }\\\cline{1-2}
+\endhead
+\PBS\raggedleft define   &$\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+CTRL\textbackslash{}\+\_\+\+EN\textbackslash{}\+\_\+\+MASK$\ast$$\ast$ ((uint32\+\_\+t)0x1)~\newline
+    \\\cline{1-2}
+\PBS\raggedleft define   &$\ast$$\ast$\+EF\textbackslash{}\+\_\+\+WDT32\textbackslash{}\+\_\+\+WDTTO\textbackslash{}\+\_\+\+FLAG$\ast$$\ast$ ((uint32\+\_\+t)0x1)~\newline
+    \\\cline{1-2}
+\PBS\raggedleft define   &$\ast$$\ast$\+IO\textbackslash{}\+\_\+\+TYPES$\ast$$\ast$ ~\newline
+    \\\cline{1-2}
+\PBS\raggedleft define   &$\ast$$\ast$\textbackslash{}\+\_\+\textbackslash{}\+\_\+R$\ast$$\ast$ volatile const uint32\+\_\+t~\newline
+    \\\cline{1-2}
+\PBS\raggedleft define   &$\ast$$\ast$\textbackslash{}\+\_\+\textbackslash{}\+\_\+\+RW$\ast$$\ast$ volatile uint32\+\_\+t~\newline
+    \\\cline{1-2}
+\PBS\raggedleft define   &$\ast$$\ast$\textbackslash{}\+\_\+\textbackslash{}\+\_\+W$\ast$$\ast$ volatile uint32\+\_\+t~\newline
+   \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md38}{}\doxysection{Structures and Types Documentation}\label{md__r_e_a_d_m_e_autotoc_md38}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md39}{}\doxysubsection{typedef $<$tt$>$\+EF\+\_\+\+WDT32\+\_\+\+TYPE$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md39}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{\_EF\_WDT32\_TYPE\_}}\ \mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE}};}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md40}{}\doxysubsection{typedef $<$tt$>$\+EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md40}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{typedef}\ \mbox{\hyperlink{struct___e_f___w_d_t32___t_y_p_e__}{EF\_WDT32\_TYPE}}*\ \mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\_WDT32\_TYPE\_PTR}};}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md41}{}\doxysubsection{struct $<$tt$>$\+\_\+\+EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md41}
+Variables\+:
+
+
+\begin{DoxyItemize}
+\item $\ast$$\ast$\textbackslash{}\+\_\+\textbackslash{}\+\_\+W$\ast$$\ast$ GCLK ~\newline
+
+\item $\ast$$\ast$\textbackslash{}\+\_\+\textbackslash{}\+\_\+W$\ast$$\ast$ IC ~\newline
+
+\item $\ast$$\ast$\textbackslash{}\+\_\+\textbackslash{}\+\_\+\+RW$\ast$$\ast$ IM ~\newline
+
+\item $\ast$$\ast$\textbackslash{}\+\_\+\textbackslash{}\+\_\+R$\ast$$\ast$ MIS ~\newline
+
+\item $\ast$$\ast$\textbackslash{}\+\_\+\textbackslash{}\+\_\+R$\ast$$\ast$ RIS ~\newline
+
+\item $\ast$$\ast$\textbackslash{}\+\_\+\textbackslash{}\+\_\+W$\ast$$\ast$ control ~\newline
+
+\item $\ast$$\ast$\textbackslash{}\+\_\+\textbackslash{}\+\_\+W$\ast$$\ast$ load ~\newline
+
+\item $\ast$$\ast$\textbackslash{}\+\_\+\textbackslash{}\+\_\+R$\ast$$\ast$ reserved\+\_\+0 ~\newline
+
+\item $\ast$$\ast$\textbackslash{}\+\_\+\textbackslash{}\+\_\+R$\ast$$\ast$ timer ~\newline
+
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md42}{}\doxysection{Macros Documentation}\label{md__r_e_a_d_m_e_autotoc_md42}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md43}{}\doxysubsection{define $<$tt$>$\+EF\+\_\+\+WDT32\+\_\+\+CTRL\+\_\+\+EN\+\_\+\+MASK$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md43}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ EF\_WDT32\_CTRL\_EN\_MASK\ ((uint32\_t)0x1)}}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md44}{}\doxysubsection{define $<$tt$>$\+EF\+\_\+\+WDT32\+\_\+\+WDTTO\+\_\+\+FLAG$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md44}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ EF\_WDT32\_WDTTO\_FLAG\ ((uint32\_t)0x1)}}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md45}{}\doxysubsection{define $<$tt$>$\+IO\+\_\+\+TYPES$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md45}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ IO\_TYPES\ }}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md46}{}\doxysubsection{define $<$tt$>$\+\_\+\+\_\+\+R$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md46}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ \_\_R\ volatile\ const\ uint32\_t}}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md47}{}\doxysubsection{define $<$tt$>$\+\_\+\+\_\+\+RW$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md47}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ \_\_RW\ volatile\ \ \ \ \ \ \ uint32\_t}}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md48}{}\doxysubsection{define $<$tt$>$\+\_\+\+\_\+\+W$<$/tt$>$}\label{md__r_e_a_d_m_e_autotoc_md48}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ \_\_W\ volatile\ \ \ \ \ \ \ uint32\_t}}
+
+\end{DoxyCode}
+ 

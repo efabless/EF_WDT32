@@ -1,0 +1,638 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="md__r_e_a_d_m_e" kind="page">
+    <compoundname>md_README</compoundname>
+    <title>API Reference</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md1">
+<title>Header files</title>
+<para><itemizedlist>
+<listitem><para>EF_Driver_Common.h</para>
+</listitem><listitem><para>EF_WDT32.h</para>
+</listitem><listitem><para>EF_WDT32_example.h</para>
+</listitem><listitem><para>EF_WDT32_regs.h</para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md2">
+<title>File EF_Driver_Common.h</title>
+<para><emphasis>C header file for common driver definitions and types.</emphasis></para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md3">
+<title>Structures and Types</title>
+<para><table rows="2" cols="2"><row>
+<entry thead="yes" align='right'><para>Type   </para>
+</entry><entry thead="yes" align='left'><para>Name    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>typedef uint32_t   </para>
+</entry><entry thead="no" align='left'><para>**EF\_DRIVER\_STATUS** <linebreak/>
+<emphasis>A type that is used to return the status of the driver functions.</emphasis>   </para>
+</entry></row>
+</table>
+</para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md4">
+<title>Macros</title>
+<para><table rows="8" cols="2"><row>
+<entry thead="yes" align='right'><para>Type   </para>
+</entry><entry thead="yes" align='left'><para>Name    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>define   </para>
+</entry><entry thead="no" align='left'><para>**EF\_DRIVER\_ERROR** ((uint32_t)1)<linebreak/>
+<emphasis>Unspecified error.</emphasis>    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>define   </para>
+</entry><entry thead="no" align='left'><para>**EF\_DRIVER\_ERROR\_BUSY** ((uint32_t)2)<linebreak/>
+<emphasis>Driver is busy.</emphasis>    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>define   </para>
+</entry><entry thead="no" align='left'><para>**EF\_DRIVER\_ERROR\_PARAMETER** ((uint32_t)5)<linebreak/>
+<emphasis>Parameter error.</emphasis>    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>define   </para>
+</entry><entry thead="no" align='left'><para>**EF\_DRIVER\_ERROR\_SPECIFIC** ((uint32_t)6)<linebreak/>
+<emphasis>Start of driver specific errors.</emphasis>    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>define   </para>
+</entry><entry thead="no" align='left'><para>**EF\_DRIVER\_ERROR\_TIMEOUT** ((uint32_t)3)<linebreak/>
+<emphasis>Timeout occurred.</emphasis>    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>define   </para>
+</entry><entry thead="no" align='left'><para>**EF\_DRIVER\_ERROR\_UNSUPPORTED** ((uint32_t)4)<linebreak/>
+<emphasis>Operation not supported.</emphasis>    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>define   </para>
+</entry><entry thead="no" align='left'><para>**EF\_DRIVER\_OK** ((uint32_t)0)<linebreak/>
+<emphasis>Operation succeeded.</emphasis>   </para>
+</entry></row>
+</table>
+</para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md5">
+<title>Structures and Types Documentation</title>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md6">
+<title>typedef &lt;tt&gt;EF_DRIVER_STATUS&lt;/tt&gt;</title>
+<para><emphasis>A type that is used to return the status of the driver functions.</emphasis> <programlisting filename=".c"><codeline><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref>;</highlight></codeline>
+</programlisting></para>
+</sect2>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md7">
+<title>Macros Documentation</title>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md8">
+<title>define &lt;tt&gt;EF_DRIVER_ERROR&lt;/tt&gt;</title>
+<para><emphasis>Unspecified error.</emphasis> <programlisting filename=".c"><codeline><highlight class="preprocessor">#define<sp/>EF_DRIVER_ERROR<sp/>((uint32_t)1)</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md9">
+<title>define &lt;tt&gt;EF_DRIVER_ERROR_BUSY&lt;/tt&gt;</title>
+<para><emphasis>Driver is busy.</emphasis> <programlisting filename=".c"><codeline><highlight class="preprocessor">#define<sp/>EF_DRIVER_ERROR_BUSY<sp/>((uint32_t)2)</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md10">
+<title>define &lt;tt&gt;EF_DRIVER_ERROR_PARAMETER&lt;/tt&gt;</title>
+<para><emphasis>Parameter error.</emphasis> <programlisting filename=".c"><codeline><highlight class="preprocessor">#define<sp/>EF_DRIVER_ERROR_PARAMETER<sp/>((uint32_t)5)</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md11">
+<title>define &lt;tt&gt;EF_DRIVER_ERROR_SPECIFIC&lt;/tt&gt;</title>
+<para><emphasis>Start of driver specific errors.</emphasis> <programlisting filename=".c"><codeline><highlight class="preprocessor">#define<sp/>EF_DRIVER_ERROR_SPECIFIC<sp/>((uint32_t)6)</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md12">
+<title>define &lt;tt&gt;EF_DRIVER_ERROR_TIMEOUT&lt;/tt&gt;</title>
+<para><emphasis>Timeout occurred.</emphasis> <programlisting filename=".c"><codeline><highlight class="preprocessor">#define<sp/>EF_DRIVER_ERROR_TIMEOUT<sp/>((uint32_t)3)</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md13">
+<title>define &lt;tt&gt;EF_DRIVER_ERROR_UNSUPPORTED&lt;/tt&gt;</title>
+<para><emphasis>Operation not supported.</emphasis> <programlisting filename=".c"><codeline><highlight class="preprocessor">#define<sp/>EF_DRIVER_ERROR_UNSUPPORTED<sp/>((uint32_t)4)</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md14">
+<title>define &lt;tt&gt;EF_DRIVER_OK&lt;/tt&gt;</title>
+<para><emphasis>Operation succeeded.</emphasis> <programlisting filename=".c"><codeline><highlight class="preprocessor">#define<sp/>EF_DRIVER_OK<sp/>((uint32_t)0)</highlight></codeline>
+</programlisting></para>
+</sect2>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md15">
+<title>File EF_WDT32.h</title>
+<para><emphasis>H header file for EF_WDT32 APIs which contains the function prototypes.</emphasis></para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md16">
+<title>Functions</title>
+<para><table rows="14" cols="2"><row>
+<entry thead="yes" align='right'><para>Type   </para>
+</entry><entry thead="yes" align='left'><para>Name    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>**EF\_DRIVER\_STATUS**   </para>
+</entry><entry thead="no" align='left'><para>**EF\_I2C\_setGclkEnable** (**EF\_WDT32\_TYPE\_PTR** wdt, uint32_t value) <linebreak/>
+<emphasis>Sets the GCLK enable bit for the specified WDT32 peripheral.</emphasis>    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>**EF\_DRIVER\_STATUS**   </para>
+</entry><entry thead="no" align='left'><para>**EF\_WDT32\_clearTimeOutFlag** (**EF\_WDT32\_TYPE\_PTR** wdt) <linebreak/>
+<emphasis>Clears the timeout flag in the WDT32 peripheral.</emphasis>    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>**EF\_DRIVER\_STATUS**   </para>
+</entry><entry thead="no" align='left'><para>**EF\_WDT32\_disable** (**EF\_WDT32\_TYPE\_PTR** wdt) <linebreak/>
+<emphasis>Disables the WDT32 peripheral.</emphasis>    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>**EF\_DRIVER\_STATUS**   </para>
+</entry><entry thead="no" align='left'><para>**EF\_WDT32\_enable** (**EF\_WDT32\_TYPE\_PTR** wdt) <linebreak/>
+<emphasis>Enables the WDT32 peripheral.</emphasis>    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>**EF\_DRIVER\_STATUS**   </para>
+</entry><entry thead="no" align='left'><para>**EF\_WDT32\_getIM** (**EF\_WDT32\_TYPE\_PTR** wdt, uint32_t *im) <linebreak/>
+<emphasis>Gets the interrupt mask (IM) from the WDT32 peripheral.</emphasis>    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>**EF\_DRIVER\_STATUS**   </para>
+</entry><entry thead="no" align='left'><para>**EF\_WDT32\_getMIS** (**EF\_WDT32\_TYPE\_PTR** wdt, uint32_t *mis) <linebreak/>
+<emphasis>Gets the masked interrupt status (MIS) from the WDT32 peripheral.</emphasis>    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>**EF\_DRIVER\_STATUS**   </para>
+</entry><entry thead="no" align='left'><para>**EF\_WDT32\_getRIS** (**EF\_WDT32\_TYPE\_PTR** wdt, uint32_t *ris) <linebreak/>
+<emphasis>Gets the raw interrupt status (RIS) from the WDT32 peripheral.</emphasis>    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>**EF\_DRIVER\_STATUS**   </para>
+</entry><entry thead="no" align='left'><para>**EF\_WDT32\_isTimeOut** (**EF\_WDT32\_TYPE\_PTR** wdt, uint32_t *is_timeout) <linebreak/>
+<emphasis>Checks if the WDT32 has timed out.</emphasis>    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>**EF\_DRIVER\_STATUS**   </para>
+</entry><entry thead="no" align='left'><para>**EF\_WDT32\_readTimerValue** (**EF\_WDT32\_TYPE\_PTR** wdt, uint32_t *timer_value) <linebreak/>
+<emphasis>Reads the current timer value from the WDT32 peripheral.</emphasis>    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>**EF\_DRIVER\_STATUS**   </para>
+</entry><entry thead="no" align='left'><para>**EF\_WDT32\_reloadWDT** (**EF\_WDT32\_TYPE\_PTR** wdt) <linebreak/>
+<emphasis>Reloads the WDT32 timer by disabling and re-enabling it.</emphasis>    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>**EF\_DRIVER\_STATUS**   </para>
+</entry><entry thead="no" align='left'><para>**EF\_WDT32\_setICR** (**EF\_WDT32\_TYPE\_PTR** wdt, uint32_t mask) <linebreak/>
+<emphasis>Sets the interrupt clear (IC) register in the WDT32 peripheral.</emphasis>    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>**EF\_DRIVER\_STATUS**   </para>
+</entry><entry thead="no" align='left'><para>**EF\_WDT32\_setIM** (**EF\_WDT32\_TYPE\_PTR** wdt, uint32_t mask) <linebreak/>
+<emphasis>Sets the interrupt mask (IM) in the WDT32 peripheral.</emphasis>    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>**EF\_DRIVER\_STATUS**   </para>
+</entry><entry thead="no" align='left'><para>**EF\_WDT32\_setReloadValue** (**EF\_WDT32\_TYPE\_PTR** wdt, uint32_t load_val) <linebreak/>
+<emphasis>Sets the reload value in the WDT32 peripheral.</emphasis>   </para>
+</entry></row>
+</table>
+</para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md17">
+<title>Functions Documentation</title>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md18">
+<title>function &lt;tt&gt;EF_I2C_setGclkEnable&lt;/tt&gt;</title>
+<para><emphasis>Sets the GCLK enable bit for the specified WDT32 peripheral.</emphasis> <programlisting filename=".c"><codeline><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8c_1a6f6927f4bc7e8d3687969831e8497a97" kindref="member">EF_I2C_setGclkEnable</ref><sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>value</highlight></codeline>
+<codeline><highlight class="normal">)<sp/></highlight></codeline>
+</programlisting></para>
+<para>This function enables or disables the GCLK for the WDT32 peripheral.</para>
+<para><bold>Parameters:</bold></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>wdt</computeroutput> Pointer to the WDT32 base address structure **EF\_WDT32\_TYPE\_PTR**.</para>
+</listitem><listitem><para><computeroutput>value</computeroutput> The value to set (0 to disable, 1 to enable).</para>
+</listitem></itemizedlist>
+</para>
+<para><bold>Returns:</bold></para>
+<para>status A value of type **EF\_DRIVER\_STATUS** : returns a success or error code. </para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md19">
+<title>function &lt;tt&gt;EF_WDT32_clearTimeOutFlag&lt;/tt&gt;</title>
+<para><emphasis>Clears the timeout flag in the WDT32 peripheral.</emphasis> <programlisting filename=".c"><codeline><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8c_1a724d7dc17ff1b58fdb42add0f7ce8707" kindref="member">EF_WDT32_clearTimeOutFlag</ref><sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt</highlight></codeline>
+<codeline><highlight class="normal">)<sp/></highlight></codeline>
+</programlisting></para>
+<para>This function writes to the interrupt clear register (IC) to clear the WDT timeout flag.</para>
+<para><bold>Parameters:</bold></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>wdt</computeroutput> Pointer to the WDT32 base address structure **EF\_WDT32\_TYPE\_PTR**.</para>
+</listitem></itemizedlist>
+</para>
+<para><bold>Returns:</bold></para>
+<para>status A value of type **EF\_DRIVER\_STATUS** : returns a success or error code. </para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md20">
+<title>function &lt;tt&gt;EF_WDT32_disable&lt;/tt&gt;</title>
+<para><emphasis>Disables the WDT32 peripheral.</emphasis> <programlisting filename=".c"><codeline><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8c_1a07bd55f1fdacb26adc08bd83e63a3de1" kindref="member">EF_WDT32_disable</ref><sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt</highlight></codeline>
+<codeline><highlight class="normal">)<sp/></highlight></codeline>
+</programlisting></para>
+<para>This function clears the enable bit in the control register of the WDT32 peripheral.</para>
+<para><bold>Parameters:</bold></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>wdt</computeroutput> Pointer to the WDT32 base address structure **EF\_WDT32\_TYPE\_PTR**.</para>
+</listitem></itemizedlist>
+</para>
+<para><bold>Returns:</bold></para>
+<para>status A value of type **EF\_DRIVER\_STATUS** : returns a success or error code. </para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md21">
+<title>function &lt;tt&gt;EF_WDT32_enable&lt;/tt&gt;</title>
+<para><emphasis>Enables the WDT32 peripheral.</emphasis> <programlisting filename=".c"><codeline><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8c_1a06ad40c0ae428ae3858c004d8d13d725" kindref="member">EF_WDT32_enable</ref><sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt</highlight></codeline>
+<codeline><highlight class="normal">)<sp/></highlight></codeline>
+</programlisting></para>
+<para>This function sets the enable bit in the control register of the WDT32 peripheral.</para>
+<para><bold>Parameters:</bold></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>wdt</computeroutput> Pointer to the WDT32 base address structure **EF\_WDT32\_TYPE\_PTR**.</para>
+</listitem></itemizedlist>
+</para>
+<para><bold>Returns:</bold></para>
+<para>status A value of type **EF\_DRIVER\_STATUS** : returns a success or error code. </para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md22">
+<title>function &lt;tt&gt;EF_WDT32_getIM&lt;/tt&gt;</title>
+<para><emphasis>Gets the interrupt mask (IM) from the WDT32 peripheral.</emphasis> <programlisting filename=".c"><codeline><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8c_1a6b8db048008ec7c64da0805649685ee9" kindref="member">EF_WDT32_getIM</ref><sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>*im</highlight></codeline>
+<codeline><highlight class="normal">)<sp/></highlight></codeline>
+</programlisting></para>
+<para>This function retrieves the interrupt mask (IM) from the specified WDT32 peripheral.</para>
+<para><bold>Parameters:</bold></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>wdt</computeroutput> Pointer to the WDT32 base address structure **EF\_WDT32\_TYPE\_PTR**.</para>
+</listitem><listitem><para><computeroutput>im</computeroutput> Pointer to a variable where the IM value will be stored.</para>
+</listitem></itemizedlist>
+</para>
+<para><bold>Returns:</bold></para>
+<para>status A value of type **EF\_DRIVER\_STATUS** : returns a success or error code. </para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md23">
+<title>function &lt;tt&gt;EF_WDT32_getMIS&lt;/tt&gt;</title>
+<para><emphasis>Gets the masked interrupt status (MIS) from the WDT32 peripheral.</emphasis> <programlisting filename=".c"><codeline><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8c_1a3063b72a80217098001d522e1c3977f3" kindref="member">EF_WDT32_getMIS</ref><sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>*mis</highlight></codeline>
+<codeline><highlight class="normal">)<sp/></highlight></codeline>
+</programlisting></para>
+<para>This function retrieves the masked interrupt status (MIS) from the specified WDT32 peripheral.</para>
+<para><bold>Parameters:</bold></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>wdt</computeroutput> Pointer to the WDT32 base address structure **EF\_WDT32\_TYPE\_PTR**.</para>
+</listitem><listitem><para><computeroutput>mis</computeroutput> Pointer to a variable where the MIS value will be stored.</para>
+</listitem></itemizedlist>
+</para>
+<para><bold>Returns:</bold></para>
+<para>status A value of type **EF\_DRIVER\_STATUS** : returns a success or error code. </para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md24">
+<title>function &lt;tt&gt;EF_WDT32_getRIS&lt;/tt&gt;</title>
+<para><emphasis>Gets the raw interrupt status (RIS) from the WDT32 peripheral.</emphasis> <programlisting filename=".c"><codeline><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8c_1a3e5017e26b1f75011c36b39ba391d97d" kindref="member">EF_WDT32_getRIS</ref><sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>*ris</highlight></codeline>
+<codeline><highlight class="normal">)<sp/></highlight></codeline>
+</programlisting></para>
+<para>This function retrieves the raw interrupt status (RIS) from the specified WDT32 peripheral.</para>
+<para><bold>Parameters:</bold></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>wdt</computeroutput> Pointer to the WDT32 base address structure **EF\_WDT32\_TYPE\_PTR**.</para>
+</listitem><listitem><para><computeroutput>ris</computeroutput> Pointer to a variable where the RIS value will be stored.</para>
+</listitem></itemizedlist>
+</para>
+<para><bold>Returns:</bold></para>
+<para>status A value of type **EF\_DRIVER\_STATUS** : returns a success or error code. </para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md25">
+<title>function &lt;tt&gt;EF_WDT32_isTimeOut&lt;/tt&gt;</title>
+<para><emphasis>Checks if the WDT32 has timed out.</emphasis> <programlisting filename=".c"><codeline><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8c_1aa4021705a5d400c234ef2286a54a77d2" kindref="member">EF_WDT32_isTimeOut</ref><sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>*is_timeout</highlight></codeline>
+<codeline><highlight class="normal">)<sp/></highlight></codeline>
+</programlisting></para>
+<para>This function reads the raw interrupt status (RIS) to determine if a timeout has occurred.</para>
+<para><bold>Parameters:</bold></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>wdt</computeroutput> Pointer to the WDT32 base address structure **EF\_WDT32\_TYPE\_PTR**.</para>
+</listitem><listitem><para><computeroutput>is_timeout</computeroutput> Pointer to a variable where the timeout status will be stored (1 if timeout, 0 otherwise).</para>
+</listitem></itemizedlist>
+</para>
+<para><bold>Returns:</bold></para>
+<para>status A value of type **EF\_DRIVER\_STATUS** : returns a success or error code. </para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md26">
+<title>function &lt;tt&gt;EF_WDT32_readTimerValue&lt;/tt&gt;</title>
+<para><emphasis>Reads the current timer value from the WDT32 peripheral.</emphasis> <programlisting filename=".c"><codeline><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8c_1a070bae4e509f7ff44bde19c4395c1f13" kindref="member">EF_WDT32_readTimerValue</ref><sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>*timer_value</highlight></codeline>
+<codeline><highlight class="normal">)<sp/></highlight></codeline>
+</programlisting></para>
+<para>This function retrieves the current value of the timer register in the specified WDT32 peripheral.</para>
+<para><bold>Parameters:</bold></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>wdt</computeroutput> Pointer to the WDT32 base address structure **EF\_WDT32\_TYPE\_PTR**.</para>
+</listitem><listitem><para><computeroutput>timer_value</computeroutput> Pointer to a variable where the current timer value will be stored.</para>
+</listitem></itemizedlist>
+</para>
+<para><bold>Returns:</bold></para>
+<para>status A value of type **EF\_DRIVER\_STATUS** : returns a success or error code. </para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md27">
+<title>function &lt;tt&gt;EF_WDT32_reloadWDT&lt;/tt&gt;</title>
+<para><emphasis>Reloads the WDT32 timer by disabling and re-enabling it.</emphasis> <programlisting filename=".c"><codeline><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8c_1a5ad03a1924b7771fd1d01c636899e0ea" kindref="member">EF_WDT32_reloadWDT</ref><sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt</highlight></codeline>
+<codeline><highlight class="normal">)<sp/></highlight></codeline>
+</programlisting></para>
+<para>This function clears the timeout flag, disables the WDT32, and then re-enables it.</para>
+<para><bold>Parameters:</bold></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>wdt</computeroutput> Pointer to the WDT32 base address structure **EF\_WDT32\_TYPE\_PTR**.</para>
+</listitem></itemizedlist>
+</para>
+<para><bold>Returns:</bold></para>
+<para>status A value of type **EF\_DRIVER\_STATUS** : returns a success or error code. </para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md28">
+<title>function &lt;tt&gt;EF_WDT32_setICR&lt;/tt&gt;</title>
+<para><emphasis>Sets the interrupt clear (IC) register in the WDT32 peripheral.</emphasis> <programlisting filename=".c"><codeline><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8c_1a7e76af97caf95f02df56665edb433b86" kindref="member">EF_WDT32_setICR</ref><sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>mask</highlight></codeline>
+<codeline><highlight class="normal">)<sp/></highlight></codeline>
+</programlisting></para>
+<para>This function sets the interrupt clear (IC) register in the specified WDT32 peripheral to clear interrupts.</para>
+<para><bold>Parameters:</bold></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>wdt</computeroutput> Pointer to the WDT32 base address structure **EF\_WDT32\_TYPE\_PTR**.</para>
+</listitem><listitem><para><computeroutput>mask</computeroutput> The value to be written to the interrupt clear (IC) register.</para>
+</listitem></itemizedlist>
+</para>
+<para><bold>Returns:</bold></para>
+<para>status A value of type **EF\_DRIVER\_STATUS** : returns a success or error code. </para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md29">
+<title>function &lt;tt&gt;EF_WDT32_setIM&lt;/tt&gt;</title>
+<para><emphasis>Sets the interrupt mask (IM) in the WDT32 peripheral.</emphasis> <programlisting filename=".c"><codeline><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8c_1a7bb77b2c466435c20e5fb6bf7391f723" kindref="member">EF_WDT32_setIM</ref><sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>mask</highlight></codeline>
+<codeline><highlight class="normal">)<sp/></highlight></codeline>
+</programlisting></para>
+<para>This function sets the interrupt mask (IM) register in the specified WDT32 peripheral.</para>
+<para><bold>Parameters:</bold></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>wdt</computeroutput> Pointer to the WDT32 base address structure **EF\_WDT32\_TYPE\_PTR**.</para>
+</listitem><listitem><para><computeroutput>mask</computeroutput> The value to be written to the interrupt mask (IM) register.</para>
+</listitem></itemizedlist>
+</para>
+<para><bold>Returns:</bold></para>
+<para>status A value of type **EF\_DRIVER\_STATUS** : returns a success or error code. </para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md30">
+<title>function &lt;tt&gt;EF_WDT32_setReloadValue&lt;/tt&gt;</title>
+<para><emphasis>Sets the reload value in the WDT32 peripheral.</emphasis> <programlisting filename=".c"><codeline><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8c_1a939788c900140f759e334e4459d4b958" kindref="member">EF_WDT32_setReloadValue</ref><sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>load_val</highlight></codeline>
+<codeline><highlight class="normal">)<sp/></highlight></codeline>
+</programlisting></para>
+<para>This function sets the reload value in the load register of the specified WDT32 peripheral.</para>
+<para><bold>Parameters:</bold></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>wdt</computeroutput> Pointer to the WDT32 base address structure **EF\_WDT32\_TYPE\_PTR**.</para>
+</listitem><listitem><para><computeroutput>load_val</computeroutput> The value to be loaded into the WDT32 reload register.</para>
+</listitem></itemizedlist>
+</para>
+<para><bold>Returns:</bold></para>
+<para>status A value of type **EF\_DRIVER\_STATUS** : returns a success or error code.</para>
+</sect2>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md31">
+<title>File EF_WDT32_example.h</title>
+<para><emphasis>C header file containing an example of how to use the WDT32 APIs.</emphasis></para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md32">
+<title>Functions</title>
+<para><table rows="2" cols="2"><row>
+<entry thead="yes" align='right'><para>Type   </para>
+</entry><entry thead="yes" align='left'><para>Name    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>**EF\_DRIVER\_STATUS**   </para>
+</entry><entry thead="no" align='left'><para>**EF\_WDT32\_example** (void) <linebreak/>
+<emphasis>Example Usage Example usage:</emphasis>   </para>
+</entry></row>
+</table>
+</para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md33">
+<title>Functions Documentation</title>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md34">
+<title>function &lt;tt&gt;EF_WDT32_example&lt;/tt&gt;</title>
+<para><emphasis>Example Usage Example usage:</emphasis> <programlisting filename=".c"><codeline><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32__example_8c_1a8709c6d249b2cd0b4f14b2f83c7ee3bd" kindref="member">EF_WDT32_example</ref><sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">)<sp/></highlight></codeline>
+</programlisting></para>
+<para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_e_f___w_d_t32_8h" kindref="compound">EF_WDT32.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Example_WDT32_BASE_ADDRESS<sp/>0x40000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WDT0<sp/>((EF_WDT32_TYPE_PTR)Example_WDT32_BASE_ADDRESS)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32__example_8c_1a8709c6d249b2cd0b4f14b2f83c7ee3bd" kindref="member">EF_WDT32_example</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/>status;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>timer_value;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>timeout_status;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Step<sp/>1:<sp/>Enable<sp/>the<sp/>Watchdog<sp/>Timer<sp/>(WDT0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="_e_f___w_d_t32_8c_1a06ad40c0ae428ae3858c004d8d13d725" kindref="member">EF_WDT32_enable</ref>(<ref refid="_e_f___w_d_t32__example_8c_1a09d9e73511b524c49ca77eec8f988678" kindref="member">WDT0</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status<sp/>!=<sp/><ref refid="_e_f___driver___common_8h_1ab56c746d5d1672835c101f00f7c90b7c" kindref="member">EF_DRIVER_OK</ref>)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status;}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Step<sp/>2:<sp/>Set<sp/>the<sp/>reload<sp/>value<sp/>to<sp/>prevent<sp/>timeout</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="_e_f___w_d_t32_8c_1a939788c900140f759e334e4459d4b958" kindref="member">EF_WDT32_setReloadValue</ref>(<ref refid="_e_f___w_d_t32__example_8c_1a09d9e73511b524c49ca77eec8f988678" kindref="member">WDT0</ref>,<sp/>0x0FFFFF);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status<sp/>!=<sp/><ref refid="_e_f___driver___common_8h_1ab56c746d5d1672835c101f00f7c90b7c" kindref="member">EF_DRIVER_OK</ref>)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status;}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Step<sp/>3:<sp/>Simulate<sp/>some<sp/>processing</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>1000000;<sp/>++i);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Step<sp/>4:<sp/>Check<sp/>if<sp/>the<sp/>WDT0<sp/>has<sp/>timed<sp/>out</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="_e_f___w_d_t32_8c_1aa4021705a5d400c234ef2286a54a77d2" kindref="member">EF_WDT32_isTimeOut</ref>(<ref refid="_e_f___w_d_t32__example_8c_1a09d9e73511b524c49ca77eec8f988678" kindref="member">WDT0</ref>,<sp/>&amp;timeout_status);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status<sp/>!=<sp/><ref refid="_e_f___driver___common_8h_1ab56c746d5d1672835c101f00f7c90b7c" kindref="member">EF_DRIVER_OK</ref>)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status;}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Step<sp/>5:<sp/>If<sp/>a<sp/>timeout<sp/>occurred,<sp/>handle<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(timeout_status<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Clear<sp/>the<sp/>timeout<sp/>flag<sp/>to<sp/>acknowledge<sp/>the<sp/>timeout</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="_e_f___w_d_t32_8c_1a724d7dc17ff1b58fdb42add0f7ce8707" kindref="member">EF_WDT32_clearTimeOutFlag</ref>(<ref refid="_e_f___w_d_t32__example_8c_1a09d9e73511b524c49ca77eec8f988678" kindref="member">WDT0</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status<sp/>!=<sp/><ref refid="_e_f___driver___common_8h_1ab56c746d5d1672835c101f00f7c90b7c" kindref="member">EF_DRIVER_OK</ref>)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status;}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reload<sp/>the<sp/>WDT0<sp/>to<sp/>prevent<sp/>a<sp/>system<sp/>reset</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="_e_f___w_d_t32_8c_1a5ad03a1924b7771fd1d01c636899e0ea" kindref="member">EF_WDT32_reloadWDT</ref>(<ref refid="_e_f___w_d_t32__example_8c_1a09d9e73511b524c49ca77eec8f988678" kindref="member">WDT0</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status<sp/>!=<sp/><ref refid="_e_f___driver___common_8h_1ab56c746d5d1672835c101f00f7c90b7c" kindref="member">EF_DRIVER_OK</ref>)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status;}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Step<sp/>6:<sp/>Read<sp/>the<sp/>current<sp/>timer<sp/>value<sp/>to<sp/>see<sp/>if<sp/>it<sp/>is<sp/>still<sp/>running</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="_e_f___w_d_t32_8c_1a070bae4e509f7ff44bde19c4395c1f13" kindref="member">EF_WDT32_readTimerValue</ref>(<ref refid="_e_f___w_d_t32__example_8c_1a09d9e73511b524c49ca77eec8f988678" kindref="member">WDT0</ref>,<sp/>&amp;timer_value);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status<sp/>!=<sp/><ref refid="_e_f___driver___common_8h_1ab56c746d5d1672835c101f00f7c90b7c" kindref="member">EF_DRIVER_OK</ref>)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status;}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Step<sp/>7:<sp/>Simulate<sp/>some<sp/>more<sp/>processing</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>1000000;<sp/>++i);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Step<sp/>8:<sp/>Disable<sp/>the<sp/>Watchdog<sp/>Timer</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="_e_f___w_d_t32_8c_1a07bd55f1fdacb26adc08bd83e63a3de1" kindref="member">EF_WDT32_disable</ref>(<ref refid="_e_f___w_d_t32__example_8c_1a09d9e73511b524c49ca77eec8f988678" kindref="member">WDT0</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status<sp/>!=<sp/><ref refid="_e_f___driver___common_8h_1ab56c746d5d1672835c101f00f7c90b7c" kindref="member">EF_DRIVER_OK</ref>)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status;}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_e_f___driver___common_8h_1ab56c746d5d1672835c101f00f7c90b7c" kindref="member">EF_DRIVER_OK</ref>;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+</sect2>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md35">
+<title>File EF_WDT32_regs.h</title>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md36">
+<title>Structures and Types</title>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes" align='right'><para>Type   </para>
+</entry><entry thead="yes" align='left'><para>Name    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>typedef struct **\_EF\_WDT32\_TYPE\_**   </para>
+</entry><entry thead="no" align='left'><para>**EF\_WDT32\_TYPE** <linebreak/>
+    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>typedef **EF\_WDT32\_TYPE** *   </para>
+</entry><entry thead="no" align='left'><para>**EF\_WDT32\_TYPE\_PTR** <linebreak/>
+    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>struct   </para>
+</entry><entry thead="no" align='left'><para>**\_EF\_WDT32\_TYPE\_** <linebreak/>
+   </para>
+</entry></row>
+</table>
+</para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md37">
+<title>Macros</title>
+<para><table rows="7" cols="2"><row>
+<entry thead="yes" align='right'><para>Type   </para>
+</entry><entry thead="yes" align='left'><para>Name    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>define   </para>
+</entry><entry thead="no" align='left'><para>**EF\_WDT32\_CTRL\_EN\_MASK** ((uint32_t)0x1)<linebreak/>
+    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>define   </para>
+</entry><entry thead="no" align='left'><para>**EF\_WDT32\_WDTTO\_FLAG** ((uint32_t)0x1)<linebreak/>
+    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>define   </para>
+</entry><entry thead="no" align='left'><para>**IO\_TYPES** <linebreak/>
+    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>define   </para>
+</entry><entry thead="no" align='left'><para>**\_\_R** volatile const uint32_t<linebreak/>
+    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>define   </para>
+</entry><entry thead="no" align='left'><para>**\_\_RW** volatile uint32_t<linebreak/>
+    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>define   </para>
+</entry><entry thead="no" align='left'><para>**\_\_W** volatile uint32_t<linebreak/>
+   </para>
+</entry></row>
+</table>
+</para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md38">
+<title>Structures and Types Documentation</title>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md39">
+<title>typedef &lt;tt&gt;EF_WDT32_TYPE&lt;/tt&gt;</title>
+<para><programlisting filename=".c"><codeline><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">_EF_WDT32_TYPE_</ref><sp/><ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE</ref>;</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md40">
+<title>typedef &lt;tt&gt;EF_WDT32_TYPE_PTR&lt;/tt&gt;</title>
+<para><programlisting filename=".c"><codeline><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE</ref>*<sp/><ref refid="_e_f___w_d_t32__regs_8h_1a7025a25691b7b7e9932da8b0c51d137c" kindref="member">EF_WDT32_TYPE_PTR</ref>;</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md41">
+<title>struct &lt;tt&gt;_EF_WDT32_TYPE_&lt;/tt&gt;</title>
+<para>Variables:</para>
+<para><itemizedlist>
+<listitem><para>**\_\_W** GCLK <linebreak/>
+</para>
+</listitem><listitem><para>**\_\_W** IC <linebreak/>
+</para>
+</listitem><listitem><para>**\_\_RW** IM <linebreak/>
+</para>
+</listitem><listitem><para>**\_\_R** MIS <linebreak/>
+</para>
+</listitem><listitem><para>**\_\_R** RIS <linebreak/>
+</para>
+</listitem><listitem><para>**\_\_W** control <linebreak/>
+</para>
+</listitem><listitem><para>**\_\_W** load <linebreak/>
+</para>
+</listitem><listitem><para>**\_\_R** reserved_0 <linebreak/>
+</para>
+</listitem><listitem><para>**\_\_R** timer <linebreak/>
+</para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md42">
+<title>Macros Documentation</title>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md43">
+<title>define &lt;tt&gt;EF_WDT32_CTRL_EN_MASK&lt;/tt&gt;</title>
+<para><programlisting filename=".c"><codeline><highlight class="preprocessor">#define<sp/>EF_WDT32_CTRL_EN_MASK<sp/>((uint32_t)0x1)</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md44">
+<title>define &lt;tt&gt;EF_WDT32_WDTTO_FLAG&lt;/tt&gt;</title>
+<para><programlisting filename=".c"><codeline><highlight class="preprocessor">#define<sp/>EF_WDT32_WDTTO_FLAG<sp/>((uint32_t)0x1)</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md45">
+<title>define &lt;tt&gt;IO_TYPES&lt;/tt&gt;</title>
+<para><programlisting filename=".c"><codeline><highlight class="preprocessor">#define<sp/>IO_TYPES<sp/></highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md46">
+<title>define &lt;tt&gt;__R&lt;/tt&gt;</title>
+<para><programlisting filename=".c"><codeline><highlight class="preprocessor">#define<sp/>__R<sp/>volatile<sp/>const<sp/>uint32_t</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md47">
+<title>define &lt;tt&gt;__RW&lt;/tt&gt;</title>
+<para><programlisting filename=".c"><codeline><highlight class="preprocessor">#define<sp/>__RW<sp/>volatile<sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md48">
+<title>define &lt;tt&gt;__W&lt;/tt&gt;</title>
+<para><programlisting filename=".c"><codeline><highlight class="preprocessor">#define<sp/>__W<sp/>volatile<sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t</highlight></codeline>
+</programlisting> </para>
+</sect2>
+</sect1>
+    </detaileddescription>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

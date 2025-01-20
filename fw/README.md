@@ -4,6 +4,7 @@
 
 - [EF_Driver_Common.h](#file-ef_driver_commonh)
 - [EF_WDT32.h](#file-ef_wdt32h)
+- [EF_WDT32_example.h](#file-ef_wdt32_exampleh)
 - [EF_WDT32_regs.h](#file-ef_wdt32_regsh)
 
 ## File EF_Driver_Common.h
@@ -440,6 +441,85 @@ This function sets the reload value in the load register of the specified WDT32 
 **Returns:**
 
 status A value of type [**EF\_DRIVER\_STATUS**](#typedef-ef_driver_status) : returns a success or error code.
+
+
+## File EF_WDT32_example.h
+
+_C header file containing an example of how to use the WDT32 APIs._
+
+
+
+
+## Functions
+
+| Type | Name |
+| ---: | :--- |
+|  [**EF\_DRIVER\_STATUS**](#typedef-ef_driver_status) | [**EF\_WDT32\_example**](#function-ef_wdt32_example) (void) <br>_Example Usage Example usage:_ |
+
+
+
+## Functions Documentation
+
+### function `EF_WDT32_example`
+
+_Example Usage Example usage:_
+```c
+EF_DRIVER_STATUS EF_WDT32_example (
+    void
+) 
+```
+
+
+````cpp
+#include "EF_WDT32.h"
+#define Example_WDT32_BASE_ADDRESS 0x40000000
+#define WDT0 ((EF_WDT32_TYPE_PTR)Example_WDT32_BASE_ADDRESS)
+
+EF_DRIVER_STATUS EF_WDT32_example(void) {
+    EF_DRIVER_STATUS status;
+    uint32_t timer_value;
+    uint32_t timeout_status;
+
+    // Step 1: Enable the Watchdog Timer (WDT0)
+    status = EF_WDT32_enable(WDT0);
+    if (status != EF_DRIVER_OK) {return status;}
+
+    // Step 2: Set the reload value to prevent timeout
+    status = EF_WDT32_setReloadValue(WDT0, 0x0FFFFF);
+    if (status != EF_DRIVER_OK) {return status;}
+
+    // Step 3: Simulate some processing
+    for (volatile int i = 0; i < 1000000; ++i);
+
+    // Step 4: Check if the WDT0 has timed out
+    status = EF_WDT32_isTimeOut(WDT0, &timeout_status);
+    if (status != EF_DRIVER_OK) {return status;}
+
+    // Step 5: If a timeout occurred, handle it
+    if (timeout_status == 1) {
+        // Clear the timeout flag to acknowledge the timeout
+        status = EF_WDT32_clearTimeOutFlag(WDT0);
+        if (status != EF_DRIVER_OK) {return status;}
+
+        // Reload the WDT0 to prevent a system reset
+        status = EF_WDT32_reloadWDT(WDT0);
+        if (status != EF_DRIVER_OK) {return status;}
+    }
+
+    // Step 6: Read the current timer value to see if it is still running
+    status = EF_WDT32_readTimerValue(WDT0, &timer_value);
+    if (status != EF_DRIVER_OK) {return status;}
+
+    // Step 7: Simulate some more processing
+    for (volatile int i = 0; i < 1000000; ++i);
+
+    // Step 8: Disable the Watchdog Timer
+    status = EF_WDT32_disable(WDT0);
+    if (status != EF_DRIVER_OK) {return status;}
+
+    return EF_DRIVER_OK;
+}
+````
 
 
 ## File EF_WDT32_regs.h

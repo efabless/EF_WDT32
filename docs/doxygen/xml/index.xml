@@ -52,6 +52,15 @@
     <member refid="_e_f___w_d_t32_8h_1a724d7dc17ff1b58fdb42add0f7ce8707" kind="function"><name>EF_WDT32_clearTimeOutFlag</name></member>
     <member refid="_e_f___w_d_t32_8h_1aa4021705a5d400c234ef2286a54a77d2" kind="function"><name>EF_WDT32_isTimeOut</name></member>
   </compound>
+  <compound refid="_e_f___w_d_t32__example_8c" kind="file"><name>EF_WDT32_example.c</name>
+    <member refid="_e_f___w_d_t32__example_8c_1af61f41915b914d01083ec40e8a4930b1" kind="define"><name>EF_WDT32_EXAMPLE_C</name></member>
+    <member refid="_e_f___w_d_t32__example_8c_1a0e8238d8f419ad1436060255981966e2" kind="define"><name>Example_WDT32_BASE_ADDRESS</name></member>
+    <member refid="_e_f___w_d_t32__example_8c_1a09d9e73511b524c49ca77eec8f988678" kind="define"><name>WDT0</name></member>
+    <member refid="_e_f___w_d_t32__example_8c_1a8709c6d249b2cd0b4f14b2f83c7ee3bd" kind="function"><name>EF_WDT32_example</name></member>
+  </compound>
+  <compound refid="_e_f___w_d_t32__example_8h" kind="file"><name>EF_WDT32_example.h</name>
+    <member refid="_e_f___w_d_t32__example_8h_1a8709c6d249b2cd0b4f14b2f83c7ee3bd" kind="function"><name>EF_WDT32_example</name></member>
+  </compound>
   <compound refid="_e_f___w_d_t32__regs_8h" kind="file"><name>EF_WDT32_regs.h</name>
     <member refid="_e_f___w_d_t32__regs_8h_1a470cd5845bed94d8b8b358933e4a3442" kind="define"><name>IO_TYPES</name></member>
     <member refid="_e_f___w_d_t32__regs_8h_1aef00c279597b188e4cdd14d288ddf77a" kind="define"><name>__R</name></member>
@@ -61,5 +70,9 @@
     <member refid="_e_f___w_d_t32__regs_8h_1ac1ec56bd03f45cbdb8ae8356f90f79f7" kind="define"><name>EF_WDT32_CTRL_EN_MASK</name></member>
     <member refid="_e_f___w_d_t32__regs_8h_1ad85812f9899d3b7b40344acb0a9dad00" kind="typedef"><name>EF_WDT32_TYPE</name></member>
     <member refid="_e_f___w_d_t32__regs_8h_1a7025a25691b7b7e9932da8b0c51d137c" kind="typedef"><name>EF_WDT32_TYPE_PTR</name></member>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="md__r_e_a_d_m_e" kind="page"><name>md_README</name>
   </compound>
 </doxygenindex>

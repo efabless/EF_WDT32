@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="_e_f___w_d_t32__example_8c" kind="file" language="C++">
+    <compoundname>EF_WDT32_example.c</compoundname>
+    <includes refid="_e_f___w_d_t32__example_8h" local="yes">EF_WDT32_example.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>EF_Driver_Common.h</label>
+        <link refid="_e_f___driver___common_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>EF_WDT32.h</label>
+        <link refid="_e_f___w_d_t32_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>EF_WDT32_example.c</label>
+        <link refid="_e_f___w_d_t32__example_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>EF_WDT32_example.h</label>
+        <link refid="_e_f___w_d_t32__example_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>EF_WDT32_regs.h</label>
+        <link refid="_e_f___w_d_t32__regs_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>stdbool.h</label>
+      </node>
+      <node id="8">
+        <label>stddef.h</label>
+      </node>
+      <node id="6">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_e_f___w_d_t32__example_8c_1af61f41915b914d01083ec40e8a4930b1" prot="public" static="no">
+        <name>EF_WDT32_EXAMPLE_C</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EF_WDT32_example.c" line="27" column="9" bodyfile="EF_WDT32_example.c" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_f___w_d_t32__example_8c_1a0e8238d8f419ad1436060255981966e2" prot="public" static="no">
+        <name>Example_WDT32_BASE_ADDRESS</name>
+        <initializer>0x40000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EF_WDT32_example.c" line="37" column="9" bodyfile="EF_WDT32_example.c" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_f___w_d_t32__example_8c_1a09d9e73511b524c49ca77eec8f988678" prot="public" static="no">
+        <name>WDT0</name>
+        <initializer>((<ref refid="_e_f___w_d_t32__regs_8h_1a7025a25691b7b7e9932da8b0c51d137c" kindref="member">EF_WDT32_TYPE_PTR</ref>)<ref refid="_e_f___w_d_t32__example_8c_1a0e8238d8f419ad1436060255981966e2" kindref="member">Example_WDT32_BASE_ADDRESS</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EF_WDT32_example.c" line="38" column="9" bodyfile="EF_WDT32_example.c" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_e_f___w_d_t32__example_8c_1a8709c6d249b2cd0b4f14b2f83c7ee3bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref></type>
+        <definition>EF_DRIVER_STATUS EF_WDT32_example</definition>
+        <argsstring>(void)</argsstring>
+        <name>EF_WDT32_example</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Example Usage Example usage: </para>
+        </briefdescription>
+        <detaileddescription>
+<para><programlisting><codeline><highlight class="normal">#include<sp/>&quot;EF_WDT32.h&quot;</highlight></codeline>
+<codeline><highlight class="normal">#define<sp/>Example_WDT32_BASE_ADDRESS<sp/>0x40000000</highlight></codeline>
+<codeline><highlight class="normal">#define<sp/>WDT0<sp/>((EF_WDT32_TYPE_PTR)Example_WDT32_BASE_ADDRESS)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">EF_DRIVER_STATUS<sp/>EF_WDT32_example(void)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>EF_DRIVER_STATUS<sp/>status;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>timer_value;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>timeout_status;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Step<sp/>1:<sp/>Enable<sp/>the<sp/>Watchdog<sp/>Timer<sp/>(WDT0)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/>EF_WDT32_enable(WDT0);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(status<sp/>!=<sp/>EF_DRIVER_OK)<sp/>{return<sp/>status;}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Step<sp/>2:<sp/>Set<sp/>the<sp/>reload<sp/>value<sp/>to<sp/>prevent<sp/>timeout</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/>EF_WDT32_setReloadValue(WDT0,<sp/>0x0FFFFF);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(status<sp/>!=<sp/>EF_DRIVER_OK)<sp/>{return<sp/>status;}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Step<sp/>3:<sp/>Simulate<sp/>some<sp/>processing</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>for<sp/>(volatile<sp/>int<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>1000000;<sp/>++i);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Step<sp/>4:<sp/>Check<sp/>if<sp/>the<sp/>WDT0<sp/>has<sp/>timed<sp/>out</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/>EF_WDT32_isTimeOut(WDT0,<sp/>&amp;timeout_status);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(status<sp/>!=<sp/>EF_DRIVER_OK)<sp/>{return<sp/>status;}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Step<sp/>5:<sp/>If<sp/>a<sp/>timeout<sp/>occurred,<sp/>handle<sp/>it</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(timeout_status<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Clear<sp/>the<sp/>timeout<sp/>flag<sp/>to<sp/>acknowledge<sp/>the<sp/>timeout</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/>EF_WDT32_clearTimeOutFlag(WDT0);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(status<sp/>!=<sp/>EF_DRIVER_OK)<sp/>{return<sp/>status;}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Reload<sp/>the<sp/>WDT0<sp/>to<sp/>prevent<sp/>a<sp/>system<sp/>reset</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/>EF_WDT32_reloadWDT(WDT0);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(status<sp/>!=<sp/>EF_DRIVER_OK)<sp/>{return<sp/>status;}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Step<sp/>6:<sp/>Read<sp/>the<sp/>current<sp/>timer<sp/>value<sp/>to<sp/>see<sp/>if<sp/>it<sp/>is<sp/>still<sp/>running</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/>EF_WDT32_readTimerValue(WDT0,<sp/>&amp;timer_value);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(status<sp/>!=<sp/>EF_DRIVER_OK)<sp/>{return<sp/>status;}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Step<sp/>7:<sp/>Simulate<sp/>some<sp/>more<sp/>processing</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>for<sp/>(volatile<sp/>int<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>1000000;<sp/>++i);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Step<sp/>8:<sp/>Disable<sp/>the<sp/>Watchdog<sp/>Timer</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/>EF_WDT32_disable(WDT0);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(status<sp/>!=<sp/>EF_DRIVER_OK)<sp/>{return<sp/>status;}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>EF_DRIVER_OK;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EF_WDT32_example.c" line="58" column="18" bodyfile="EF_WDT32_example.c" bodystart="58" bodyend="101"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>C file containing an example of how to use the WDT32 APIs. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>Copyright<sp/>2025<sp/>Efabless<sp/>Corp.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EF_WDT32_EXAMPLE_C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EF_WDT32_EXAMPLE_C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">*<sp/>Includes</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_e_f___w_d_t32__example_8h" kindref="compound">EF_WDT32_example.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">*<sp/>File-Specific<sp/>Macros<sp/>and<sp/>Constants</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Example_WDT32_BASE_ADDRESS<sp/>0x40000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WDT0<sp/>((EF_WDT32_TYPE_PTR)Example_WDT32_BASE_ADDRESS)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">*<sp/>Static<sp/>Variables</highlight></codeline>
+<codeline lineno="43"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="48"><highlight class="comment">*<sp/>Static<sp/>Function<sp/>Prototypes</highlight></codeline>
+<codeline lineno="49"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="54"><highlight class="comment">*<sp/>Function<sp/>Definitions</highlight></codeline>
+<codeline lineno="55"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32__example_8c_1a8709c6d249b2cd0b4f14b2f83c7ee3bd" kindref="member">EF_WDT32_example</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/>status;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>timer_value;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>timeout_status;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Step<sp/>1:<sp/>Enable<sp/>the<sp/>Watchdog<sp/>Timer<sp/>(WDT0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="_e_f___w_d_t32_8c_1a06ad40c0ae428ae3858c004d8d13d725" kindref="member">EF_WDT32_enable</ref>(<ref refid="_e_f___w_d_t32__example_8c_1a09d9e73511b524c49ca77eec8f988678" kindref="member">WDT0</ref>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status<sp/>!=<sp/><ref refid="_e_f___driver___common_8h_1ab56c746d5d1672835c101f00f7c90b7c" kindref="member">EF_DRIVER_OK</ref>)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status;}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Step<sp/>2:<sp/>Set<sp/>the<sp/>reload<sp/>value<sp/>to<sp/>prevent<sp/>timeout</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="_e_f___w_d_t32_8c_1a939788c900140f759e334e4459d4b958" kindref="member">EF_WDT32_setReloadValue</ref>(<ref refid="_e_f___w_d_t32__example_8c_1a09d9e73511b524c49ca77eec8f988678" kindref="member">WDT0</ref>,<sp/>0x0FFFFF);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status<sp/>!=<sp/><ref refid="_e_f___driver___common_8h_1ab56c746d5d1672835c101f00f7c90b7c" kindref="member">EF_DRIVER_OK</ref>)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status;}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Step<sp/>3:<sp/>Simulate<sp/>some<sp/>processing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>1000000;<sp/>++i);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Step<sp/>4:<sp/>Check<sp/>if<sp/>the<sp/>WDT0<sp/>has<sp/>timed<sp/>out</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="_e_f___w_d_t32_8c_1aa4021705a5d400c234ef2286a54a77d2" kindref="member">EF_WDT32_isTimeOut</ref>(<ref refid="_e_f___w_d_t32__example_8c_1a09d9e73511b524c49ca77eec8f988678" kindref="member">WDT0</ref>,<sp/>&amp;timeout_status);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status<sp/>!=<sp/><ref refid="_e_f___driver___common_8h_1ab56c746d5d1672835c101f00f7c90b7c" kindref="member">EF_DRIVER_OK</ref>)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status;}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Step<sp/>5:<sp/>If<sp/>a<sp/>timeout<sp/>occurred,<sp/>handle<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(timeout_status<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Clear<sp/>the<sp/>timeout<sp/>flag<sp/>to<sp/>acknowledge<sp/>the<sp/>timeout</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="_e_f___w_d_t32_8c_1a724d7dc17ff1b58fdb42add0f7ce8707" kindref="member">EF_WDT32_clearTimeOutFlag</ref>(<ref refid="_e_f___w_d_t32__example_8c_1a09d9e73511b524c49ca77eec8f988678" kindref="member">WDT0</ref>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status<sp/>!=<sp/><ref refid="_e_f___driver___common_8h_1ab56c746d5d1672835c101f00f7c90b7c" kindref="member">EF_DRIVER_OK</ref>)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status;}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reload<sp/>the<sp/>WDT0<sp/>to<sp/>prevent<sp/>a<sp/>system<sp/>reset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="_e_f___w_d_t32_8c_1a5ad03a1924b7771fd1d01c636899e0ea" kindref="member">EF_WDT32_reloadWDT</ref>(<ref refid="_e_f___w_d_t32__example_8c_1a09d9e73511b524c49ca77eec8f988678" kindref="member">WDT0</ref>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status<sp/>!=<sp/><ref refid="_e_f___driver___common_8h_1ab56c746d5d1672835c101f00f7c90b7c" kindref="member">EF_DRIVER_OK</ref>)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status;}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Step<sp/>6:<sp/>Read<sp/>the<sp/>current<sp/>timer<sp/>value<sp/>to<sp/>see<sp/>if<sp/>it<sp/>is<sp/>still<sp/>running</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="_e_f___w_d_t32_8c_1a070bae4e509f7ff44bde19c4395c1f13" kindref="member">EF_WDT32_readTimerValue</ref>(<ref refid="_e_f___w_d_t32__example_8c_1a09d9e73511b524c49ca77eec8f988678" kindref="member">WDT0</ref>,<sp/>&amp;timer_value);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status<sp/>!=<sp/><ref refid="_e_f___driver___common_8h_1ab56c746d5d1672835c101f00f7c90b7c" kindref="member">EF_DRIVER_OK</ref>)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status;}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Step<sp/>7:<sp/>Simulate<sp/>some<sp/>more<sp/>processing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>1000000;<sp/>++i);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Step<sp/>8:<sp/>Disable<sp/>the<sp/>Watchdog<sp/>Timer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="_e_f___w_d_t32_8c_1a07bd55f1fdacb26adc08bd83e63a3de1" kindref="member">EF_WDT32_disable</ref>(<ref refid="_e_f___w_d_t32__example_8c_1a09d9e73511b524c49ca77eec8f988678" kindref="member">WDT0</ref>);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status<sp/>!=<sp/><ref refid="_e_f___driver___common_8h_1ab56c746d5d1672835c101f00f7c90b7c" kindref="member">EF_DRIVER_OK</ref>)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status;}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_e_f___driver___common_8h_1ab56c746d5d1672835c101f00f7c90b7c" kindref="member">EF_DRIVER_OK</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="104"><highlight class="comment">*<sp/>Static<sp/>Function<sp/>Definitions</highlight></codeline>
+<codeline lineno="105"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>EF_WDT32_EXAMPLE_C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="112"><highlight class="comment">*<sp/>End<sp/>of<sp/>File</highlight></codeline>
+<codeline lineno="113"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="EF_WDT32_example.c"/>
+  </compounddef>
+</doxygen>
