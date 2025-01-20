@@ -60,22 +60,30 @@ EF_DRIVER_STATUS EF_WDT32_example(void) {
     uint32_t timer_value;
     uint32_t timeout_status;
 
-    // Step 1: Enable the Watchdog Timer (WDT0)
+
+    // Step 1: Enable the clock gate for the WDT0 peripheral
+    status = EF_WDT32_setGclkEnable(WDT0, 1);
+    if (status != EF_DRIVER_OK) {return status;}
+
+
+    // Step 2: Enable the Watchdog Timer (WDT0)
+
     status = EF_WDT32_enable(WDT0);
     if (status != EF_DRIVER_OK) {return status;}
 
-    // Step 2: Set the reload value to prevent timeout
+
+    // Step 3: Set the reload value to prevent timeout
     status = EF_WDT32_setReloadValue(WDT0, 0x0FFFFF);
     if (status != EF_DRIVER_OK) {return status;}
 
-    // Step 3: Simulate some processing
+    // Step 4: Simulate some processing
     for (volatile int i = 0; i < 1000000; ++i);
 
-    // Step 4: Check if the WDT0 has timed out
+    // Step 5: Check if the WDT0 has timed out
     status = EF_WDT32_isTimeOut(WDT0, &timeout_status);
     if (status != EF_DRIVER_OK) {return status;}
 
-    // Step 5: If a timeout occurred, handle it
+    // Step 6: If a timeout occurred, handle it
     if (timeout_status == 1) {
         // Clear the timeout flag to acknowledge the timeout
         status = EF_WDT32_clearTimeOutFlag(WDT0);
@@ -86,14 +94,14 @@ EF_DRIVER_STATUS EF_WDT32_example(void) {
         if (status != EF_DRIVER_OK) {return status;}
     }
 
-    // Step 6: Read the current timer value to see if it is still running
+    // Step 7: Read the current timer value to see if it is still running
     status = EF_WDT32_readTimerValue(WDT0, &timer_value);
     if (status != EF_DRIVER_OK) {return status;}
 
-    // Step 7: Simulate some more processing
+    // Step 8: Simulate some more processing
     for (volatile int i = 0; i < 1000000; ++i);
 
-    // Step 8: Disable the Watchdog Timer
+    // Step 9: Disable the Watchdog Timer
     status = EF_WDT32_disable(WDT0);
     if (status != EF_DRIVER_OK) {return status;}
 

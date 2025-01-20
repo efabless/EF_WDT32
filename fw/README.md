@@ -116,6 +116,7 @@ _H header file for EF\_WDT32 APIs which contains the function prototypes._
 |  [**EF\_DRIVER\_STATUS**](#typedef-ef_driver_status) | [**EF\_WDT32\_isTimeOut**](#function-ef_wdt32_istimeout) ([**EF\_WDT32\_TYPE\_PTR**](#typedef-ef_wdt32_type_ptr) wdt, uint32\_t \*is\_timeout) <br>_Checks if the WDT32 has timed out._ |
 |  [**EF\_DRIVER\_STATUS**](#typedef-ef_driver_status) | [**EF\_WDT32\_readTimerValue**](#function-ef_wdt32_readtimervalue) ([**EF\_WDT32\_TYPE\_PTR**](#typedef-ef_wdt32_type_ptr) wdt, uint32\_t \*timer\_value) <br>_Reads the current timer value from the WDT32 peripheral._ |
 |  [**EF\_DRIVER\_STATUS**](#typedef-ef_driver_status) | [**EF\_WDT32\_reloadWDT**](#function-ef_wdt32_reloadwdt) ([**EF\_WDT32\_TYPE\_PTR**](#typedef-ef_wdt32_type_ptr) wdt) <br>_Reloads the WDT32 timer by disabling and re-enabling it._ |
+|  [**EF\_DRIVER\_STATUS**](#typedef-ef_driver_status) | [**EF\_WDT32\_setGclkEnable**](#function-ef_wdt32_setgclkenable) ([**EF\_WDT32\_TYPE\_PTR**](#typedef-ef_wdt32_type_ptr) wdt, uint32\_t value) <br>_Sets the GCLK enable bit in the GCLK register to a certain value._ |
 |  [**EF\_DRIVER\_STATUS**](#typedef-ef_driver_status) | [**EF\_WDT32\_setICR**](#function-ef_wdt32_seticr) ([**EF\_WDT32\_TYPE\_PTR**](#typedef-ef_wdt32_type_ptr) wdt, uint32\_t mask) <br>_Sets the interrupt clear (IC) register in the WDT32 peripheral._ |
 |  [**EF\_DRIVER\_STATUS**](#typedef-ef_driver_status) | [**EF\_WDT32\_setIM**](#function-ef_wdt32_setim) ([**EF\_WDT32\_TYPE\_PTR**](#typedef-ef_wdt32_type_ptr) wdt, uint32\_t mask) <br>_Sets the interrupt mask (IM) in the WDT32 peripheral._ |
 |  [**EF\_DRIVER\_STATUS**](#typedef-ef_driver_status) | [**EF\_WDT32\_setReloadValue**](#function-ef_wdt32_setreloadvalue) ([**EF\_WDT32\_TYPE\_PTR**](#typedef-ef_wdt32_type_ptr) wdt, uint32\_t load\_val) <br>_Sets the reload value in the WDT32 peripheral._ |
@@ -366,6 +367,27 @@ This function clears the timeout flag, disables the WDT32, and then re-enables i
 **Returns:**
 
 status A value of type [**EF\_DRIVER\_STATUS**](#typedef-ef_driver_status) : returns a success or error code.
+### function `EF_WDT32_setGclkEnable`
+
+_Sets the GCLK enable bit in the GCLK register to a certain value._
+```c
+EF_DRIVER_STATUS EF_WDT32_setGclkEnable (
+    EF_WDT32_TYPE_PTR wdt,
+    uint32_t value
+) 
+```
+
+
+**Parameters:**
+
+
+* `wdt` Pointer to the WDT32 base address structure [**EF\_WDT32\_TYPE\_PTR**](#typedef-ef_wdt32_type_ptr).
+* `value` The value of the GCLK enable bit
+
+
+**Returns:**
+
+status A value of type [**EF\_DRIVER\_STATUS**](#typedef-ef_driver_status) : returns a success or error code
 ### function `EF_WDT32_setICR`
 
 _Sets the interrupt clear (IC) register in the WDT32 peripheral._

@@ -14,6 +14,8 @@ C file for WDT32 APIs which contains the function implmentations.
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \mbox{\hyperlink{_e_f___w_d_t32_8c_ab08c2eebc731b4f73c4a362a73395360}{EF\+\_\+\+WDT32\+\_\+set\+Gclk\+Enable}} (\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}} wdt, uint32\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Sets the GCLK enable bit in the GCLK register to a certain value. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \mbox{\hyperlink{_e_f___w_d_t32_8c_a070bae4e509f7ff44bde19c4395c1f13}{EF\+\_\+\+WDT32\+\_\+read\+Timer\+Value}} (\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}} wdt, uint32\+\_\+t $\ast$timer\+\_\+value)
 \begin{DoxyCompactList}\small\item\em Reads the current timer value from the WDT32 peripheral. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \mbox{\hyperlink{_e_f___w_d_t32_8c_a939788c900140f759e334e4459d4b958}{EF\+\_\+\+WDT32\+\_\+set\+Reload\+Value}} (\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}} wdt, uint32\+\_\+t load\+\_\+val)
@@ -268,6 +270,26 @@ This function clears the timeout flag, disables the WDT32, and then re-\/enables
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 status A value of type \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \+: returns a success or error code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_e_f___w_d_t32_8c_ab08c2eebc731b4f73c4a362a73395360}\label{_e_f___w_d_t32_8c_ab08c2eebc731b4f73c4a362a73395360}} 
+\index{EF\_WDT32.c@{EF\_WDT32.c}!EF\_WDT32\_setGclkEnable@{EF\_WDT32\_setGclkEnable}}
+\index{EF\_WDT32\_setGclkEnable@{EF\_WDT32\_setGclkEnable}!EF\_WDT32.c@{EF\_WDT32.c}}
+\doxysubsubsection{\texorpdfstring{EF\_WDT32\_setGclkEnable()}{EF\_WDT32\_setGclkEnable()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} EF\+\_\+\+WDT32\+\_\+set\+Gclk\+Enable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}}]{wdt,  }\item[{uint32\+\_\+t}]{value }\end{DoxyParamCaption})}
+
+
+
+Sets the GCLK enable bit in the GCLK register to a certain value. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em wdt} & Pointer to the WDT32 base address structure \mbox{\hyperlink{_e_f___w_d_t32__regs_8h_a7025a25691b7b7e9932da8b0c51d137c}{EF\+\_\+\+WDT32\+\_\+\+TYPE\+\_\+\+PTR}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em value} & The value of the GCLK enable bit\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+status A value of type \mbox{\hyperlink{_e_f___driver___common_8h_ad1c99136d1edfd0a7757f5b81600a351}{EF\+\_\+\+DRIVER\+\_\+\+STATUS}} \+: returns a success or error code 
 \end{DoxyReturn}
 \mbox{\Hypertarget{_e_f___w_d_t32_8c_a7e76af97caf95f02df56665edb433b86}\label{_e_f___w_d_t32_8c_a7e76af97caf95f02df56665edb433b86}} 
 \index{EF\_WDT32.c@{EF\_WDT32.c}!EF\_WDT32\_setICR@{EF\_WDT32\_setICR}}

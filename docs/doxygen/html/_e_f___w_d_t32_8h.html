@@ -84,6 +84,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ab08c2eebc731b4f73c4a362a73395360"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_f___driver___common_8h.html#ad1c99136d1edfd0a7757f5b81600a351">EF_DRIVER_STATUS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_f___w_d_t32_8h.html#ab08c2eebc731b4f73c4a362a73395360">EF_WDT32_setGclkEnable</a> (<a class="el" href="_e_f___w_d_t32__regs_8h.html#a7025a25691b7b7e9932da8b0c51d137c">EF_WDT32_TYPE_PTR</a> wdt, uint32_t value)</td></tr>
+<tr class="memdesc:ab08c2eebc731b4f73c4a362a73395360"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the GCLK enable bit in the GCLK register to a certain value.  <br /></td></tr>
+<tr class="separator:ab08c2eebc731b4f73c4a362a73395360"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a070bae4e509f7ff44bde19c4395c1f13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_f___driver___common_8h.html#ad1c99136d1edfd0a7757f5b81600a351">EF_DRIVER_STATUS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_f___w_d_t32_8h.html#a070bae4e509f7ff44bde19c4395c1f13">EF_WDT32_readTimerValue</a> (<a class="el" href="_e_f___w_d_t32__regs_8h.html#a7025a25691b7b7e9932da8b0c51d137c">EF_WDT32_TYPE_PTR</a> wdt, uint32_t *timer_value)</td></tr>
 <tr class="memdesc:a070bae4e509f7ff44bde19c4395c1f13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the current timer value from the WDT32 peripheral.  <br /></td></tr>
 <tr class="separator:a070bae4e509f7ff44bde19c4395c1f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -470,6 +473,44 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>status A value of type <a class="el" href="_e_f___driver___common_8h.html#ad1c99136d1edfd0a7757f5b81600a351">EF_DRIVER_STATUS</a> : returns a success or error code. </dd></dl>
+
+</div>
+</div>
+<a id="ab08c2eebc731b4f73c4a362a73395360" name="ab08c2eebc731b4f73c4a362a73395360"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab08c2eebc731b4f73c4a362a73395360">&#9670;&#160;</a></span>EF_WDT32_setGclkEnable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_e_f___driver___common_8h.html#ad1c99136d1edfd0a7757f5b81600a351">EF_DRIVER_STATUS</a> EF_WDT32_setGclkEnable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_e_f___w_d_t32__regs_8h.html#a7025a25691b7b7e9932da8b0c51d137c">EF_WDT32_TYPE_PTR</a>&#160;</td>
+          <td class="paramname"><em>wdt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the GCLK enable bit in the GCLK register to a certain value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wdt</td><td>Pointer to the WDT32 base address structure <a class="el" href="_e_f___w_d_t32__regs_8h.html#a7025a25691b7b7e9932da8b0c51d137c">EF_WDT32_TYPE_PTR</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>The value of the GCLK enable bit</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>status A value of type <a class="el" href="_e_f___driver___common_8h.html#ad1c99136d1edfd0a7757f5b81600a351">EF_DRIVER_STATUS</a> : returns a success or error code </dd></dl>
 
 </div>
 </div>

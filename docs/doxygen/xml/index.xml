@@ -23,6 +23,7 @@
   </compound>
   <compound refid="_e_f___w_d_t32_8c" kind="file"><name>EF_WDT32.c</name>
     <member refid="_e_f___w_d_t32_8c_1a147df04fc0736aa0c0c09441d42c1e2d" kind="define"><name>EF_WDT32_C</name></member>
+    <member refid="_e_f___w_d_t32_8c_1ab08c2eebc731b4f73c4a362a73395360" kind="function"><name>EF_WDT32_setGclkEnable</name></member>
     <member refid="_e_f___w_d_t32_8c_1a070bae4e509f7ff44bde19c4395c1f13" kind="function"><name>EF_WDT32_readTimerValue</name></member>
     <member refid="_e_f___w_d_t32_8c_1a939788c900140f759e334e4459d4b958" kind="function"><name>EF_WDT32_setReloadValue</name></member>
     <member refid="_e_f___w_d_t32_8c_1a3e5017e26b1f75011c36b39ba391d97d" kind="function"><name>EF_WDT32_getRIS</name></member>
@@ -38,6 +39,7 @@
     <member refid="_e_f___w_d_t32_8c_1aa4021705a5d400c234ef2286a54a77d2" kind="function"><name>EF_WDT32_isTimeOut</name></member>
   </compound>
   <compound refid="_e_f___w_d_t32_8h" kind="file"><name>EF_WDT32.h</name>
+    <member refid="_e_f___w_d_t32_8h_1ab08c2eebc731b4f73c4a362a73395360" kind="function"><name>EF_WDT32_setGclkEnable</name></member>
     <member refid="_e_f___w_d_t32_8h_1a070bae4e509f7ff44bde19c4395c1f13" kind="function"><name>EF_WDT32_readTimerValue</name></member>
     <member refid="_e_f___w_d_t32_8h_1a939788c900140f759e334e4459d4b958" kind="function"><name>EF_WDT32_setReloadValue</name></member>
     <member refid="_e_f___w_d_t32_8h_1a3e5017e26b1f75011c36b39ba391d97d" kind="function"><name>EF_WDT32_getRIS</name></member>

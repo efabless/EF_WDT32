@@ -44,6 +44,16 @@
 * Function Prototypes
 ******************************************************************************/
 
+//! Sets the GCLK enable bit in the GCLK register to a certain value
+    /*!
+        \param [in] wdt           Pointer to the WDT32 base address structure \ref EF_WDT32_TYPE_PTR.
+        \param [in] value The value of the GCLK enable bit
+        
+        \return status A value of type \ref EF_DRIVER_STATUS : returns a success or error code 
+    */
+EF_DRIVER_STATUS EF_WDT32_setGclkEnable(EF_WDT32_TYPE_PTR wdt, uint32_t value);
+
+
 //! Reads the current timer value from the WDT32 peripheral.
 /*!
     This function retrieves the current value of the timer register in the specified WDT32 peripheral.

@@ -54,6 +54,19 @@
 * Function Definitions
 ******************************************************************************/
 
+EF_DRIVER_STATUS EF_WDT32_setGclkEnable(EF_WDT32_TYPE_PTR wdt, uint32_t value) {
+    EF_DRIVER_STATUS status = EF_DRIVER_OK;
+
+    if (wdt == NULL) {
+        status = EF_DRIVER_ERROR_PARAMETER; // Return error if the timer pointer is NULL
+    } else if (value > (uint32_t)0x1) {
+        status = EF_DRIVER_ERROR_PARAMETER; // Return error if value is out of valid range
+    } else {
+        wdt->GCLK = value; // Set the GCLK enable bit to the provided value
+    }
+
+    return status;
+}
 
 EF_DRIVER_STATUS EF_WDT32_readTimerValue(EF_WDT32_TYPE_PTR wdt, uint32_t* timer_value){
 

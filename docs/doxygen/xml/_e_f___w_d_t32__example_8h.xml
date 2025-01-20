@@ -122,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="EF_WDT32_example.h" line="114" column="18" bodyfile="EF_WDT32_example.c" bodystart="58" bodyend="101" declfile="EF_WDT32_example.h" declline="114" declcolumn="18"/>
+        <location file="EF_WDT32_example.h" line="114" column="18" bodyfile="EF_WDT32_example.c" bodystart="58" bodyend="109" declfile="EF_WDT32_example.h" declline="114" declcolumn="18"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -66,6 +66,48 @@
       </node>
     </invincdepgraph>
       <sectiondef kind="func">
+      <memberdef kind="function" id="_e_f___w_d_t32_8h_1ab08c2eebc731b4f73c4a362a73395360" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref></type>
+        <definition>EF_DRIVER_STATUS EF_WDT32_setGclkEnable</definition>
+        <argsstring>(EF_WDT32_TYPE_PTR wdt, uint32_t value)</argsstring>
+        <name>EF_WDT32_setGclkEnable</name>
+        <param>
+          <type><ref refid="_e_f___w_d_t32__regs_8h_1a7025a25691b7b7e9932da8b0c51d137c" kindref="member">EF_WDT32_TYPE_PTR</ref></type>
+          <declname>wdt</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Sets the GCLK enable bit in the GCLK register to a certain value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">wdt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the WDT32 base address structure <ref refid="_e_f___w_d_t32__regs_8h_1a7025a25691b7b7e9932da8b0c51d137c" kindref="member">EF_WDT32_TYPE_PTR</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value of the GCLK enable bit</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status A value of type <ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref> : returns a success or error code </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EF_WDT32.h" line="54" column="18" bodyfile="EF_WDT32.c" bodystart="57" bodyend="69" declfile="EF_WDT32.h" declline="54" declcolumn="18"/>
+      </memberdef>
       <memberdef kind="function" id="_e_f___w_d_t32_8h_1a070bae4e509f7ff44bde19c4395c1f13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref></type>
         <definition>EF_DRIVER_STATUS EF_WDT32_readTimerValue</definition>
@@ -107,7 +149,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="EF_WDT32.h" line="56" column="18" bodyfile="EF_WDT32.c" bodystart="58" bodyend="70" declfile="EF_WDT32.h" declline="56" declcolumn="18"/>
+        <location file="EF_WDT32.h" line="66" column="18" bodyfile="EF_WDT32.c" bodystart="71" bodyend="83" declfile="EF_WDT32.h" declline="66" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="_e_f___w_d_t32_8h_1a939788c900140f759e334e4459d4b958" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref></type>
@@ -150,7 +192,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="EF_WDT32.h" line="70" column="18" bodyfile="EF_WDT32.c" bodystart="72" bodyend="82" declfile="EF_WDT32.h" declline="70" declcolumn="18"/>
+        <location file="EF_WDT32.h" line="80" column="18" bodyfile="EF_WDT32.c" bodystart="85" bodyend="95" declfile="EF_WDT32.h" declline="80" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="_e_f___w_d_t32_8h_1a3e5017e26b1f75011c36b39ba391d97d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref></type>
@@ -193,7 +235,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="EF_WDT32.h" line="82" column="18" bodyfile="EF_WDT32.c" bodystart="84" bodyend="96" declfile="EF_WDT32.h" declline="82" declcolumn="18"/>
+        <location file="EF_WDT32.h" line="92" column="18" bodyfile="EF_WDT32.c" bodystart="97" bodyend="109" declfile="EF_WDT32.h" declline="92" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="_e_f___w_d_t32_8h_1a3063b72a80217098001d522e1c3977f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref></type>
@@ -236,7 +278,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="EF_WDT32.h" line="94" column="18" bodyfile="EF_WDT32.c" bodystart="98" bodyend="110" declfile="EF_WDT32.h" declline="94" declcolumn="18"/>
+        <location file="EF_WDT32.h" line="104" column="18" bodyfile="EF_WDT32.c" bodystart="111" bodyend="123" declfile="EF_WDT32.h" declline="104" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="_e_f___w_d_t32_8h_1a7bb77b2c466435c20e5fb6bf7391f723" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref></type>
@@ -279,7 +321,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="EF_WDT32.h" line="106" column="18" bodyfile="EF_WDT32.c" bodystart="112" bodyend="122" declfile="EF_WDT32.h" declline="106" declcolumn="18"/>
+        <location file="EF_WDT32.h" line="116" column="18" bodyfile="EF_WDT32.c" bodystart="125" bodyend="135" declfile="EF_WDT32.h" declline="116" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="_e_f___w_d_t32_8h_1a6b8db048008ec7c64da0805649685ee9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref></type>
@@ -322,7 +364,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="EF_WDT32.h" line="119" column="18" bodyfile="EF_WDT32.c" bodystart="124" bodyend="136" declfile="EF_WDT32.h" declline="119" declcolumn="18"/>
+        <location file="EF_WDT32.h" line="129" column="18" bodyfile="EF_WDT32.c" bodystart="137" bodyend="149" declfile="EF_WDT32.h" declline="129" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="_e_f___w_d_t32_8h_1a7e76af97caf95f02df56665edb433b86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref></type>
@@ -365,7 +407,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="EF_WDT32.h" line="132" column="18" bodyfile="EF_WDT32.c" bodystart="138" bodyend="148" declfile="EF_WDT32.h" declline="132" declcolumn="18"/>
+        <location file="EF_WDT32.h" line="142" column="18" bodyfile="EF_WDT32.c" bodystart="151" bodyend="161" declfile="EF_WDT32.h" declline="142" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="_e_f___w_d_t32_8h_1a6f6927f4bc7e8d3687969831e8497a97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref></type>
@@ -408,7 +450,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="EF_WDT32.h" line="149" column="18" bodyfile="EF_WDT32.c" bodystart="156" bodyend="169" declfile="EF_WDT32.h" declline="149" declcolumn="18"/>
+        <location file="EF_WDT32.h" line="159" column="18" bodyfile="EF_WDT32.c" bodystart="169" bodyend="182" declfile="EF_WDT32.h" declline="159" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="_e_f___w_d_t32_8h_1a06ad40c0ae428ae3858c004d8d13d725" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref></type>
@@ -439,7 +481,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="EF_WDT32.h" line="160" column="18" bodyfile="EF_WDT32.c" bodystart="171" bodyend="181" declfile="EF_WDT32.h" declline="160" declcolumn="18"/>
+        <location file="EF_WDT32.h" line="170" column="18" bodyfile="EF_WDT32.c" bodystart="184" bodyend="194" declfile="EF_WDT32.h" declline="170" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="_e_f___w_d_t32_8h_1a07bd55f1fdacb26adc08bd83e63a3de1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref></type>
@@ -470,7 +512,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="EF_WDT32.h" line="171" column="18" bodyfile="EF_WDT32.c" bodystart="183" bodyend="193" declfile="EF_WDT32.h" declline="171" declcolumn="18"/>
+        <location file="EF_WDT32.h" line="181" column="18" bodyfile="EF_WDT32.c" bodystart="196" bodyend="206" declfile="EF_WDT32.h" declline="181" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="_e_f___w_d_t32_8h_1a5ad03a1924b7771fd1d01c636899e0ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref></type>
@@ -501,7 +543,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="EF_WDT32.h" line="181" column="18" bodyfile="EF_WDT32.c" bodystart="195" bodyend="206" declfile="EF_WDT32.h" declline="181" declcolumn="18"/>
+        <location file="EF_WDT32.h" line="191" column="18" bodyfile="EF_WDT32.c" bodystart="208" bodyend="219" declfile="EF_WDT32.h" declline="191" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="_e_f___w_d_t32_8h_1a724d7dc17ff1b58fdb42add0f7ce8707" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref></type>
@@ -532,7 +574,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="EF_WDT32.h" line="194" column="18" bodyfile="EF_WDT32.c" bodystart="208" bodyend="218" declfile="EF_WDT32.h" declline="194" declcolumn="18"/>
+        <location file="EF_WDT32.h" line="204" column="18" bodyfile="EF_WDT32.c" bodystart="221" bodyend="231" declfile="EF_WDT32.h" declline="204" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="_e_f___w_d_t32_8h_1aa4021705a5d400c234ef2286a54a77d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref></type>
@@ -575,7 +617,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="EF_WDT32.h" line="207" column="18" bodyfile="EF_WDT32.c" bodystart="220" bodyend="232" declfile="EF_WDT32.h" declline="207" declcolumn="18"/>
+        <location file="EF_WDT32.h" line="217" column="18" bodyfile="EF_WDT32.c" bodystart="233" bodyend="245" declfile="EF_WDT32.h" declline="217" declcolumn="18"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -626,75 +668,79 @@
 <codeline lineno="45"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1a070bae4e509f7ff44bde19c4395c1f13" kindref="member">EF_WDT32_readTimerValue</ref>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,<sp/>uint32_t*<sp/>timer_value);</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1ab08c2eebc731b4f73c4a362a73395360" kindref="member">EF_WDT32_setGclkEnable</ref>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,<sp/>uint32_t<sp/>value);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"></highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1a939788c900140f759e334e4459d4b958" kindref="member">EF_WDT32_setReloadValue</ref>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,<sp/>uint32_t<sp/>load_val);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1a070bae4e509f7ff44bde19c4395c1f13" kindref="member">EF_WDT32_readTimerValue</ref>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,<sp/>uint32_t*<sp/>timer_value);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
 <codeline lineno="71"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1a3e5017e26b1f75011c36b39ba391d97d" kindref="member">EF_WDT32_getRIS</ref>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,<sp/>uint32_t*<sp/>ris);</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1a939788c900140f759e334e4459d4b958" kindref="member">EF_WDT32_setReloadValue</ref>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,<sp/>uint32_t<sp/>load_val);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1a3063b72a80217098001d522e1c3977f3" kindref="member">EF_WDT32_getMIS</ref>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,<sp/>uint32_t*<sp/>mis);</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1a3e5017e26b1f75011c36b39ba391d97d" kindref="member">EF_WDT32_getRIS</ref>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,<sp/>uint32_t*<sp/>ris);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
-<codeline lineno="98"><highlight class="normal"></highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1a7bb77b2c466435c20e5fb6bf7391f723" kindref="member">EF_WDT32_setIM</ref>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,<sp/>uint32_t<sp/>mask);</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1a3063b72a80217098001d522e1c3977f3" kindref="member">EF_WDT32_getMIS</ref>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,<sp/>uint32_t*<sp/>mis);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight></codeline>
-<codeline lineno="109"><highlight class="normal"></highlight></codeline>
-<codeline lineno="111"><highlight class="normal"></highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1a6b8db048008ec7c64da0805649685ee9" kindref="member">EF_WDT32_getIM</ref>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,<sp/>uint32_t*<sp/>im);</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1a7bb77b2c466435c20e5fb6bf7391f723" kindref="member">EF_WDT32_setIM</ref>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,<sp/>uint32_t<sp/>mask);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
 <codeline lineno="121"><highlight class="normal"></highlight></codeline>
-<codeline lineno="122"><highlight class="normal"></highlight></codeline>
-<codeline lineno="124"><highlight class="normal"></highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1a7e76af97caf95f02df56665edb433b86" kindref="member">EF_WDT32_setICR</ref>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,<sp/>uint32_t<sp/>mask);</highlight></codeline>
-<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1a6b8db048008ec7c64da0805649685ee9" kindref="member">EF_WDT32_getIM</ref>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,<sp/>uint32_t*<sp/>im);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
 <codeline lineno="134"><highlight class="normal"></highlight></codeline>
-<codeline lineno="135"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>following<sp/>functions<sp/>are<sp/>not<sp/>verified<sp/>yet</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="137"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="138"><highlight class="normal"></highlight></codeline>
-<codeline lineno="139"><highlight class="normal"></highlight></codeline>
-<codeline lineno="141"><highlight class="normal"></highlight></codeline>
-<codeline lineno="149"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1a6f6927f4bc7e8d3687969831e8497a97" kindref="member">EF_I2C_setGclkEnable</ref><sp/>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,<sp/>uint32_t<sp/>value);</highlight></codeline>
-<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1a7e76af97caf95f02df56665edb433b86" kindref="member">EF_WDT32_setICR</ref>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,<sp/>uint32_t<sp/>mask);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>following<sp/>functions<sp/>are<sp/>not<sp/>verified<sp/>yet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
 <codeline lineno="151"><highlight class="normal"></highlight></codeline>
-<codeline lineno="153"><highlight class="normal"></highlight></codeline>
-<codeline lineno="160"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1a06ad40c0ae428ae3858c004d8d13d725" kindref="member">EF_WDT32_enable</ref>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1a6f6927f4bc7e8d3687969831e8497a97" kindref="member">EF_I2C_setGclkEnable</ref><sp/>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,<sp/>uint32_t<sp/>value);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
 <codeline lineno="161"><highlight class="normal"></highlight></codeline>
-<codeline lineno="162"><highlight class="normal"></highlight></codeline>
-<codeline lineno="164"><highlight class="normal"></highlight></codeline>
-<codeline lineno="171"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1a07bd55f1fdacb26adc08bd83e63a3de1" kindref="member">EF_WDT32_disable</ref>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1a06ad40c0ae428ae3858c004d8d13d725" kindref="member">EF_WDT32_enable</ref>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
 <codeline lineno="172"><highlight class="normal"></highlight></codeline>
 <codeline lineno="174"><highlight class="normal"></highlight></codeline>
-<codeline lineno="181"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1a5ad03a1924b7771fd1d01c636899e0ea" kindref="member">EF_WDT32_reloadWDT</ref>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1a07bd55f1fdacb26adc08bd83e63a3de1" kindref="member">EF_WDT32_disable</ref>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt);</highlight></codeline>
 <codeline lineno="182"><highlight class="normal"></highlight></codeline>
-<codeline lineno="183"><highlight class="normal"></highlight></codeline>
 <codeline lineno="184"><highlight class="normal"></highlight></codeline>
-<codeline lineno="186"><highlight class="normal"></highlight></codeline>
-<codeline lineno="194"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1a724d7dc17ff1b58fdb42add0f7ce8707" kindref="member">EF_WDT32_clearTimeOutFlag</ref>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt);</highlight></codeline>
-<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1a5ad03a1924b7771fd1d01c636899e0ea" kindref="member">EF_WDT32_reloadWDT</ref>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
 <codeline lineno="196"><highlight class="normal"></highlight></codeline>
-<codeline lineno="198"><highlight class="normal"></highlight></codeline>
-<codeline lineno="207"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1aa4021705a5d400c234ef2286a54a77d2" kindref="member">EF_WDT32_isTimeOut</ref>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,<sp/>uint32_t*<sp/>is_timeout);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1a724d7dc17ff1b58fdb42add0f7ce8707" kindref="member">EF_WDT32_clearTimeOutFlag</ref>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
 <codeline lineno="208"><highlight class="normal"></highlight></codeline>
-<codeline lineno="209"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
-<codeline lineno="210"><highlight class="comment">*<sp/>External<sp/>Variables</highlight></codeline>
-<codeline lineno="211"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="212"><highlight class="normal"></highlight></codeline>
-<codeline lineno="213"><highlight class="normal"></highlight></codeline>
-<codeline lineno="214"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>EF_WDT32_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="215"><highlight class="normal"></highlight></codeline>
-<codeline lineno="216"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
-<codeline lineno="217"><highlight class="comment">*<sp/>End<sp/>of<sp/>File</highlight></codeline>
-<codeline lineno="218"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><ref refid="_e_f___driver___common_8h_1ad1c99136d1edfd0a7757f5b81600a351" kindref="member">EF_DRIVER_STATUS</ref><sp/><ref refid="_e_f___w_d_t32_8h_1aa4021705a5d400c234ef2286a54a77d2" kindref="member">EF_WDT32_isTimeOut</ref>(<ref refid="struct___e_f___w_d_t32___t_y_p_e__" kindref="compound">EF_WDT32_TYPE_PTR</ref><sp/>wdt,<sp/>uint32_t*<sp/>is_timeout);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="220"><highlight class="comment">*<sp/>External<sp/>Variables</highlight></codeline>
+<codeline lineno="221"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>EF_WDT32_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="227"><highlight class="comment">*<sp/>End<sp/>of<sp/>File</highlight></codeline>
+<codeline lineno="228"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="EF_WDT32.h"/>
   </compounddef>
