@@ -7,7 +7,7 @@
 	you may not use this file except in compliance with the License.
 	You may obtain a copy of the License at
 
-	    http://www.apache.org/licenses/LICENSE-2.0
+	    www.apache.org/licenses/LICENSE-2.0
 
 	Unless required by applicable law or agreed to in writing, software
 	distributed under the License is distributed on an "AS IS" BASIS,
@@ -20,16 +20,44 @@
 #ifndef EF_WDT32REGS_H
 #define EF_WDT32REGS_H
 
+ 
+/******************************************************************************
+* Includes
+******************************************************************************/
+#include <stdint.h>
+
+/******************************************************************************
+* Macros and Constants
+******************************************************************************/
+
 #ifndef IO_TYPES
 #define IO_TYPES
-#define   __R     volatile const unsigned int
-#define   __W     volatile       unsigned int
-#define   __RW    volatile       unsigned int
+#define   __R     volatile const uint32_t
+#define   __W     volatile       uint32_t
+#define   __RW    volatile       uint32_t
 #endif
 
+#define EF_WDT32_TIMER_REG_TIMER_BIT	((uint32_t)0)
+#define EF_WDT32_TIMER_REG_TIMER_MASK	((uint32_t)0xffffffff)
+#define EF_WDT32_TIMER_REG_MAX_VALUE	((uint32_t)0xFFFFFFFF)
 
-#define EF_WDT32_WDTTO_FLAG	0x1
+#define EF_WDT32_LOAD_REG_LOAD_BIT	((uint32_t)0)
+#define EF_WDT32_LOAD_REG_LOAD_MASK	((uint32_t)0xffffffff)
+#define EF_WDT32_LOAD_REG_MAX_VALUE	((uint32_t)0xFFFFFFFF)
 
+#define EF_WDT32_CONTROL_REG_CONTROL_BIT	((uint32_t)0)
+#define EF_WDT32_CONTROL_REG_CONTROL_MASK	((uint32_t)0x1)
+#define EF_WDT32_CONTROL_REG_MAX_VALUE	((uint32_t)0x1)
+
+
+#define EF_WDT32_WDTTO_FLAG	((uint32_t)0x1)
+
+
+          
+/******************************************************************************
+* Typedefs and Enums
+******************************************************************************/
+          
 typedef struct _EF_WDT32_TYPE_ {
 	__R 	timer;
 	__W 	load;
@@ -42,5 +70,26 @@ typedef struct _EF_WDT32_TYPE_ {
 	__W 	GCLK;
 } EF_WDT32_TYPE;
 
+typedef struct _EF_WDT32_TYPE_ *EF_WDT32_TYPE_PTR;     // Pointer to the register structure
+
+  
+/******************************************************************************
+* Function Prototypes
+******************************************************************************/
+
+
+
+/******************************************************************************
+* External Variables
+******************************************************************************/
+
+
+
+
 #endif
 
+/******************************************************************************
+* End of File
+******************************************************************************/
+          
+          
