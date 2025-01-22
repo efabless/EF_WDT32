@@ -26,7 +26,7 @@ Directory Structure:
 
     - hdl 
         - rtl 
-            - **EF_WDT32.v**: Verilog source code for the EF_WDT32 design, including the core logic of the UART module.
+            - **EF_WDT32.v**: Verilog source code for the EF_WDT32 design
             - **bus_wrappers**
                 - **EF_WDT32_AHBL.v**: Verilog wrapper to interface the EF_WDT32 with the AMBA High-performance Bus (AHB-Lite) protocol.
                 - **EF_WDT32_APB.v**: Verilog wrapper to interface the EF_WDT32 with the Advanced Peripheral Bus (APB) protocol.
