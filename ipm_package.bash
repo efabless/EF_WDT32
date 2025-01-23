@@ -67,7 +67,7 @@ files_to_compress=$(find . \
     | grep -v "\./ip" \
     | grep -v "\./docs" \
     | grep -v "\./README.md" \
-    | grep -v "\.\$"; ls "./ip/dependencies.json")
+    | grep -v "\.\$")
 
 # Print the files that will be compressed
 echo "Files to be compressed:"
