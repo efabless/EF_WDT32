@@ -31,6 +31,7 @@ module EF_WDT32_APB (
 	inout VPWR,
 	inout VGND,
 `endif
+	input	wire	sc_testmode,
 	`APB_SLAVE_PORTS
 );
 

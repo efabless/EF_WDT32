@@ -31,6 +31,7 @@ module EF_WDT32_AHBL (
 	inout VPWR,
 	inout VGND,
 `endif
+	input	wire	sc_testmode,
 	`AHBL_SLAVE_PORTS
 );
 

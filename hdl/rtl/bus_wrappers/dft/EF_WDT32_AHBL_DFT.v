@@ -24,6 +24,7 @@
 
 module EF_WDT32_AHBL (
 
+    input  wire        sc_testmode,
     input  wire        HCLK,
     input  wire        HRESETn,
     input  wire        HWRITE,

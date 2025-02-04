@@ -31,6 +31,7 @@ module EF_WDT32_WB (
 	inout VPWR,
 	inout VGND,
 `endif
+	input	wire	sc_testmode,
 	`WB_SLAVE_PORTS
 );
 

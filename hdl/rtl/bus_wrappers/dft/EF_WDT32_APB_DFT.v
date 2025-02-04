@@ -24,6 +24,7 @@
 
 module EF_WDT32_APB (
 
+    input  wire        sc_testmode,
     input  wire        PCLK,
     input  wire        PRESETn,
     input  wire        PWRITE,

@@ -24,6 +24,7 @@
 
 module EF_WDT32_WB (
 
+    input  wire        sc_testmode,
     input  wire        clk_i,
     input  wire        rst_i,
     input  wire [31:0] adr_i,
