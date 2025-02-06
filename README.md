@@ -114,8 +114,8 @@ VERILOG_DEFINES:
 - CLKG_SKY130_HD
 ```
 ## Firmware Drivers:
-Firmware drivers for EF_WDT32 can be found in the [Drivers](https://github.com/efabless/EFIS/tree/main/Drivers) directory in the [EFIS](https://github.com/efabless/EFIS) (Efabless Firmware Interface Standard) repo. EF_WDT32 driver documentation  is available [here](https://github.com/efabless/EFIS/blob/main/Drivers/docs/EF_Driver_WDT32/README.md).
-You can also find an example C application using the EF_WDT32 drivers [here](https://github.com/efabless/EFIS/tree/main/Drivers/docs/EF_Driver_WDT32/example).
+Firmware drivers for EF_WDT32 can be found in the [Drivers](https://github.com/efabless/EFIS/tree/main/Drivers) directory in the [EFIS](https://github.com/efabless/EFIS) (Efabless Firmware Interface Standard) repo. EF_WDT32 driver documentation  is available [here](https://github.com/efabless/EFIS/blob/main/Drivers/Docs/EF_WDT32/README.md).
+You can also find an example C application using the EF_WDT32 drivers [here](https://github.com/efabless/EFIS/tree/main/Drivers/Docs/EF_WDT32/example).
 ## Installation:
 You can install the IP either by cloning this repository or by using [IPM](https://github.com/efabless/IPM).
 ### 1. Using [IPM](https://github.com/efabless/IPM):
