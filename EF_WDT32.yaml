@@ -1,12 +1,12 @@
 ---
 info:
   name: EF_WDT32
-  description: |
+  description:
     A simple 32-bit WatchDog Timer (WDT). It can be used to interrupt the CPU to:
-
-    Indicate a software malfunction.
-    Wakeup the CPU after a certain sleep time.
-    The WDT is a simple 32-bit down-counter which is decremented every system clock cycle. When it reached zero, the counter is loaded with the value stored in the load register and the TO flag is raised..
+    - Indicate a software malfunction.
+    - Wakeup the CPU after a certain sleep time.
+    
+    The WDT is a simple 32-bit "loadable" down counter which is decremented every system clock cycle. When it reached zero, the counter is loaded with the value stored in the load register and the TO flag is raised.
 
     The WDT can be enabled/disabled. When it is disabled the counter is loaded with the value in the load register.
   repo: https://github.com/efabless/EF_WDT32
